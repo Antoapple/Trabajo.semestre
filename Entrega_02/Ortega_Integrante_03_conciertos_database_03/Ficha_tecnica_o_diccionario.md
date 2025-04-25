@@ -3,7 +3,7 @@
 
 ## **Tema de la base de datos: Festivales realizados en recintos con capacidad para albergar eventos masivos**
 
-###**FUENTE DE LOS DATOS**
+### **FUENTE DE LOS DATOS**
 
 - *Fuentes que fueron esenciales para construir la base:*
 
@@ -11,43 +11,44 @@
 
 2. Cartelera de espectáculos 2024: revisa los festivales y conciertos agendados en Chile. [El Mostrador](https://www.elmostrador.cl/datos-utiles/2024/01/26/cartelera-de-espectaculos-2024-revisa-los-festivales-y-conciertos-agendados-en-chile/)
 
-3. 
+3. Los mejores conciertos de 2024. [La Tercera](https://www.latercera.com/galeria/culto/los-mejores-conciertos-de-2024/IV6QKN5ZZVDRZI43WPNSVSVZG4/#)
 
-4.
+4. Placebo, Karol G y Iron Maiden: Todos los conciertos confirmados para Chile este 2024. [The Clinic](https://www.theclinic.cl/2024/01/05/conciertos-eventos-2024-artistas-internacionales/amp/)
+
 
 - *Sitios web de medios de comunicación:*
 
 1. 
 
-2.
+2. 
 
 3.
 
 - *Cuentas oficiales de Instagram de los recintos, tiqueteras o productoras responsables del evento como :*
 
-1. @lotuscl
+1. [@lotuscl](https://www.instagram.com/lotuscl?igsh=ZGRhbGU0MWFxbTho)
 
-2. @dgmedios
+2. [@dgmedios](https://www.instagram.com/dgmedios/)
 
-3. @bizarrolivecl
+3. [@bizarrolivecl](https://www.instagram.com/dgmedios/)
 
-4. @puntoticket
+4. [@puntoticket](https://www.instagram.com/puntoticket/)
 
-5. @passline_oficial
+5. [@passline_oficial](https://www.instagram.com/passline_oficial/)
 
-6. @movistararena
+6. [@movistararena](https://www.instagram.com/movistararena/)
 
-7. @teatrocaupolican
+7. [@teatrocaupolican](https://www.instagram.com/teatrocaupolican/)
 
 etc.
 
 - *Sitios web de las tiqueteras PuntoTicket, Passline, Ticketmaster, Ticketplus, etc. Es especial las primeras tres.*
 
-1. 
+1. [PuntoTicket](https://www.puntoticket.com/). Para más detalles de eventos, por ejemplo el concierto de [Myriam Hernandez](https://www.puntoticket.com/myriam-hernandez-movistar-arena) en el Movistar Arena, accedía al sitio mediante la búsqueda que Google arrojaba de los eventos específicos.
 
-2.
+2. [Passline](https://home.passline.com/home)
 
-3.
+3. [Ticketmaster](https://www.ticketmaster.cl/)
 
 
 ### **METODOLOGÍA DE LA CONSTRUCCIÓN DE LA BASE**
@@ -58,11 +59,11 @@ Recolección manual de datos a través de la búsqueda de información en sitios
 
 Datos de presentaciones de artistas musicales que hayan convocado a más de 3.000 personas y que se hayan definido como conciertos, es decir, que no correspondan a festivales, incluso si convocan a más de un artista. Deben haber sido realizados en Santiago de Chile durante el año 2024 en recintos habilitados para recibir a más de 3.000 asistentes y que comúnmente reciban este tipo de espectáculos (locaciones que solo realicen un evento en el año no fueron consideradas).
 
-###**CARACTERÍSTICAS DE LOS DATOS**
+### **CARACTERÍSTICAS DE LOS DATOS**
 
 Son datos procesados, estructurados, tanto cuantitativos como cualitativos, obtenidos de una investigación de campo y de fuentes abiertas.
 
-###**VARIABLES INCORPORADAS**
+### **VARIABLES INCORPORADAS**
 
 - ID: número de identificación de cada concierto.
 
@@ -88,9 +89,9 @@ Son datos procesados, estructurados, tanto cuantitativos como cualitativos, obte
 
 - Preventas_realizadas: indica si hubo o no preventa/s para cada concierto. 0 significa que no hubo preventa y 1 que sí hubo. 
 
--Cancelado: indica si el evento fue cancelado. 0 significa que no fue cancelado y 1 que sí lo fue.
+- Cancelado: indica si el evento fue cancelado. 0 significa que no fue cancelado y 1 que sí lo fue.
 
--Cambio_recinto: señala si el evento experimentó un cambio de lugar antes de su realización. 0 significa que no hubo cambió de recinto y 1 implica que si hubo un cambio de recinto. 
+- Cambio_recinto: señala si el evento experimentó un cambio de lugar antes de su realización. 0 significa que no hubo cambió de recinto y 1 implica que si hubo un cambio de recinto. 
 
 - Genero_musical: Tipo de género musical predominante de cada artista.
 
@@ -103,6 +104,6 @@ También, hay casillas de la columna Rango_precios donde se incluye "sin datos",
 
 Otra observación es que ocurrió en algunos conciertos que se cancelaron, pero se reprogramaron. En ese caso, se incluye el evento cancelado (con ambas casillas en las columnas de cancelado y cambio_recinto marcadas con 1) y el concierto con la nueva fecha y nuevo recinto. 
 
-Otro dato a considerar, respecto a la consideración de los eventos, es que hay conciertos que se realizan por dos o tres artistas, sin embargo, o son artistas invitados o son colaboraciones. No se consideran festivales, pues son eventos únicos. En la misma línea, es importante señalar que hay eventos registrados con el mismo ID, por el mismo motivo. Se registra un artista diferente, pero sigue siendo la misma fecha, por lo que se conserva el ID.
+Además, otro dato a considerar, respecto a la consideración de los eventos, es que hay conciertos que se realizan por dos o tres artistas, sin embargo, o son artistas invitados o son colaboraciones. No se consideran festivales, pues son eventos únicos. En la misma línea, es importante señalar que hay eventos registrados con el mismo ID, por el mismo motivo. Se registra un artista diferente, pero sigue siendo la misma fecha, por lo que se conserva el ID.
 
 
