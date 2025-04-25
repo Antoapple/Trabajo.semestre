@@ -31,9 +31,15 @@ Las fuentes utilizadas para crear la base de datos se pueden agrupar según:
 ### **3. Preguntas que se pueden responder con la base de datos**
 
 A. ¿Cuáles fueron los recintos que albergaron más conciertos?
+
 B. ¿Qué características destacan de los artistas que se presentaron?
+
 C. ¿Se presentaron más artistas internacionales o nacionales? ¿En qué recintos se presentaron más artistas internacionales? ¿Y los nacionales?
+
 D. ¿Qué tiquetera predominó en la venta de entradas?
+
 E. ¿Cuáles fueron los artistas que vendieron más fechas?
+
 F. ¿Qué productora organizó más conciertos en 2024?
+
 G. ¿Cuál es la moda respecto al género musical en los artistas que se presentaron el año pasado?
