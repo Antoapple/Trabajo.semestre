@@ -18,11 +18,33 @@
 
 - *Sitios web de medios de comunicación:*
 
-1. 
+1. La Tercera. Ejemplo: [Nueva fecha de Luis Miguel en Chile: precios y a qué hora empieza la venta de entradas](https://www.latercera.com/servicios/noticia/nueva-fecha-de-luis-miguel-en-chile-precios-y-a-que-hora-empieza-la-venta-de-entradas/6T4VYGCLHVBHTMVFL4HAQW7ZQ4/)
 
-2. 
+2. Radio Duna. Ejemplo: [Fito Páez vuelve a Chile este 2024](https://www.duna.cl/cultura/musica/2024/06/28/fito-paez-vuelve-a-chile-este-2024/amp/)
 
-3.
+3. Los 40. Ejemplo:  [Marcianeke en Movistar Arena: Fecha y venta de entradas](https://los40.cl/2024/marcianeke-en-movistar-arena-fecha-y-venta-de-entradas-178405.html?outputType=amp)
+
+4. Radio Futuro. Ejemplo: [Iron Maiden en Chile 2024: precio de entradas y cuándo comienza la preventa](https://www.futuro.cl/2023/10/iron-maiden-en-chile-2024-precio-de-entradas-y-cuando-comienza-la-preventa/amp/)
+
+5. Cooperativa. Ejemplo: Melendi en Chile en 2024: [Recinto, fecha y venta de entradas](https://www.cooperativa.cl/noticias/site/artic/20231207/pags-amp/20231207131407.html)
+
+6. The Clinic. Ejemplo: [De Ana Tijoux a Paul McCartney: la destacada cartelera de conciertos que cerrará el 2024 en Santiago](https://www.theclinic.cl/2024/08/13/de-maria-becerra-a-paul-mccartney-los-conciertos-que-quedan-en-chile-el-2024/amp/)
+
+7. El Mostrador. Ejemplo: [Jonas Brothers confirma regreso a Chile: revisa lugar, fecha y venta de entradas](https://www.elmostrador.cl/noticias/2023/12/14/jonas-brothers-confirma-regreso-a-chile-revisa-lugar-fecha-y-venta-de-entradas//)
+
+8. CNN Chile. Ejemplo: [Robleis en Chile 2024: Todos los detalles de su concierto en el Movistar Arena](https://www.cnnchile.com/cultura/robleis-concierto-chile-movistar-arena_20240529/)
+
+9. RedGol. Ejemplo: [¡Oye Pablo! Danna sorprende con un show increíble en su debut en Chile](https://redgol.cl/amp/tiempolibre/como-fue-el-show-de-danna-en-chile-mexicana-sorprende-en-su-debut)
+
+10. La Cuarta. Ejemplo:[Arcángel en Chile: precios y venta de entradas](https://www.lacuarta.com/servicios/noticia/arcangel-en-chile-precios-y-venta-de-entradas/K2TMX23WKVDTPCG4LCJ4Q7QBOI/#)
+
+11. BioBioChile. Ejemplo: [La Revuelta de Los Tres cumple su objetivo en Santiago a pesar de imprevisto de último minuto](https://www.biobiochile.cl/noticias/artes-y-cultura/musica/2024/04/28/la-revuelta-de-los-tres-cumple-su-objetivo-en-santiago-a-pesar-de-imprevisto-de-ultimo-minuto.shtml)
+
+12. Radio Activa. Ejemplo: [Nueva Fecha confirmada para «La pelea del siglo» de Gino Mella y Jairo Vera](https://www.radioactiva.cl/2024/03/nueva-fecha-confirmada-para-la-pelea-del-siglo-de-gino-mella-y-jairo-vera/amp/)
+
+13. RedHoy. Ejemplo: [Conoce la Cartelera de conciertos que restan de este 2024 en Chile](https://redhoy.cl/conoce-la-cartelera-de-conciertos-que-restan-de-este-2024-en-chile/)
+
+14. Agenda Musical. Ejemplo: [Kool & The Gang y Village People en Chile: El recuerdo vivo de la música funk y disco](https://www.agendamusical.cl/kool-and-the-gang-village-people-chile/)
 
 - *Cuentas oficiales de Instagram de los recintos, tiqueteras o productoras responsables del evento como :*
 
@@ -100,7 +122,7 @@ Son datos procesados, estructurados, tanto cuantitativos como cualitativos, obte
 
 La columna Numero_asistentes cuenta con pocas cifras, debido a que no son datos que estén disponibles en la web, o, al menos, no fueron publicados por ninguna clase de medio, página web, o cuenta oficial. Es por esto que muchas casillas ponen “sin datos”. Asimismo, se incluye "no aplica", para aquellos eventos que fueron cancelados, pues no hubo asistentes en esa fecha.
 
-También, hay casillas de la columna Rango_precios donde se incluye "sin datos", pues fueron eventos a los que no se pudo acceder a información de libre acceso sobre el rango de precios de las entradas. 
+Hay casillas de la columna Rango_precios donde se incluye "sin datos", pues fueron eventos a los que no se pudo acceder a información de libre acceso sobre el rango de precios de las entradas. 
 
 Otra observación es que ocurrió en algunos conciertos que se cancelaron, pero se reprogramaron. En ese caso, se incluye el evento cancelado (con ambas casillas en las columnas de cancelado y cambio_recinto marcadas con 1) y el concierto con la nueva fecha y nuevo recinto. 
 
