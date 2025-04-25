@@ -1,4 +1,4 @@
-#**Ficha Técnica – Entrega n°2**
+# **Ficha Técnica – Entrega n°2**
 ### *Nombre: Analía Ortega*
 
 ## **Tema de la base de datos: Festivales realizados en recintos con capacidad para albergar eventos masivos**
@@ -29,7 +29,17 @@
 
 2. @dgmedios
 
-3. @
+3. @bizarrolivecl
+
+4. @puntoticket
+
+5. @passline_oficial
+
+6. @movistararena
+
+7. @teatrocaupolican
+
+etc.
 
 - *Sitios web de las tiqueteras PuntoTicket, Passline, Ticketmaster, Ticketplus, etc. Es especial las primeras tres.*
 
