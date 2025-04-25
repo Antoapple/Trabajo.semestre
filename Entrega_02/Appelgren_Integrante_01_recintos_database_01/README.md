@@ -1,35 +1,37 @@
-# **ASPECTOS GENERALES DE LA ENTREGA II** 
+# Documentación
+### Recintos para conciertos/festivales
+#### Antonia Appelgren
 
-## *Nombre: Antonia Appelgren, Luciana González, y Analía Ortega*
 
-### *Hipótesis actual: ¿Qué queremos demostrar?* 
 
-La alta demanda de eventos musicales masivos en Chile ha sobrepasado la capacidad de los recintos medianos, lo que obliga a que espacios no creados para este fin, como los estadios, sean utilizados con más frecuencia y evidencia la necesidad de una mayor infraestructura.  
+**EXPLICACIÓN**
 
-### *Preguntas de investigación actuales* 
+La limpieza de datos realizada se inició con la búsqueda de la información y el establecimiento de los límites para esta búsqueda. Ante esta investigación previa llegamos al consenso, junto a mi grupo, de hacer 12 recintos que se utilizan para conciertos. Todos dentro de la Región Metropolitana y que cumplen con el requisito mínimo de capacidad para eventos masivos (3.000 personas). En el caso específico de mi base de datos, se agregó un recinto más (Claro Arena), ya que es un lugar en el que aún no se han realizado eventos, pero ya tiene programados conciertos para el futuro de este año.
 
-Las interrogantes que están guiando el desarrollo de nuestro proyecto son las siguientes:  
+Al comenzar con esta investigación, queríamos hacer de los recintos en todo el país, pero no existen bases de datos completas con aquella información (ya sea el nombre del recinto, ubicación, capacidad, etc) y, además, la cantidad de conciertos y festivales iba a ser mucho mayor. 
 
-A. ¿Por qué los estadios se utilizan para cierta clase de eventos musicales y para otros no?  
+Una vez que dejamos los límites claros para nuestra investigación, comencé el proceso de crear una tabla en Excel, desde cero. Esto sin duda tuvo un peso mayor en la carga, ya que otras veces, en ejercicios en clases, habiamos realizado el proceso de abrir archivos CSV en Excel. De todas formas, no se me complicó el usar la aplicación. Pude ocupar la función en separar en dos columnas la sección de 'dirección', ya que, originalmente, se encontraba la dirección como tal y la comuna, solo separadas con una coma. 
+Luego de realizada la tabla, la guarde como un archivo CSV. Esto me permitio poder subirlo a google colab y poder leerlo en la biblioteca de panda. 
 
-B. ¿Hasta qué punto inciden las características de un recinto en la correcta realización de un evento musical masivo?  
+En cuanto a las variables usadas en la tabla, opte por esas ocho (nombre, dirección, comuna, capacidad, butacas, zona residencial, propietario y si el recinto es abierto o cerrado) porque son variables que nos ayudarían en nuestro reportaje. En la capacidad quise hacer esta diferencia con las butacas ya que algunos recintos pierden su capacidad de cancha, dependiendo del tipo de evento. 
+Un problema que encontre en el camino fue que quería agregar la variable de precio (cuánto cuesta arrendar estos recintos) pero en muchos lados la información salía confusa, ya que, por ejemplo, el Movistar Arena tiene diferentes formas de ser arrendado: total con salones vips y sillas, medio, solo salon normal, entre otras. Aun así, conversando con mis compañeras, nos gustaría tener esta información para más adelante, pero tendríamos que ver la mejor opción de cómo poner los precios (poner el precio más alto, precio mínimo o máximo, aproximarlo, etc).
 
-C. ¿La creación de nuevos recintos es la única solución para hacer frente a la alta demanda de eventos musicales masivos?  
 
-### *Avance de nuestro proyecto en relación con la hipótesis y preguntas de investigación*
+**LISTA DE FUENTES**
 
-La construcción de nuestras bases de datos nos ayudaron a tener una visión más clara de la demanda de cada recinto, a través de su capacidad y el tipo de eventos que se realizan en cada uno. Gracias a estos datos, nos dimos cuenta de que, a diferencia de lo que se pueda pensar, los estadios de Santiago no son tan ocupados para la realización de eventos musicales masivos excepto para la presentación de cierto tipo de artista (por lo que observamos, cantantes o bandas con trayectoria musical, fama internacional, y miles de oyentes mensuales).  
+Ahora mostraré las fuentes que fueron consultadas para esta tabla. No tiene un orden específico. 
+1. [Agenda musical](https://www.agendamusical.cl/venues-santiago-chile/): Esta página me sirvió para ver capacidad y dirección de algunos recintos que se siguen usando. El único problema en esta fuente fue que es información antigua, por lo que aparecen lugares que ya no se usan. 
+2. [Transfermarkt](https://www.transfermarkt.es/csd-colo-colo/stadion/verein/2433): Esta página está destinada al fútbol, y la use principalmente para ver la información sobre el Estadio Monumental David Arellano (estadio de Colo-Colo); también pude corroborar información sobre el Claro Arena (ex estadio San Carlos de Apoquindo o estadio de la Universidad Cátolica). Y, por último, corroborar información del Estadio Santa Laura (correspondiente a la Unión Española).
+3. [Concierto](https://www.concierto.cl/): Este medio me ayudo a corroborar datos que salen en google sobre la capacidad de los recintos. Siendo una ventaja que sea información actualizada hace menos de 10 días. 
+4. [Página oficial Movistar Arena](https://www.movistararena.cl/sobre-nosotros/): Esta página, al ser la oficial de un recinto, me sirvió para terminar de corroborar la información que aparece en las otras. 
+5. [Página oficial Teatro Caupolicán](https://teatrocaupolican.cl/nosotros/): Al igual que la página anterior, en este medio pude confirmar la información de este recinto (Teatro Caupolicán). 
+6. [Página oficial Espacio Riesco](https://www.espacioriesco.cl/salones-y-espacios/): Al igual que en las anteriores, una forma de corroborar información sobre los recintos. Este lugar en particular me complicó un poco ya que es un recinto que cuenta con diferentes espacios, diferentes capacidad y puede ser cerrado o abierto. 
 
-Antes, nuestro foco estaba en si los recintos cumplían o no con ciertos estándares; sin embargo, dado que esos requisitos sí se cumplen por normativa, nuestro enfoque era muy simplista. De esta manera, las bases de datos nos permitieron ir más allá de una mera categorización de los recintos. Nos dimos cuenta de que la capacidad es una cualidad valorada por productoras y artistas, y que la demanda de eventos musicales masivos no está siendo satisfecha al mismo nivel que la demanda de eventos de pequeña y mediana capacidad.  
+**EJEMPLOS SOBRE PREGUNTAS**
 
-### *Síntesis de la historia: Resumen de la historia actual* 
-
-En los últimos años, la demanda de eventos musicales de gran envergadura ha provocado que cada vez sea más frecuente la adaptación de Estadios o espacios al aire libre para la realización de estos, debido a su capacidad de asistentes y la posibilidad de instalar una puesta en escena de gran magnitud. Además, las [largas filas virtuales](https://www.rockandpop.cl/2021/12/un-caos-por-dua-lipa-en-chile-los-memes-y-reacciones-de-la-preventa-de-entradas/) revelan un gran interés por ser asistir. Desde la [AGEPEC](https://radio.uchile.cl/2024/03/03/el-deficit-de-salas-en-chile-es-dramatico-productores-de-conciertos-insisten-en-la-falta-de-recintos-para-eventos-culturales/), han manifestado la preocupación por una mayor infraestructura.  
-
-Para contextualizar, el Movistar Arena tiene una capacidad máxima de cerca de 16 mil, y el Teatro Caupolicán cuenta con un aforo de 7 mil. En contraste, el Estadio Monumental puede recibir hasta 47.000 personas y el Estadio Nacional hasta 56.000.  
-
-Frente a la necesidad de más espacio para ciertos eventos masivos, el año pasado se inauguró el Parque Estadio Nacional cuya capacidad es para 60 mil personas y ya se ha utilizado para el Knotfest Chile 2024 y las dos fechas de Iron Maiden. Asimismo, la construcción del Claro Arena, que pretende albergar 20 mil personas, demuestra la demanda por recintos con mayor capacidad y que cumplan con estándares ideales de acústica y visibilidad.  
-
-Un ejemplo reciente es el caso de Kidd Voodoo y la gran suma de fechas (7) de conciertos para julio de 2025 en el Movistar Arena. Otro caso es el de Luis Miguel, que vendió dos fechas en marzo de 2024 en el Estadio Nacional, mientras que en 2023 vendió diez fechas en el Movistar Arena (dos Estadios Nacional son aproximadamente seis Movistar Arena).
-
- 
+La mayor parte de mis datos son, por decirlo de alguna forma, más objetivos. Aun así, nos podemos hacer algunas preguntas al respecto: 
+1. ¿Cuál es el recinto que presenta una mayor capacidad de personas?
+2. ¿Qué recinto proporciona una mayor cantidad de butacas?
+3. ¿Cuál es el recinto que queda más cercano a mi? (esto en el caso de cada persona)
+4. ¿En que comuna se alberga una mayor cantidad de recintos?
+5. ¿Cuántos de los recintos son abiertos?
