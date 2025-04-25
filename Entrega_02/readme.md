@@ -24,7 +24,7 @@ Antes, nuestro foco estaba en si los recintos cumplían o no con ciertos estánd
 
 ### *Síntesis de la historia: Resumen de la historia actual* 
 
-En los últimos años, la demanda de eventos musicales de gran envergadura ha provocado que cada vez sea más frecuente la adaptación de Estadios o espacios al aire libre para la realización de estos, debido a su capacidad de asistentes y la posibilidad de instalar una puesta en escena de gran magnitud. Además, las largas filas virtuales revelan un gran interés por ser asistir. (link dua lipa). Desde la AGEPEC, han manifestado la preocupación por una mayor infraestructura.  
+En los últimos años, la demanda de eventos musicales de gran envergadura ha provocado que cada vez sea más frecuente la adaptación de Estadios o espacios al aire libre para la realización de estos, debido a su capacidad de asistentes y la posibilidad de instalar una puesta en escena de gran magnitud. Además, las [largas filas virtuales](https://www.rockandpop.cl/2021/12/un-caos-por-dua-lipa-en-chile-los-memes-y-reacciones-de-la-preventa-de-entradas/) revelan un gran interés por ser asistir. Desde la [AGEPEC](https://radio.uchile.cl/2024/03/03/el-deficit-de-salas-en-chile-es-dramatico-productores-de-conciertos-insisten-en-la-falta-de-recintos-para-eventos-culturales/), han manifestado la preocupación por una mayor infraestructura.  
 
 Para contextualizar, el Movistar Arena tiene una capacidad máxima de cerca de 16 mil, y el Teatro Caupolicán cuenta con un aforo de 7 mil. En contraste, el Estadio Monumental puede recibir hasta 47.000 personas y el Estadio Nacional hasta 56.000.  
 
