@@ -32,4 +32,3 @@ Frente a la necesidad de más espacio para ciertos eventos masivos, el año pasa
 
 Un ejemplo reciente es el caso de Kidd Voodoo y la gran suma de fechas (7) de conciertos para julio de 2025 en el Movistar Arena. Otro caso es el de Luis Miguel, que vendió dos fechas en marzo de 2024 en el Estadio Nacional, mientras que en 2023 vendió diez fechas en el Movistar Arena (dos Estadios Nacional son aproximadamente seis Movistar Arena).
 
- 

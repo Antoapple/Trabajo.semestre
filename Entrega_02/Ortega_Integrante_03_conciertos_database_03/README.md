@@ -1,35 +1,39 @@
-# **ASPECTOS GENERALES DE LA ENTREGA II** 
+# **Documentación - Entrega 02**
+### *Nombre: Analía Ortega*
+## **Tema: Conciertos realizados en recintos con capacidad para albergar eventos masivos en 2024**
 
-## *Nombre: Antonia Appelgren, Luciana González, y Analía Ortega*
+### **1. Proceso de realización de limpieza de datos**
 
-### *Hipótesis actual: ¿Qué queremos demostrar?* 
+La base de datos para los conciertos realizados en 2024 fue creada desde cero a travás de la recopilación manual de información de diversos sitios web públicos. 
 
-La alta demanda de eventos musicales masivos en Chile ha sobrepasado la capacidad de los recintos medianos, lo que obliga a que espacios no creados para este fin, como los estadios, sean utilizados con más frecuencia y evidencia la necesidad de una mayor infraestructura.  
+En primer lugar, se definió las variables que encabezarían cada columna de la tabla de Excel, las cuales se organizaron de acuerdo con el nivel de relevancia que, como grupo, le asignamos en torno a la hipótesis definida. El orden en que se dispusieron las variables fue: Concierto (entiéndase como nombre del evento), recinto, productora, tiquetera, fecha, número de asientos vendidos, tipo de artista (nacional o internacional), rango de precios, opción de descuento, preventa, cancelado (sí o no), cambio de recinto (sí o no) y género musical. 
 
-### *Preguntas de investigación actuales* 
+Cada fila se organiza según cada evento realizado en los distintos establecimientos por orden alfabético. Por lo mismo, como grupo también definimos al inicio los recintos a contemplar (Club Hípico, Espacio Riesco, Espacio Bicentenario de La Florida, Estadio Monumental David Arellano, Estadio Nacional, Estadio Santa Laura, Hipódromo Chile, Movistar Arena, Parque Estadio Nacional Julio Martínez Prádanos, Parque Bicentenario de Cerrillos, Parque Padre Hurtado y Teatro Caupolicán) para facilitar la comprensión de los datos a favor de la hipótesis a corroborar. 
 
-Las interrogantes que están guiando el desarrollo de nuestro proyecto son las siguientes:  
+Para la recopilación de datos, nos basamos en un inicio en las listas que Cooperativa publicó mes a mes con los conciertos que se aproximaban en el país y también en una nota de The Clinic con los eventos musicales que se realizaron en 2024. Ambas listas incluían el nombre de los artistas a presentarse, las fechas y los establecimientos. Aquellos conciertos programados en recintos pequeños como el Teatro Cariola o el Teatro Coliseo fueron descartados. 
 
-A. ¿Por qué los estadios se utilizan para cierta clase de eventos musicales y para otros no?  
+A partir de esos datos, comencé a buscar en Google, específicamente en la página de cada tiquetera y establecimiento, los datos faltantes para completar el resto de las columnas. También contemplé la información proporcionada por medios de comunicación para rellenar algunas casillas como número de asistentes (no disponible para todos los eventos), nacionalidad de los artistas o género musical. 
 
-B. ¿Hasta qué punto inciden las características de un recinto en la correcta realización de un evento musical masivo?  
+Cabe señalar que para la mayoría de los eventos, no estaba posible o se bloqueaba la información de las tiqueteras. Si bien, en la mayoría de los casos pude volver a la página inicial sin el anuncio de que el evento ya se había realizado y bloqueaba la pantalla, en algunos casos recurrí a Wayback Machine para rastrear aquellos datos retrocediendo a versiones más antiguas del sitio Esta herramienta la utilicé principalmente al inicio de la creación de la base de datos.
 
-C. ¿La creación de nuevos recintos es la única solución para hacer frente a la alta demanda de eventos musicales masivos?  
+La base de datos cuenta con una versión inicial y una versión final o limpia que consiste en aquella importada como archivo CSV.
 
-### *Avance de nuestro proyecto en relación con la hipótesis y preguntas de investigación*
+### **2. Lista de fuentes de datos**
 
-La construcción de nuestras bases de datos nos ayudaron a tener una visión más clara de la demanda de cada recinto, a través de su capacidad y el tipo de eventos que se realizan en cada uno. Gracias a estos datos, nos dimos cuenta de que, a diferencia de lo que se pueda pensar, los estadios de Santiago no son tan ocupados para la realización de eventos musicales masivos excepto para la presentación de cierto tipo de artista (por lo que observamos, cantantes o bandas con trayectoria musical, fama internacional, y miles de oyentes mensuales).  
+Las fuentes utilizadas para crear la base de datos se pueden agrupar según:
 
-Antes, nuestro foco estaba en si los recintos cumplían o no con ciertos estándares; sin embargo, dado que esos requisitos sí se cumplen por normativa, nuestro enfoque era muy simplista. De esta manera, las bases de datos nos permitieron ir más allá de una mera categorización de los recintos. Nos dimos cuenta de que la capacidad es una cualidad valorada por productoras y artistas, y que la demanda de eventos musicales masivos no está siendo satisfecha al mismo nivel que la demanda de eventos de pequeña y mediana capacidad.  
+- Sitios de medios de comunicación: La Tercera, Radio Duna, Los 40, Radio Futuro, Cooperativa, The Clinic, El Mostrador, CNN Chile, RedGol, La Cuarta, BioBioChile, Radio Activa, RedHoy y Agenda Musical. Utilicé todos estos medios, ya que subieron notas respecto a la cartelera de conciertos para 2024 y sobre los eventos en particular. En especial, me sirvió para obtener información sobre los conciertos cancelados o reprogramados.
 
-### *Síntesis de la historia: Resumen de la historia actual* 
+- Cuentas oficiales de Instagram de las productoras o recintos de eventos: @puntoticket, @bizarrolivecl, @lotuscl, @passline_oficial, @dgmedios, @movistararena, @teatrocaupolican, etc. Estos canales de información oficiales de las empresas me permitieron corroborar ciertos datos como fechas, si los conciertos efectivamente se realizaron y actualizaciones respecto a, por ejemplo, disponibilidad de entradas o nuevas fechas.
 
-En los últimos años, la demanda de eventos musicales de gran envergadura ha provocado que cada vez sea más frecuente la adaptación de Estadios o espacios al aire libre para la realización de estos, debido a su capacidad de asistentes y la posibilidad de instalar una puesta en escena de gran magnitud. Además, las [largas filas virtuales](https://www.rockandpop.cl/2021/12/un-caos-por-dua-lipa-en-chile-los-memes-y-reacciones-de-la-preventa-de-entradas/) revelan un gran interés por ser asistir. Desde la [AGEPEC](https://radio.uchile.cl/2024/03/03/el-deficit-de-salas-en-chile-es-dramatico-productores-de-conciertos-insisten-en-la-falta-de-recintos-para-eventos-culturales/), han manifestado la preocupación por una mayor infraestructura.  
+- Sitios web de tiqueteras y productoras: PuntoTicket, Passline, Ticketmaster, TicketPlus, DGMedios, Bizarro Live, Lotus, Fenix Entertainment, etc. A través de estos pude obtener la información sobre el precio de las entradas, los descuentos disponibles y las preventas, en caso de contar con ellas. También, utilicé en menor medida la información disponible en el sitio web del Movistar Arena. 
 
-Para contextualizar, el Movistar Arena tiene una capacidad máxima de cerca de 16 mil, y el Teatro Caupolicán cuenta con un aforo de 7 mil. En contraste, el Estadio Monumental puede recibir hasta 47.000 personas y el Estadio Nacional hasta 56.000.  
+### **3. Preguntas que se pueden responder con la base de datos**
 
-Frente a la necesidad de más espacio para ciertos eventos masivos, el año pasado se inauguró el Parque Estadio Nacional cuya capacidad es para 60 mil personas y ya se ha utilizado para el Knotfest Chile 2024 y las dos fechas de Iron Maiden. Asimismo, la construcción del Claro Arena, que pretende albergar 20 mil personas, demuestra la demanda por recintos con mayor capacidad y que cumplan con estándares ideales de acústica y visibilidad.  
-
-Un ejemplo reciente es el caso de Kidd Voodoo y la gran suma de fechas (7) de conciertos para julio de 2025 en el Movistar Arena. Otro caso es el de Luis Miguel, que vendió dos fechas en marzo de 2024 en el Estadio Nacional, mientras que en 2023 vendió diez fechas en el Movistar Arena (dos Estadios Nacional son aproximadamente seis Movistar Arena).
-
- 
+A. ¿Cuáles fueron los recintos que albergaron más conciertos?
+B. ¿Qué características destacan de los artistas que se presentaron?
+C. ¿Se presentaron más artistas internacionales o nacionales? ¿En qué recintos se presentaron más artistas internacionales? ¿Y los nacionales?
+D. ¿Qué tiquetera predominó en la venta de entradas?
+E. ¿Cuáles fueron los artistas que vendieron más fechas?
+F. ¿Qué productora organizó más conciertos en 2024?
+G. ¿Cuál es la moda respecto al género musical en los artistas que se presentaron el año pasado?
