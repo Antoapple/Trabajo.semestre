@@ -1,35 +1,24 @@
-# **ASPECTOS GENERALES DE LA ENTREGA II** 
+# **Documentación – Entrega n°2**
+### *Nombre: Luciana González*
+## **Tema de la base de datos: Festivales realizados en recintos con capacidad para albergar eventos masivos.**
 
-## *Nombre: Antonia Appelgren, Luciana González, y Analía Ortega*
+### **1.Proceso de realización de limpieza de datos:** 
+La base de datos sobre festivales fue creada desde cero y mediante la recopilación manual de información de sitios web disponibles en el buscador de Google. Antes de comenzar con la recolección propiamente tal, definí las variables que encabezarían cada columna de la tabla. Estas variables fueron dispuestas de mayor a menor grado de importancia y especificidad. El orden en el que están dispuestas es el siguiente: Festival; Recinto; Productora/ organizadora; Tiquetera; Fecha; Número de asistentes; Tipo de artista; Artista; Rango de precios; Preventas realizadas; Cancelado; y Cambio de recinto. Cada fila contienen el nombre de algún festival, y estos fueron ordenados por fecha (desde el 20 de enero de 2024 al 15 de diciembre de 2024) para facilitar la visualización y comprensión de los datos. 
+Para la recopilación de datos, tomé como base una nota de Radio Cooperativa titulada  Cartelera de conciertos en Chile 2024. Esta incluye los nombres de los festivales realizados (o, en su defecto, de los artistas que participaron en el festival), la fecha,  y el lugar donde se realizó. Me enfoqué solo en aquellos festivales organizados en recintos que tuvieran una capacidad para más de 3.000 asistentes (es decir, para eventos masivos) y se localizaran en Santiago. Omití el resto.
+A partir de los datos provistos por el artículo de Cooperativa, busqué y recopilé los datos faltantes desde diversas fuentes: sitios web de medio de comunicación, sitios de las tiqueteras, y cuentas de Instagram oficiales. 
+Para corroborar la veracidad de la información, procuré que cada dato recopilado apareciera en más de una fuente, y contrasté la información que sale en los medios de comunicación con aquella que aparece en las cuentas de Instagram oficiales. 
+Por último, como herramienta de búsqueda, recurrí en numerosas ocasiones al sitio Wayback Machine para rastrear algunos datos que ya nos están disponibles en las versiones más actuales de los sitios web de las tiqueteras. Este fue el caso de los precios de las entradas. De esta manera, pude “retroceder” a la fecha en la que salieron a la venta las primeras entradas, y así pude obtener información sobre los primeros precios de las preventas en verde, hasta la venta general de entradas. Cabe destacar que la página web de las tiqueteras te redirige al inicio o señala que la información no está disponible cuando se busca un evento pasado. 
+La base de datos cuenta con una versión inicial, la que incluye tildes y cuatro filas (348 a 351) que combinaban variables cuantitativas y cualitativas. La versión final no tiene tildes (Excel las reconocía al importar la base como un archivo CSV) y las cuatro filas mencionadas quedaron solo con números.  
+### **2.Lista de fuentes de datos**:
+Las fuentes utilizadas para la construcción de la base datos se pueden agrupar en tres categorías: 
+- Sitios de medio de comunicación: Recurrí a La Tercera, Radio Duna, El Mostrador, CNN Chile, Pulso Mag, Radio Corazón, Los 40, Futuro, Radio Cooperativa, RedGol, La Cuarta, BioBioChile, y Parlante.cl. Recurrí a estos porque todos ellos subieron notas con datos útiles sobre alguno de los festivales que seleccioné, y la información que publican está verificada (al menos, en teoría). 
+- Cuentas oficiales de Instagram de los festivales o de la productora responsable del evento: @ultrafest, @magikgardenofficial, @knotfestchile, @vibrafest.cl, @iguana.cl, @glovox, etc. Son canales de información oficiales y es a través de estas cuentas que los organizadores o productores suben avisos o actualizaciones de los eventos musicales. 
+- Sitios web de las tiqueteras: PuntoTicket, Passline, Ticketmaster, Ticketplus, LiveTickets, y Tu Acceso. Los utilicé porque en estos está el detalle de los artistas, ubicaciones, precios, etc., de cada festival.
+- Wikipedia, cuando busqué un dato muy preciso, como la nacionalidad de todos los artistas de un evento. En ese sentido, la elegí únicamente con ese fin. 
 
-### *Hipótesis actual: ¿Qué queremos demostrar?* 
-
-La alta demanda de eventos musicales masivos en Chile ha sobrepasado la capacidad de los recintos medianos, lo que obliga a que espacios no creados para este fin, como los estadios, sean utilizados con más frecuencia y evidencia la necesidad de una mayor infraestructura.  
-
-### *Preguntas de investigación actuales* 
-
-Las interrogantes que están guiando el desarrollo de nuestro proyecto son las siguientes:  
-
-A. ¿Por qué los estadios se utilizan para cierta clase de eventos musicales y para otros no?  
-
-B. ¿Hasta qué punto inciden las características de un recinto en la correcta realización de un evento musical masivo?  
-
-C. ¿La creación de nuevos recintos es la única solución para hacer frente a la alta demanda de eventos musicales masivos?  
-
-### *Avance de nuestro proyecto en relación con la hipótesis y preguntas de investigación*
-
-La construcción de nuestras bases de datos nos ayudaron a tener una visión más clara de la demanda de cada recinto, a través de su capacidad y el tipo de eventos que se realizan en cada uno. Gracias a estos datos, nos dimos cuenta de que, a diferencia de lo que se pueda pensar, los estadios de Santiago no son tan ocupados para la realización de eventos musicales masivos excepto para la presentación de cierto tipo de artista (por lo que observamos, cantantes o bandas con trayectoria musical, fama internacional, y miles de oyentes mensuales).  
-
-Antes, nuestro foco estaba en si los recintos cumplían o no con ciertos estándares; sin embargo, dado que esos requisitos sí se cumplen por normativa, nuestro enfoque era muy simplista. De esta manera, las bases de datos nos permitieron ir más allá de una mera categorización de los recintos. Nos dimos cuenta de que la capacidad es una cualidad valorada por productoras y artistas, y que la demanda de eventos musicales masivos no está siendo satisfecha al mismo nivel que la demanda de eventos de pequeña y mediana capacidad.  
-
-### *Síntesis de la historia: Resumen de la historia actual* 
-
-En los últimos años, la demanda de eventos musicales de gran envergadura ha provocado que cada vez sea más frecuente la adaptación de Estadios o espacios al aire libre para la realización de estos, debido a su capacidad de asistentes y la posibilidad de instalar una puesta en escena de gran magnitud. Además, las [largas filas virtuales](https://www.rockandpop.cl/2021/12/un-caos-por-dua-lipa-en-chile-los-memes-y-reacciones-de-la-preventa-de-entradas/) revelan un gran interés por ser asistir. Desde la [AGEPEC](https://radio.uchile.cl/2024/03/03/el-deficit-de-salas-en-chile-es-dramatico-productores-de-conciertos-insisten-en-la-falta-de-recintos-para-eventos-culturales/), han manifestado la preocupación por una mayor infraestructura.  
-
-Para contextualizar, el Movistar Arena tiene una capacidad máxima de cerca de 16 mil, y el Teatro Caupolicán cuenta con un aforo de 7 mil. En contraste, el Estadio Monumental puede recibir hasta 47.000 personas y el Estadio Nacional hasta 56.000.  
-
-Frente a la necesidad de más espacio para ciertos eventos masivos, el año pasado se inauguró el Parque Estadio Nacional cuya capacidad es para 60 mil personas y ya se ha utilizado para el Knotfest Chile 2024 y las dos fechas de Iron Maiden. Asimismo, la construcción del Claro Arena, que pretende albergar 20 mil personas, demuestra la demanda por recintos con mayor capacidad y que cumplan con estándares ideales de acústica y visibilidad.  
-
-Un ejemplo reciente es el caso de Kidd Voodoo y la gran suma de fechas (7) de conciertos para julio de 2025 en el Movistar Arena. Otro caso es el de Luis Miguel, que vendió dos fechas en marzo de 2024 en el Estadio Nacional, mientras que en 2023 vendió diez fechas en el Movistar Arena (dos Estadios Nacional son aproximadamente seis Movistar Arena).
-
- 
+### **3.Preguntas que se pueden responder con la base de datos:** 
+- ¿Qué tiquetera que predominó en la venta de entradas ? 
+- ¿Cuáles fueron los recintos que albergaron más festivales en 2024? ¿Y los que fueron menos utilizados?
+- ¿Los festivales tendieron a realizarse en recintos cerrados o abiertos? 
+- ¿Qué recinto recibió a más artistas internacionales el año pasado? ¿Cuál recibió a más artistas nacionales? 
+- ¿Qué productora organizó más festivales en 2024? 
