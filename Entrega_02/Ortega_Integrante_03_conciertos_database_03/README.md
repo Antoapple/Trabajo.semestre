@@ -14,7 +14,7 @@ En segundo lugar, ya con las variables definidas, continué con la recopilación
 
 A partir de esos datos, comencé a buscar en Google, específicamente en la página de cada tiquetera y establecimiento, los datos faltantes para completar el resto de las columnas. También contemplé la información proporcionada por medios de comunicación para rellenar algunas casillas como número de asistentes (no disponible para todos los eventos), nacionalidad de los artistas o género musical. 
 
-Cabe señalar que para la mayoría de los eventos, no estaba posible o se bloqueaba la información de las tiqueteras. Si bien, en la mayoría de los casos pude volver a la página inicial sin el anuncio de que el evento ya se había realizado y bloqueaba la pantalla, en algunos casos recurrí a Wayback Machine para rastrear aquellos datos retrocediendo a versiones más antiguas del sitio Esta herramienta la utilicé principalmente al inicio de la creación de la base de datos.
+Cabe señalar que para la mayoría de los eventos, no estaba disponible o se bloqueaba la información de las tiqueteras debido a que se llevaron a cabo en 2024. Si bien, en la mayoría de los casos pude volver a la página inicial sin el anuncio de que el evento ya se había realizado y bloqueaba la pantalla, en algunos casos recurrí a Wayback Machine para rastrear aquellos datos retrocediendo a versiones más antiguas del sitio Esta herramienta la utilicé principalmente al inicio de la creación de la base de datos.
 
 La base de datos cuenta con una versión inicial y una versión final o limpia que consiste en aquella importada como archivo CSV.
 
