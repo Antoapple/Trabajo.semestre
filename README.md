@@ -1,4 +1,4 @@
-**Proyecto de webstory: Radiografía de recintos para conciertos masivos a nivel país, y análisis de las condiciones en las que se encuentran**. 
+**Proyecto de webstory: Capacidad de los recintos de Chile para albergar conciertos masivos, y análisis de los usos que se les dan en la práctica**. 
 
 Integrantes: 
 
