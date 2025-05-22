@@ -20,13 +20,13 @@ Para la base de datos, me basé en el mismo CSV que entregué en el encargo N°2
 
 ### Preguntas que puede responder la visualización de datos final (o el conjunto de visualizaciones que crearon).
 
-Respecto a la visualización que realicé:
+**Respecto a la visualización que realicé:**
 
 1. ¿Cuántos eventos musicales masivos, sin considerar festivales, se realizaron durante el 2024?
 2. ¿Cuáles fueron los recintos que albergaron más conciertos?
 3. ¿Cuál fue el mes o la temporada más alta de conciertos?
 
-Sobre las visualizaciones de mis compañeras:
+**Sobre las visualizaciones de mis compañeras:**
 
 1. ¿Cómo se caracterizan demográficamente los artistas que visitaron el país en 2024 para realizar festivales?
 2. ¿Qué tipo de artista predominó en 2024?
