@@ -11,11 +11,16 @@
 ### Variables incorporadas:
 
 **Recinto**: Se refiere a los nombres de los diez recintos donde se realizaron o se agendaron (considerando aquellos cancelados) conciertos masivos de música en 2024.
+
 **Fecha**: Alude a todas las fechas (día/mes/año) en que se realizaron o agendaron conciertos masivos durante 2024.
 Se organizan por mes en el eje X para facilitar la visualización.
+
 *Para Tooltip*
+
 **Conciertos**: Considera los nombres de todos los conciertos realizados durante 2024.
+
 **Artista**: Agrupa todos los artistas que participaron en los conciertos realizados en 2024.
+
 **Fecha**
 
 #### Observaciones sobre la base de datos:
