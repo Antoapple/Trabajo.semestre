@@ -23,6 +23,6 @@ Se organizan por mes en el eje X para facilitar la visualización.
 
 **Fecha**
 
-#### Observaciones sobre la base de datos:
+### Observaciones sobre la base de datos:
 
 El CSV incluye otras variables como ID, productora/organizadora, tiquetera, numero_asistentes   tipo_ artista, artista, rango_precios, opcion_descuento_entrada, preventa, cancelado, cambio_recinto, genero_musical. Considerando el CSV de la entrega N°2, este ya no cuenta con tildes, signos de peso o palabras en las casillas de asistentes que se mezclen con números, aunque de estas columnas no utilice ninguna información. También me parece importante mencionar que, si bien no quise alterar la base para afectar sustancialmente los datos, en Colab sí utilicé códigos para filtrar por fecha (no ID), considerar solo un concierto, pese a que más de un artista se presentó en esa fecha (artistas invitados, por ejemplo), y no considerar los eventos cancelados. No quise limpiar estos datos como tal del CSV debido a que no quería transmitir, en los datos limpios, que estos conciertos no existieron, por ejemplo, en el caso de los eventos cancelados. 
