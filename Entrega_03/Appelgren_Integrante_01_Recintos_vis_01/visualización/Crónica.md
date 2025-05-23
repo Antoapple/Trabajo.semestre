@@ -13,6 +13,7 @@ Lo mismo ocurre en el Club Hípico, originalmente creado por fans de la hípica 
 Algo similar sucede con los estadios de fútbol, como el Estadio Nacional, el Monumental, el Bicentenario de La Florida o el Santa Laura. Estos espacios han sido utilizados para conciertos de gran envergadura, pero su uso ha sido controversial. El daño al césped es el principal problema que se vive, lo que ha generado retrasos en las competencias y los reclamos de los hinchas. 
 
 ![Visualización_01]("C:\Users\antof\Documents\GitHub\Trabajo.semestre\Entrega_03\Appelgren_Integrante_01_Recintos_vis_01\visualización\vis_01.jpg") 
+
 *Historigrama que muestra la cantidad de recintos por propósito y capacidad de asistentes*
 
 Estos datos evidencian una carencia estructural en la infraestructura cultural del país. A pesar del auge de la industria musical, Chile no cuenta con suficientes espacios diseñados específicamente para conciertos y festivales. La mayoría de los eventos masivos siguen realizándose en espacios no aptos para este fin, adaptándose a una función que no fue contemplada en su diseño original.
