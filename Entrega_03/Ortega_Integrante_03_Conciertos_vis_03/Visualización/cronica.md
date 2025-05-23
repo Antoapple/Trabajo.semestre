@@ -2,7 +2,7 @@ Crónica
 
 # Los acordes que más resonaron en el suelo nacional en 2024
 
-### El interés de la población chilena por los eventos musicales se materializó en la realización de 193 conciertos masivos en la Región Metropolitana durante 2024, destacando artistas de gran envergadura como Luis Miguel, André Rieu o, en la escena nacional, Los Bunkers y Los Tres.
+### El interés de la población chilena por los eventos musicales se materializó en la realización de 197 conciertos masivos en la Región Metropolitana durante 2024, destacando artistas de gran envergadura como Luis Miguel, André Rieu o, en la escena nacional, Los Bunkers y Los Tres.
 
 *Por Analía Ortega*
 
@@ -11,7 +11,7 @@ El público chileno vibró en 2024 con 197 conciertos masivos que respondieron a
 *En el siguiente gráfico se puede apreciar el detalle y la distribución de los conciertos que se realizaron en Santiago.*
 
 ![Visualización](https://github.com/Antoapple/Trabajo.semestre/blob/main/Entrega_03/Ortega_Integrante_03_Conciertos_vis_03/Visualizaci%C3%B3n/vis_03.jpg)
-![Visualización](C:/Users/anabe/Downloads/vis_03.html)
+![Visualización](https://github.com/Antoapple/Trabajo.semestre/blob/main/Entrega_03/Ortega_Integrante_03_Conciertos_vis_03/Visualizaci%C3%B3n/vis_03.html)
 
 En ese contexto, Los Tres marcaron un hito al convertirse en el artista nacional con más fechas vendidas durante el año pasado en el Movistar Arena, consolidando su vigencia y arrastre popular. Este recinto fue uno de los más utilizados en 2024, albergando más de 10.000 personas durante 114 noches de pura música.
 
