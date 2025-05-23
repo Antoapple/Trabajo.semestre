@@ -11,7 +11,7 @@ El público chileno vibró en 2024 con 197 conciertos masivos que respondieron a
 *En el siguiente gráfico se puede apreciar el detalle y la distribución de los conciertos que se realizaron en Santiago.*
 
 ![Visualización](https://github.com/Antoapple/Trabajo.semestre/blob/main/Entrega_03/Ortega_Integrante_03_Conciertos_vis_03/Visualizaci%C3%B3n/vis_03.jpg)
-![Visualización](https://github.com/Antoapple/Trabajo.semestre/blob/main/Entrega_03/Ortega_Integrante_03_Conciertos_vis_03/Visualizaci%C3%B3n/vis_03.html)
+![Visualización](vis_03.html)
 
 En ese contexto, Los Tres marcaron un hito al convertirse en el artista nacional con más fechas vendidas durante el año pasado en el Movistar Arena, consolidando su vigencia y arrastre popular. Este recinto fue uno de los más utilizados en 2024, albergando más de 10.000 personas durante 114 noches de pura música.
 
