@@ -4,15 +4,15 @@
 
  
 
-**##1.Actualización de la hipótesis**  
+**##1. Actualización de la hipótesis**  
 
 - La alta demanda de eventos musicales masivos en Chile ha superado la capacidad de los recintos destinados para estos espectáculos, lo que obliga a que espacios no creados para este fin sean utilizados con más frecuencia y evidencia la necesidad de una mayor infraestructura, así como la readaptación de los espacios existentes. 
 
-**##2.Propuesta de trabajo**  
+**##2. Propuesta de trabajo**  
 
 - La webstory se centra en la creciente demanda de eventos musicales de gran envergadura en Chile que ha impulsado la adaptación de estadios y espacios al aire libre que no fueron creados en un inicio con el propósito de recibir conciertos y festivales. Nuestra idea es que el diseño y estructura de la página transmitan una vibra ligera y una sensación de pertenencia, con una estética que una los elementos propios del lenguaje digital con lo sensorial, asociado al sonido y las luces de los conciertos y la multitud, para potenciar la experiencia visual del proyecto. Se espera que el usuario viaje desde una vista general de los recintos, adquiriendo conocimiento sobre sus características y luego pueda indagar más en los conciertos y festivales realizados durante 2024 en el país. Por último, se expondrán las reflexiones finales respecto a la hipótesis en la que se basa la webstory. 
 
-**##3.Manual de identidad visual**  
+**##3. Manual de identidad visual**  
 
 **Sobre el proceso de creación** 
 
@@ -36,9 +36,8 @@ El hilo conductor de las imágenes es su aspecto juvenil, urbano, tal vez bohemi
 
 **Fotografías e ilustraciones**: Este segmento también servirá de guía cuando definamos el tipo de fotos y otras imágenes que complementen el cuerpo de la webstory, al limitarlas a unas pocas, pero pertinentes, posibilidades.  
 
- 
 
-**##4.Wireframe** 
+**##4. Wireframe** 
 
 **Link al prototipo**: https://miro.com/welcomeonboard/bUZqNUNraklDWEx6eXU1R2hkWnBwdXZJQThPUjYwV1dwcVl4dERURWg4NEhQeWM5MFBwR05wM2IrZlpLV1h6TWkyb09vbHp2bmdnb0J0QlFEUjNEK0Rpa2VEamZjL0YrV3h5T2NMcFNnS3BscCthTHByOFg2NU1TNVFDSmRTZENzVXVvMm53MW9OWFg5bkJoVXZxdFhRPT0hdjE=?share_link_id=442810706707 
 
