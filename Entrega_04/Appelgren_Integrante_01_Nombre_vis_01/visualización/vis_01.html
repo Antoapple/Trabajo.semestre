@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-5eb94722ce65d49ec49d4500eb51761b"}, "mark": {"type": "bar", "opacity": 0.7}, "encoding": {"color": {"field": "PROPOSITO con total", "scale": {"range": ["#cf0638", "#0a6789", "#fecd23", "#fa6632", "#0a996f"]}, "title": "Prop\u00f3sito (Total)", "type": "nominal"}, "x": {"bin": {"maxbins": 20, "step": 5000}, "field": "Capacidad m\u00e1xima", "title": "Capacidad m\u00e1xima", "type": "quantitative"}, "y": {"aggregate": "count", "stack": "zero", "title": "Cantidad de recintos", "type": "quantitative"}}, "height": 300, "width": 500, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-5eb94722ce65d49ec49d4500eb51761b": [{"Nombres de recintos": "Centro Cultural CEINA", "PROPOSITO": "Cultural", "Capacidad m\u00e1xima": 802.0, "PROPOSITO con total": "Cultural (10)"}, {"Nombres de recintos": "Centro Cultural Gabriela Mistral (GAM)", "PROPOSITO": "Cultural", "Capacidad m\u00e1xima": 2500.0, "PROPOSITO con total": "Cultural (10)"}, {"Nombres de recintos": "Centro Cultural Matucana 100", "PROPOSITO": "Cultural", "Capacidad m\u00e1xima": 2000.0, "PROPOSITO con total": "Cultural (10)"}, {"Nombres de recintos": "Claro Arena", "PROPOSITO": "Multiprop\u00f3sito", "Capacidad m\u00e1xima": 20000.0, "PROPOSITO con total": "Multiprop\u00f3sito (3)"}, {"Nombres de recintos": "Club H\u00edpico", "PROPOSITO": "Deportivo", "Capacidad m\u00e1xima": 50000.0, "PROPOSITO con total": "Deportivo (6)"}, {"Nombres de recintos": "Espacio Car\u00e9n", "PROPOSITO": "Multiprop\u00f3sito", "Capacidad m\u00e1xima": 5000.0, "PROPOSITO con total": "Multiprop\u00f3sito (3)"}, {"Nombres de recintos": "Espacio Riesco", "PROPOSITO": "Multiprop\u00f3sito", "Capacidad m\u00e1xima": 10000.0, "PROPOSITO con total": "Multiprop\u00f3sito (3)"}, {"Nombres de recintos": "Estadio Bicentenario de La Florida", "PROPOSITO": "Deportivo", "Capacidad m\u00e1xima": 28000.0, "PROPOSITO con total": "Deportivo (6)"}, {"Nombres de recintos": "Estadio Monumental David Arellano", "PROPOSITO": "Deportivo", "Capacidad m\u00e1xima": 47000.0, "PROPOSITO con total": "Deportivo (6)"}, {"Nombres de recintos": "Estadio Nacional Julio Mart\u00ednez Pr\u00e1danos", "PROPOSITO": "Deportivo", "Capacidad m\u00e1xima": 60000.0, "PROPOSITO con total": "Deportivo (6)"}, {"Nombres de recintos": "Estadio Santa Laura", "PROPOSITO": "Deportivo", "Capacidad m\u00e1xima": 22000.0, "PROPOSITO con total": "Deportivo (6)"}, {"Nombres de recintos": "Hip\u00f3dromo Chile", "PROPOSITO": "Deportivo", "Capacidad m\u00e1xima": 40000.0, "PROPOSITO con total": "Deportivo (6)"}, {"Nombres de recintos": "Movistar Arena", "PROPOSITO": "Musical", "Capacidad m\u00e1xima": 16522.0, "PROPOSITO con total": "Musical (2)"}, {"Nombres de recintos": "Parque Bicentenario de Cerrillos", "PROPOSITO": "Recreacional", "Capacidad m\u00e1xima": 80000.0, "PROPOSITO con total": "Recreacional (3)"}, {"Nombres de recintos": "Parque Deportivo Estadio Nacional", "PROPOSITO": "Recreacional", "Capacidad m\u00e1xima": 60000.0, "PROPOSITO con total": "Recreacional (3)"}, {"Nombres de recintos": "Parque Padre Hurtado ", "PROPOSITO": "Recreacional", "Capacidad m\u00e1xima": 5000.0, "PROPOSITO con total": "Recreacional (3)"}, {"Nombres de recintos": "Teatro Caupolic\u00e1n", "PROPOSITO": "Musical", "Capacidad m\u00e1xima": 7000.0, "PROPOSITO con total": "Musical (2)"}, {"Nombres de recintos": "Teatro Coliseo", "PROPOSITO": "Cultural", "Capacidad m\u00e1xima": 2500.0, "PROPOSITO con total": "Cultural (10)"}, {"Nombres de recintos": "Teatro Mori Bellavista", "PROPOSITO": "Cultural", "Capacidad m\u00e1xima": 162.0, "PROPOSITO con total": "Cultural (10)"}, {"Nombres de recintos": "Teatro Mori Parque Arauco", "PROPOSITO": "Cultural", "Capacidad m\u00e1xima": 248.0, "PROPOSITO con total": "Cultural (10)"}, {"Nombres de recintos": "Teatro Mori Recoleta", "PROPOSITO": "Cultural", "Capacidad m\u00e1xima": 222.0, "PROPOSITO con total": "Cultural (10)"}, {"Nombres de recintos": "Teatro Mori Vitacura ", "PROPOSITO": "Cultural", "Capacidad m\u00e1xima": 239.0, "PROPOSITO con total": "Cultural (10)"}, {"Nombres de recintos": "Teatro Municipal de Santiago", "PROPOSITO": "Cultural", "Capacidad m\u00e1xima": 1500.0, "PROPOSITO con total": "Cultural (10)"}, {"Nombres de recintos": "Teatro Nescaf\u00e9 de las Artes", "PROPOSITO": "Cultural", "Capacidad m\u00e1xima": 983.0, "PROPOSITO con total": "Cultural (10)"}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
