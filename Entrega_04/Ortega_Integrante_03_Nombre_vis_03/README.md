@@ -1,0 +1,21 @@
+# ANÁLISIS PIEZA VISUAL
+#### *Analía Ortega*
+
+## 1. Descripción de la lectura visual de la pieza
+
+La pieza está pensada para una lectura lineal, que el lector deslice por la página de arriba hacia abajo. En primer lugar, se entra por el color y el titular. La bajada aterriza el tema y adelanta aquello que va a encontrar el usuario: la recapitulación de los conciertos realizados en 2024 en recintos masivos de la Región Metropolitana.
+Luego se incluye la visualización y se complementa y desarrolla con la crónica. Por último, se incluyen fotografías que permiten acercar la información al lector y plantear referencias visuales en la mente del lector. Además, buscan aligerar la información, para no sobrecargar al lector con texto solamente.
+
+El diseño se construye a partir de una narrativa estructurada que responde a una necesidad comunicacional concreta de la webstory en general: visibilizar que Chile enfrenta una demanda creciente de conciertos que demanda adaptar otros espacios como estadios y parques para el disfrute de eventos musicales. En particular, esta pieza se construye con base en una visualización sobre los conciertos masivos realizados en la Región Metropolitana durante 2024 y es acompañada por una crónica.  
+
+## 2. Cómo los elementos visuales potencian y clarifican el mensaje comunicacional
+
+Los elementos visuales están cuidadosamente jerarquizados para crear un flujo natural en la lectura. El color azul oscuro (#080d21), utilizado como fondo dominante, aporta profundidad y estructura, estableciendo un tono serio. Sobre este fondo, a sus costados, lo acompaña un diseño de tickets que aligera la sobriedad y refuerza visualmente la idea de los eventos musicales y la cultura del espectáculo. Irrumpen con fuerza los acentos en color fucsia (#ff005b), que marcan los puntos de énfasis. El blanco cálido (#f9f6f1) se convierte en el equilibrio visual necesario, permitiendo que los se lean claramente. Este uso busca organizar la atención y enfatizar jerarquías discursivas sin sobrecargar.
+
+No se presentan los datos como un informe plano, sino como elementos destacados e integrados al diseño general de la pieza. Por ejemplo, la información más relevante se subraya o se marca en negrita, estableciendo así un contraste visual inmediato que guía la atención. El texto no está aislada de lo gráfico: la crónica explica la visualización y la complementa. El objetivo no es solo informar, sino aterrizar los datos en la experiencia concreta del usuario. Aquellos datos que se destacan están cuidadosamente seleccionados en función del propósito central de la webstory: visibilizar la alta demanda de eventos y la falta de infraestructura suficiente.
+
+Es importante destacar que el logo ubicado en la parte superior, junto con los íconos de búsqueda y compartición, forman parte de un banner estático que permanece visible al deslizarse por la pieza, asegurando así una navegación coherente y una identidad visual constante. Otros íconos, como los de sonido (para acompañar opcionalmente la lectura con música) y de expansión (para visualizar mejor los datos), están diseñados con contornos en blanco cálido para integrarse sutilmente sin distraer. Estos elementos no solo aportan funcionalidad, sino que buscan involucrar más al usuario, convirtiendo la lectura en una experiencia interactiva.
+
+En cuanto a la visualización de datos, actualmente aparece con fondo blanco por su formato JPG, pero se contempla reemplazarla por una versión PNG con fondo transparente. Esto permitirá que se integre mejor al diseño general y no interrumpa la continuidad estética del sitio. Además, se presenta a lo ancho para maximizar su legibilidad y asegurar que cada detalle sea visible, facilitando una comprensión más directa del mensaje.
+
+Finalmente, las imágenes juegan un rol clave en representar los datos. Al expresar visualmente eventos reales y situaciones concretas, generan cercanía, identificación y relevancia emocional. No se trata solo de ilustrar, sino de hacer tangible el mensaje: mostrar que detrás de cada cifra hay experiencias concretas que capaz el usuario vivió o al menos tenía conocimiento desde antes. 
