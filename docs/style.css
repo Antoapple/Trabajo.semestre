@@ -13,13 +13,13 @@ header {
     height: 60px;
     position: fixed;
     top: 0;
-    text-align: center;
+    text-align: justify;
     width: 80%;
     justify-content: space-between;
 }
 
-.logo img {
-
+.logo.img {
+size: 20px;
 }
 
 nav {
