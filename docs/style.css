@@ -49,6 +49,13 @@ h2 {
     color: #ff005b;
 }
 
+h3 {
+    color:#f9f6f1;
+}
+p {
+    font-family: "Noto Serif Thai", sans-serif;
+    color:#f9f6f1;
+}
 
 /* Espacio para el contenido bajo el header fijo */
 .content {
@@ -67,7 +74,10 @@ grid-row-gap: 4px;
 
 .div1 { grid-area: 1 / 1 / 6 / 2; }
 .div2 { grid-area: 1 / 8 / 6 / 9; }
-.título { grid-area: 1 / 2 / 2 / 8; }
+.título { grid-area: 1 / 2 / 2 / 8; 
+align-items: center;
+text-align: center;}
+
 .div4 { grid-area: 2 / 2 / 3 / 8; }
 .div5 { grid-area: 3 / 2 / 4 / 8; }
 .div6 { grid-area: 4 / 2 / 5 / 5; }
