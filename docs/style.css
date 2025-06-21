@@ -1,6 +1,6 @@
 body {
-    margin-top: 2cm;
-    font-family: Arial, sans-serif;
+    margin-top: 5cm;
+    font-family:  "Noto Serif Thai", sans-serif;
     background-color: #080d21;
 }
 
@@ -29,7 +29,7 @@ nav {
 nav a {
     color: #f9f6f1;
     text-decoration: none;
-    padding: 0 40px;
+    padding: 40px;
     margin: 0;
 }
 
