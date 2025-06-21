@@ -59,12 +59,12 @@ body {
 
         }
 
-        .parent {
+ .parent {
 display: grid;
 grid-template-columns: repeat(6, 1fr);
 grid-template-rows: repeat(5, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+grid-column-gap: 10px;
+grid-row-gap: 7px;
 }
 
 .div1 { grid-area: 1 / 2 / 2 / 6; }
