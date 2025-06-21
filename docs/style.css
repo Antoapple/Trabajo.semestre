@@ -19,7 +19,7 @@ header {
 }
 
 .logo img {
-    height: 40px; /* Ajusta la altura de la imagen */
+
 }
 
 nav {
@@ -72,8 +72,11 @@ grid-column-gap: 2px;
 grid-row-gap: 4px;
 }
 
-.div1 { grid-area: 1 / 1 / 6 / 2; }
-.div2 { grid-area: 1 / 8 / 6 / 9; }
+.div1 { grid-area: 1 / 1 / 6 / 2; 
+display: flex;}
+
+.div2 { grid-area: 1 / 8 / 6 / 9;
+display: flex; }
 .título { grid-area: 1 / 2 / 2 / 8; 
 align-items: center;
 text-align: center;}
