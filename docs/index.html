@@ -7,6 +7,9 @@
 	<meta name="description" content="Sold Out">
     <title>Sold Out</title> 
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+Thai:wght@100..900&display=swap" rel="stylesheet">
@@ -62,6 +65,16 @@ Los números lo confirman: más de 200 conciertos y festivales en un año, pero 
 </div>
 <div class="div5" id="div5">
     <h1>Conciertos y festivales: ¿con qué frecuencia sonaron en 20204?</h1>
+      <script>
+    // Inserta tu gráfico Vega-Lite desde el archivo JSON
+    vegaEmbed('#grafico', 'visualization.vl.json')
+      .then(result => {
+        // Opcional: hacer algo con el gráfico embedido
+        console.log("Gráfico cargado");
+      })
+      .catch(error => console.error("Error cargando el gráfico:", error));
+  </script>
+</body>
 </div>
 <div class="div6" id="div6">
     <h1>Los otros escenarios que dan vida a los festivales musicales en Santiago</h1>
