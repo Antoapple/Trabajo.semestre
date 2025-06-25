@@ -1,3 +1,4 @@
+function cargarVisualizacion() {
 const spec = {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "background": "white",
@@ -7150,8 +7151,42 @@ const spec = {
     }
   ]
 
-  };
+ };
 
-vegaEmbed('#visualizacion_eventos', spec).then(result => {
-  // visualización cargada con éxito
-}).catch(console.error);
+vegaEmbed('#visualizacion_eventos', spec).catch(console.error);
+}
+
+function iniciarNotasDesdeTexto() {
+  const contenedor = document.getElementById("bloque-notas");
+  if (!contenedor) {
+    console.warn("No se encontró el contenedor #bloque-notas");
+    return;
+  }
+
+  let offsetX = 0;
+  let direccion = 1;
+
+  function crearNota() {
+    const nota = document.createElement("div");
+    nota.classList.add("nota");
+    nota.textContent = ["🎵", "🎶", "♩", "♪", "♫"][Math.floor(Math.random() * 5)];
+    
+    nota.style.left = `${offsetX}px`;
+    nota.style.top = `0px`;
+    
+    contenedor.appendChild(nota);
+
+    setTimeout(() => nota.remove(), 4000);
+
+    offsetX += 50 * direccion;
+    if (offsetX > contenedor.clientWidth - 50 || offsetX < 0) {
+      direccion *= -1;
+    }
+  }
+
+  setInterval(crearNota, 300);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  iniciarNotasDesdeTexto();
+});
