@@ -107,21 +107,26 @@ text-align: center; }
 
 #bloque-notas {
   position: relative;
-  width: 100%;
-  height: 150px;
+  width: 80%;
+  height: 200px;
   margin-top: 20px;
+  margin-left: 150px;
+  margin-right: 200px;
   overflow: hidden;
 }
 
 .nota {
   position: absolute;
-  color: white;
-  font-size: 28px;
-  opacity: 0.9;
-  animation: bajar 4s linear forwards;
+  width: 120px; /* Más grande */
+  height: auto;
+  opacity: 0.95;
+  animation: bajarLento 8s linear forwards;
+  pointer-events: none;
+  user-select: none;
 }
 
-@keyframes bajar {
+
+@keyframes bajarLento {
   0% {
     transform: translateY(0);
     opacity: 1;

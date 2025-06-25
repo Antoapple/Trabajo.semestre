@@ -7158,33 +7158,56 @@ vegaEmbed('#visualizacion_eventos', spec).catch(console.error);
 
 function iniciarNotasDesdeTexto() {
   const contenedor = document.getElementById("bloque-notas");
-  if (!contenedor) {
-    console.warn("No se encontró el contenedor #bloque-notas");
-    return;
-  }
+  if (!contenedor) return;
 
   let offsetX = 0;
-  let direccion = 1;
+  const paso = 70;
+  const color = "#A20264";
+  let alternador = true; // alterna entre simple y corchea
+
+  function crearNotaSVG(tipo) {
+    const svgNS = "http://www.w3.org/2000/svg";
+    const svg = document.createElementNS(svgNS, "svg");
+    svg.setAttribute("viewBox", "0 0 64 64");
+    svg.setAttribute("width", "40");
+    svg.setAttribute("height", "40");
+    svg.classList.add("nota");
+
+    const path = document.createElementNS(svgNS, "path");
+    
+    // Nota simple o corchea
+    const d_simple = "M48 8v32.6c-2.4-1.2-5.1-1.9-8-1.9-6.6 0-12 3.6-12 8s5.4 8 12 8 12-3.6 12-8V8h-4z";
+    const d_corchea = "M44 8v28.6c-2.4-1.2-5.1-1.9-8-1.9-6.6 0-12 3.6-12 8s5.4 8 12 8 12-3.6 12-8V16h4V8h-8z";
+
+    path.setAttribute("d", tipo === "corchea" ? d_corchea : d_simple);
+    path.setAttribute("fill", color);
+
+    svg.appendChild(path);
+    return svg;
+  }
 
   function crearNota() {
-    const nota = document.createElement("div");
-    nota.classList.add("nota");
-    nota.textContent = ["🎵", "🎶", "♩", "♪", "♫"][Math.floor(Math.random() * 5)];
-    
+    const tipo = alternador ? "simple" : "corchea";
+    alternador = !alternador;
+
+    const nota = crearNotaSVG(tipo);
+    nota.style.position = "absolute";
     nota.style.left = `${offsetX}px`;
     nota.style.top = `0px`;
-    
+    nota.style.animation = "bajarLento 6s linear forwards";
+    nota.style.pointerEvents = "none";
+    nota.style.userSelect = "none";
+
     contenedor.appendChild(nota);
+    setTimeout(() => nota.remove(), 6000);
 
-    setTimeout(() => nota.remove(), 4000);
-
-    offsetX += 50 * direccion;
-    if (offsetX > contenedor.clientWidth - 50 || offsetX < 0) {
-      direccion *= -1;
+    offsetX += paso;
+    if (offsetX > contenedor.clientWidth - paso) {
+      offsetX = 0;
     }
   }
 
-  setInterval(crearNota, 300);
+  setInterval(crearNota, 500);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
