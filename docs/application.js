@@ -7567,3 +7567,258 @@ const spec3 = {
 
 vegaEmbed('#visualizacion_genero', spec3).catch(console.error);
 }
+function cargarVisualizacion4() {
+const spec4 = {
+ "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "background": "white",
+  "padding": 5,
+  "width": 700,
+  "height": 300,
+  "title": {
+    "text": "Recintos por Propósito y su Capacidad Máxima",
+    "frame": "group"
+  },
+  "style": "cell",
+  "data": [
+    {
+      "name": "data-7611dacb6f697160f014778b7f167af4",
+      "values": [
+        {
+          "Nombres de recintos": "Centro Cultural CEINA",
+          "PROPOSITO": "Cultural",
+          "Capacidad máxima": 802
+        },
+        {
+          "Nombres de recintos": "Centro Cultural Gabriela Mistral (GAM)",
+          "PROPOSITO": "Cultural",
+          "Capacidad máxima": 2500
+        },
+        {
+          "Nombres de recintos": "Centro Cultural Matucana 100",
+          "PROPOSITO": "Cultural",
+          "Capacidad máxima": 2000
+        },
+        {
+          "Nombres de recintos": "Claro Arena",
+          "PROPOSITO": "Multipropósito",
+          "Capacidad máxima": 20000
+        },
+        {
+          "Nombres de recintos": "Club Hípico",
+          "PROPOSITO": "Deportivo",
+          "Capacidad máxima": 50000
+        },
+        {
+          "Nombres de recintos": "Espacio Carén",
+          "PROPOSITO": "Multipropósito",
+          "Capacidad máxima": 5000
+        },
+        {
+          "Nombres de recintos": "Espacio Riesco",
+          "PROPOSITO": "Multipropósito",
+          "Capacidad máxima": 10000
+        },
+        {
+          "Nombres de recintos": "Estadio Bicentenario de La Florida",
+          "PROPOSITO": "Deportivo",
+          "Capacidad máxima": 28000
+        },
+        {
+          "Nombres de recintos": "Estadio Monumental David Arellano",
+          "PROPOSITO": "Deportivo",
+          "Capacidad máxima": 47000
+        },
+        {
+          "Nombres de recintos": "Estadio Nacional Julio Martínez Prádanos",
+          "PROPOSITO": "Deportivo",
+          "Capacidad máxima": 60000
+        },
+        {
+          "Nombres de recintos": "Estadio Santa Laura",
+          "PROPOSITO": "Deportivo",
+          "Capacidad máxima": 22000
+        },
+        {
+          "Nombres de recintos": "Hipódromo Chile",
+          "PROPOSITO": "Deportivo",
+          "Capacidad máxima": 40000
+        },
+        {
+          "Nombres de recintos": "Movistar Arena",
+          "PROPOSITO": "Musical",
+          "Capacidad máxima": 16522
+        },
+        {
+          "Nombres de recintos": "Parque Bicentenario de Cerrillos",
+          "PROPOSITO": "Recreacional",
+          "Capacidad máxima": 80000
+        },
+        {
+          "Nombres de recintos": "Parque Deportivo Estadio Nacional",
+          "PROPOSITO": "Recreacional",
+          "Capacidad máxima": 60000
+        },
+        {
+          "Nombres de recintos": "Parque Padre Hurtado ",
+          "PROPOSITO": "Recreacional",
+          "Capacidad máxima": 5000
+        },
+        {
+          "Nombres de recintos": "Teatro Caupolicán",
+          "PROPOSITO": "Musical",
+          "Capacidad máxima": 7000
+        },
+        {
+          "Nombres de recintos": "Teatro Coliseo",
+          "PROPOSITO": "Cultural",
+          "Capacidad máxima": 2500
+        },
+        {
+          "Nombres de recintos": "Teatro Mori Bellavista",
+          "PROPOSITO": "Cultural",
+          "Capacidad máxima": 162
+        },
+        {
+          "Nombres de recintos": "Teatro Mori Parque Arauco",
+          "PROPOSITO": "Cultural",
+          "Capacidad máxima": 248
+        },
+        {
+          "Nombres de recintos": "Teatro Mori Recoleta",
+          "PROPOSITO": "Cultural",
+          "Capacidad máxima": 222
+        },
+        {
+          "Nombres de recintos": "Teatro Mori Vitacura ",
+          "PROPOSITO": "Cultural",
+          "Capacidad máxima": 239
+        },
+        {
+          "Nombres de recintos": "Teatro Municipal de Santiago",
+          "PROPOSITO": "Cultural",
+          "Capacidad máxima": 1500
+        },
+        {
+          "Nombres de recintos": "Teatro Nescafé de las Artes",
+          "PROPOSITO": "Cultural",
+          "Capacidad máxima": 983
+        }
+      ]
+    },
+    {
+      "name": "data_0",
+      "source": "data-7611dacb6f697160f014778b7f167af4",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"Capacidad máxima\"]) && isFinite(+datum[\"Capacidad máxima\"])"
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "name": "marks",
+      "type": "symbol",
+      "style": ["circle"],
+      "from": {"data": "data_0"},
+      "encode": {
+        "update": {
+          "opacity": {"value": 0.7},
+          "size": {"value": 150},
+          "fill": {"scale": "color", "field": "PROPOSITO"},
+          "tooltip": {
+            "signal": "{\"Nombres de recintos\": isValid(datum[\"Nombres de recintos\"]) ? datum[\"Nombres de recintos\"] : \"\"+datum[\"Nombres de recintos\"], \"PROPOSITO\": isValid(datum[\"PROPOSITO\"]) ? datum[\"PROPOSITO\"] : \"\"+datum[\"PROPOSITO\"], \"Capacidad máxima\": format(datum[\"Capacidad máxima\"], \"\")}"
+          },
+          "ariaRoleDescription": {"value": "circle"},
+          "description": {
+            "signal": "\"Capacidad máxima del recinto: \" + (format(datum[\"Capacidad máxima\"], \"\")) + \"; Propósito del recinto: \" + (isValid(datum[\"PROPOSITO\"]) ? datum[\"PROPOSITO\"] : \"\"+datum[\"PROPOSITO\"]) + \"; PROPOSITO: \" + (isValid(datum[\"PROPOSITO\"]) ? datum[\"PROPOSITO\"] : \"\"+datum[\"PROPOSITO\"]) + \"; Nombres de recintos: \" + (isValid(datum[\"Nombres de recintos\"]) ? datum[\"Nombres de recintos\"] : \"\"+datum[\"Nombres de recintos\"]) + \"; Capacidad máxima: \" + (format(datum[\"Capacidad máxima\"], \"\"))"
+          },
+          "x": {"scale": "x", "field": "Capacidad máxima"},
+          "y": {"scale": "y", "field": "PROPOSITO"},
+          "shape": {"value": "circle"}
+        }
+      }
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "linear",
+      "domain": {"data": "data_0", "field": "Capacidad máxima"},
+      "range": [0, {"signal": "width"}],
+      "nice": true,
+      "zero": true
+    },
+    {
+      "name": "y",
+      "type": "point",
+      "domain": {"data": "data_0", "field": "PROPOSITO", "sort": true},
+      "range": [0, {"signal": "height"}],
+      "padding": 0.5
+    },
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": {"data": "data_0", "field": "PROPOSITO", "sort": true},
+      "range": ["#FFABC5", "#FF5187", "#DF4575", "#A34EA0", "#3F4270"]
+    }
+  ],
+  "axes": [
+    {
+      "scale": "x",
+      "orient": "bottom",
+      "gridScale": "y",
+      "grid": true,
+      "tickCount": {"signal": "ceil(width/40)"},
+      "domain": false,
+      "labels": false,
+      "aria": false,
+      "maxExtent": 0,
+      "minExtent": 0,
+      "ticks": false,
+      "zindex": 0
+    },
+    {
+      "scale": "y",
+      "orient": "left",
+      "gridScale": "x",
+      "grid": true,
+      "domain": false,
+      "labels": false,
+      "aria": false,
+      "maxExtent": 0,
+      "minExtent": 0,
+      "ticks": false,
+      "zindex": 0
+    },
+    {
+      "scale": "x",
+      "orient": "bottom",
+      "grid": false,
+      "title": "Capacidad máxima del recinto",
+      "labelFlush": true,
+      "labelOverlap": true,
+      "tickCount": {"signal": "ceil(width/40)"},
+      "zindex": 0
+    },
+    {
+      "scale": "y",
+      "orient": "left",
+      "grid": false,
+      "title": "Propósito del recinto",
+      "zindex": 0
+    }
+  ],
+  "legends": [
+    {
+      "fill": "color",
+      "symbolType": "circle",
+      "title": "PROPOSITO",
+      "encode": {"symbols": {"update": {"opacity": {"value": 0.7}}}}
+    }
+  ],
+  "config": {"axis": {"grid": true}}
+};
+vegaEmbed('#visualizacion_recintosmasivos', spec4).catch(console.error);
+}
