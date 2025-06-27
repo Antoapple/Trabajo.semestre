@@ -7214,8 +7214,8 @@ document.addEventListener("DOMContentLoaded", () => {
   iniciarNotasDesdeTexto();
 });
 
-function cargarVisualizacion4() {
-const spec4 = {
+function cargarVisualizacion2() {
+const spec2 = {
    "$schema": "https://vega.github.io/schema/vega/v5.json",
   "background": "white",
   "padding": 5,
@@ -7567,6 +7567,7 @@ const spec3 = {
 
 vegaEmbed('#visualizacion_genero', spec3).catch(console.error);
 }
+
 function cargarVisualizacion4() {
 const spec4 = {
  "$schema": "https://vega.github.io/schema/vega/v5.json",
