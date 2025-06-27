@@ -1,5 +1,5 @@
 function cargarVisualizacion() {
-const spec = {
+const spec1 = {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "background": "white",
   "padding": 5,
@@ -7153,7 +7153,7 @@ const spec = {
 
  };
 
-vegaEmbed('#visualizacion_eventos', spec).catch(console.error);
+vegaEmbed('#visualizacion_eventos', spec1).catch(console.error);
 }
 
 function iniciarNotasDesdeTexto() {
@@ -7213,3 +7213,357 @@ function iniciarNotasDesdeTexto() {
 document.addEventListener("DOMContentLoaded", () => {
   iniciarNotasDesdeTexto();
 });
+
+function cargarVisualizacion2() {
+const spec2 = {
+   "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "background": "white",
+  "padding": 5,
+  "width": 480,
+  "height": 250,
+  "title": {
+    "text": "Conciertos mensuales en el Movistar Arena (2024)",
+    "frame": "group"
+  },
+  "style": "cell",
+  "data": [
+    {
+      "name": "data-02b3ee1e0d952d2de759826c1d0909e8",
+      "values": [
+        {"Mes_num": 1, "Mes": "Enero", "Conciertos": 1},
+        {"Mes_num": 2, "Mes": "Febrero", "Conciertos": 5},
+        {"Mes_num": 3, "Mes": "Marzo", "Conciertos": 6},
+        {"Mes_num": 4, "Mes": "Abril", "Conciertos": 17},
+        {"Mes_num": 5, "Mes": "Mayo", "Conciertos": 9},
+        {"Mes_num": 6, "Mes": "Junio", "Conciertos": 6},
+        {"Mes_num": 7, "Mes": "Julio", "Conciertos": 6},
+        {"Mes_num": 8, "Mes": "Agosto", "Conciertos": 8},
+        {"Mes_num": 9, "Mes": "Septiembre", "Conciertos": 16},
+        {"Mes_num": 10, "Mes": "Octubre", "Conciertos": 6},
+        {"Mes_num": 11, "Mes": "Noviembre", "Conciertos": 18},
+        {"Mes_num": 12, "Mes": "Diciembre", "Conciertos": 14}
+      ]
+    },
+    {
+      "name": "data_0",
+      "source": "data-02b3ee1e0d952d2de759826c1d0909e8",
+      "transform": [
+        {
+          "type": "formula",
+          "expr": "datum[\"Mes\"]===\"Enero\" ? 0 : datum[\"Mes\"]===\"Febrero\" ? 1 : datum[\"Mes\"]===\"Marzo\" ? 2 : datum[\"Mes\"]===\"Abril\" ? 3 : datum[\"Mes\"]===\"Mayo\" ? 4 : datum[\"Mes\"]===\"Junio\" ? 5 : datum[\"Mes\"]===\"Julio\" ? 6 : datum[\"Mes\"]===\"Agosto\" ? 7 : datum[\"Mes\"]===\"Septiembre\" ? 8 : datum[\"Mes\"]===\"Octubre\" ? 9 : datum[\"Mes\"]===\"Noviembre\" ? 10 : datum[\"Mes\"]===\"Diciembre\" ? 11 : 12",
+          "as": "x_Mes_sort_index"
+        }
+      ]
+    },
+    {
+      "name": "data_1",
+      "source": "data_0",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"Conciertos\"]) && isFinite(+datum[\"Conciertos\"])"
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "name": "layer_0_marks",
+      "type": "line",
+      "style": ["line"],
+      "sort": {"field": "x"},
+      "from": {"data": "data_0"},
+      "encode": {
+        "update": {
+          "stroke": {"value": "#49007E"},
+          "tooltip": {
+            "signal": "{\"Mes\": isValid(datum[\"Mes\"]) ? datum[\"Mes\"] : \"\"+datum[\"Mes\"], \"Conciertos\": format(datum[\"Conciertos\"], \"\")}"
+          },
+          "description": {
+            "signal": "\"Mes: \" + (isValid(datum[\"Mes\"]) ? datum[\"Mes\"] : \"\"+datum[\"Mes\"]) + \"; Cantidad de conciertos: \" + (format(datum[\"Conciertos\"], \"\")) + \"; Conciertos: \" + (format(datum[\"Conciertos\"], \"\"))"
+          },
+          "x": {"scale": "x", "field": "Mes"},
+          "y": {"scale": "y", "field": "Conciertos"},
+          "defined": {
+            "signal": "isValid(datum[\"Conciertos\"]) && isFinite(+datum[\"Conciertos\"])"
+          }
+        }
+      }
+    },
+    {
+      "name": "layer_1_marks",
+      "type": "symbol",
+      "style": ["point"],
+      "from": {"data": "data_1"},
+      "encode": {
+        "update": {
+          "opacity": {"value": 1},
+          "fill": {"value": "#4c78a8"},
+          "tooltip": {
+            "signal": "{\"Mes\": isValid(datum[\"Mes\"]) ? datum[\"Mes\"] : \"\"+datum[\"Mes\"], \"Conciertos\": format(datum[\"Conciertos\"], \"\")}"
+          },
+          "ariaRoleDescription": {"value": "point"},
+          "description": {
+            "signal": "\"Mes: \" + (isValid(datum[\"Mes\"]) ? datum[\"Mes\"] : \"\"+datum[\"Mes\"]) + \"; Cantidad de conciertos: \" + (format(datum[\"Conciertos\"], \"\")) + \"; Conciertos: \" + (format(datum[\"Conciertos\"], \"\"))"
+          },
+          "x": {"scale": "x", "field": "Mes"},
+          "y": {"scale": "y", "field": "Conciertos"}
+        }
+      }
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "point",
+      "domain": {
+        "data": "data_0",
+        "field": "Mes",
+        "sort": {"op": "min", "field": "x_Mes_sort_index"}
+      },
+      "range": [0, {"signal": "width"}],
+      "padding": 0.5
+    },
+    {
+      "name": "y",
+      "type": "linear",
+      "domain": {
+        "fields": [
+          {"data": "data_0", "field": "Conciertos"},
+          {"data": "data_1", "field": "Conciertos"}
+        ]
+      },
+      "range": [{"signal": "height"}, 0],
+      "nice": true,
+      "zero": true
+    }
+  ],
+  "axes": [
+    {
+      "scale": "y",
+      "orient": "left",
+      "gridScale": "x",
+      "grid": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "domain": false,
+      "labels": false,
+      "aria": false,
+      "maxExtent": 0,
+      "minExtent": 0,
+      "ticks": false,
+      "zindex": 0
+    },
+    {
+      "scale": "x",
+      "orient": "bottom",
+      "grid": false,
+      "title": "Mes",
+      "labelAlign": "right",
+      "labelAngle": 270,
+      "labelBaseline": "middle",
+      "zindex": 0
+    },
+    {
+      "scale": "y",
+      "orient": "left",
+      "grid": false,
+      "title": "Cantidad de conciertos",
+      "labelOverlap": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "zindex": 0
+    }
+  ]
+}
+vegaEmbed('#visualizacion_movistar', spec2).then(result => {
+      // gráfico 2 insertado
+    }).catch(console.error);
+}
+
+function cargarVisualizacion2() {
+const spec3 = {
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "background": "white",
+  "padding": 5,
+  "width":  480,
+  "height": 250,
+  "title": {"text": "Artistas únicos por familia musical", "frame": "group"},
+  "style": "cell",
+  "data": [
+    {
+      "name": "data-2ea1cbe35ecf9c3ca37d3b38d4a0de12",
+      "values": [
+        {
+          "Familia_musical": "Rock",
+          "Cantidad": 51,
+          "Géneros agrupados": "rock, rock & roll, metal, heavy metal, punk"
+        },
+        {
+          "Familia_musical": "Pop",
+          "Cantidad": 38,
+          "Géneros agrupados": "pop, pop balada, pop rock, trippy pop, k-pop"
+        },
+        {
+          "Familia_musical": "Urbano",
+          "Cantidad": 33,
+          "Géneros agrupados": "reggaeton, trap, rap, hip hop, urbana"
+        },
+        {
+          "Familia_musical": "Tropical/Latino",
+          "Cantidad": 20,
+          "Géneros agrupados": "salsa, cumbia, mariachi, ranchera, vallenato, rumba, ska, reggae, folclore chileno"
+        },
+        {
+          "Familia_musical": "Balada",
+          "Cantidad": 16,
+          "Géneros agrupados": "balada"
+        },
+        {
+          "Familia_musical": "Electrónica",
+          "Cantidad": 15,
+          "Géneros agrupados": "electronica, disco"
+        },
+        {
+          "Familia_musical": "Otros",
+          "Cantidad": 15,
+          "Géneros agrupados": "r&b, soul, clasica, cuarteto, instrumental, infantil"
+        }
+      ]
+    },
+    {
+      "name": "data_0",
+      "source": "data-2ea1cbe35ecf9c3ca37d3b38d4a0de12",
+      "transform": [
+        {
+          "type": "formula",
+          "expr": "datum[\"Familia_musical\"]===\"Rock\" ? 0 : datum[\"Familia_musical\"]===\"Pop\" ? 1 : datum[\"Familia_musical\"]===\"Urbano\" ? 2 : datum[\"Familia_musical\"]===\"Tropical/Latino\" ? 3 : datum[\"Familia_musical\"]===\"Balada\" ? 4 : datum[\"Familia_musical\"]===\"Electrónica\" ? 5 : datum[\"Familia_musical\"]===\"Otros\" ? 6 : 7",
+          "as": "y_Familia_musical_sort_index"
+        }
+      ]
+    },
+    {
+      "name": "data_1",
+      "source": "data_0",
+      "transform": [
+        {
+          "type": "stack",
+          "groupby": ["Familia_musical"],
+          "field": "Cantidad",
+          "sort": {"field": [], "order": []},
+          "as": ["Cantidad_start", "Cantidad_end"],
+          "offset": "zero"
+        },
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"Cantidad\"]) && isFinite(+datum[\"Cantidad\"])"
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "name": "marks",
+      "type": "rect",
+      "style": ["bar"],
+      "from": {"data": "data_1"},
+      "encode": {
+        "update": {
+          "fill": {"scale": "color", "field": "Familia_musical"},
+          "tooltip": {
+            "signal": "{\"Familia_musical\": isValid(datum[\"Familia_musical\"]) ? datum[\"Familia_musical\"] : \"\"+datum[\"Familia_musical\"], \"Cantidad\": format(datum[\"Cantidad\"], \"\"), \"Géneros agrupados\": isValid(datum[\"Géneros agrupados\"]) ? datum[\"Géneros agrupados\"] : \"\"+datum[\"Géneros agrupados\"]}"
+          },
+          "ariaRoleDescription": {"value": "bar"},
+          "description": {
+            "signal": "\"Cantidad de artistas únicos: \" + (format(datum[\"Cantidad\"], \"\")) + \"; Familia musical: \" + (isValid(datum[\"Familia_musical\"]) ? datum[\"Familia_musical\"] : \"\"+datum[\"Familia_musical\"]) + \"; Familia_musical: \" + (isValid(datum[\"Familia_musical\"]) ? datum[\"Familia_musical\"] : \"\"+datum[\"Familia_musical\"]) + \"; Cantidad: \" + (format(datum[\"Cantidad\"], \"\")) + \"; Géneros agrupados: \" + (isValid(datum[\"Géneros agrupados\"]) ? datum[\"Géneros agrupados\"] : \"\"+datum[\"Géneros agrupados\"])"
+          },
+          "x": {"scale": "x", "field": "Cantidad_end"},
+          "x2": {"scale": "x", "field": "Cantidad_start"},
+          "y": {"scale": "y", "field": "Familia_musical"},
+          "height": {"signal": "max(0.25, bandwidth('y'))"}
+        }
+      }
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "linear",
+      "domain": {
+        "data": "data_1",
+        "fields": ["Cantidad_start", "Cantidad_end"]
+      },
+      "range": [0, {"signal": "width"}],
+      "nice": true,
+      "zero": true
+    },
+    {
+      "name": "y",
+      "type": "band",
+      "domain": {
+        "data": "data_0",
+        "field": "Familia_musical",
+        "sort": {"op": "min", "field": "y_Familia_musical_sort_index"}
+      },
+      "range": [0, {"signal": "height"}],
+      "paddingInner": 0.1,
+      "paddingOuter": 0.05
+    },
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": [
+        "Rock",
+        "Pop",
+        "Urbano",
+        "Tropical/Latino",
+        "Balada",
+        "Electrónica",
+        "Otros"
+      ],
+      "range": [
+        "#0A1A40",
+        "#5B1FA8",
+        "#47528B",
+        "#B0317B",
+        "#C063BA",
+        "#FF33CC",
+        "#F4F0CD"
+      ]
+    }
+  ],
+  "axes": [
+    {
+      "scale": "x",
+      "orient": "bottom",
+      "gridScale": "y",
+      "grid": true,
+      "tickCount": {"signal": "ceil(width/40)"},
+      "domain": false,
+      "labels": false,
+      "aria": false,
+      "maxExtent": 0,
+      "minExtent": 0,
+      "ticks": false,
+      "zindex": 0
+    },
+    {
+      "scale": "x",
+      "orient": "bottom",
+      "grid": false,
+      "title": "Cantidad de artistas únicos",
+      "labelFlush": true,
+      "labelOverlap": true,
+      "tickCount": {"signal": "ceil(width/40)"},
+      "zindex": 0
+    },
+    {
+      "scale": "y",
+      "orient": "left",
+      "grid": false,
+      "title": "Familia musical",
+      "zindex": 0
+    }
+  ]
+ };
+
+vegaEmbed('#visualizacion_genero', spec3).catch(console.error);
+}
