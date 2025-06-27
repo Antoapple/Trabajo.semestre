@@ -7384,7 +7384,7 @@ const spec3 = {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "background": "white",
   "padding": 5,
-  "width":  480,
+  "width":  450,
   "height": 250,
   "title": {"text": "Artistas únicos por familia musical", "frame": "group"},
   "style": "cell",
