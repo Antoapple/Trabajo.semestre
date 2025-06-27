@@ -7379,7 +7379,7 @@ vegaEmbed('#visualizacion_movistar', spec2).then(result => {
     }).catch(console.error);
 }
 
-function cargarVisualizacion2() {
+function cargarVisualizacion3() {
 const spec3 = {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "background": "white",
