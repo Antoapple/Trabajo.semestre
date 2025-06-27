@@ -3,7 +3,7 @@ const spec1 = {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "background": "white",
   "padding": 5,
-  "width": 700,
+  "width": 800,
   "height": 400,
   "title": {
     "text": "Eventos por recinto realizados en la Región Metropolitana en 2024",
@@ -7573,7 +7573,7 @@ const spec4 = {
  "$schema": "https://vega.github.io/schema/vega/v5.json",
   "background": "white",
   "padding": 5,
-  "width": 700,
+  "width": 900,
   "height": 300,
   "title": {
     "text": "Recintos por Propósito y su Capacidad Máxima",
