@@ -170,13 +170,12 @@ img {
 }
 
 body {
-        font-family: "Noto Serif Thai", sans-serif;
         margin: 20px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         }
-.highlight-box1 {
+.highlight-box {
             border: 2px solid #f7b0c9; /* Color del borde */
             background-color: #ff005b; /* Color de fondo */
             color: white; /* Color del texto */
@@ -202,29 +201,4 @@ body {
                 padding: 15px; 
             }
         }
-.highlight-box2 {
-            border: 2px solid #f7b0c9; /* Color del borde */
-            background-color: #ff005b; /* Color de fondo */
-            color: white; /* Color del texto */
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin: 10px;
-            width: 200px; /* Ancho fijo para los recuadros */
-            height: 200px; /* Altura fija para los recuadros */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            transition: transform 0.2s; /* Suaviza la transición */
-        }
-        .highlight-box:hover {
-            transform: scale(1.05); /* Aumenta el tamaño al pasar el cursor */
-        }
-        @media (max-width: 600px) {
-            .highlight-box {
-                width: 100%; /* Ajusta el ancho en pantallas más pequeñas */
-                height: auto; /* Permite que la altura sea automática */
-                padding: 15px; 
-            }
-        }
+
