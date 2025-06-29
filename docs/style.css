@@ -126,6 +126,7 @@ text-align: center; }
 }
 
 .collage {
+    align-items: center
     gap: 10px;
     width: 90%;
     max-width: 800px;
@@ -144,13 +145,6 @@ text-align: center; }
 
 .large {
     grid-row: span 2;
-}
-
-@media (max-width: 600px) {
-    .collage {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-    }
 }
 
 @keyframes bajarLento {
