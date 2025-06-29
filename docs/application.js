@@ -7822,4 +7822,18 @@ const spec4 = {
   "config": {"axis": {"grid": true}}
 };
 vegaEmbed('#visualizacion_recintosmasivos', spec4).catch(console.error);
-}
+
+};
+
+const images = document.querySelectorAll('.collage img');
+
+    images.forEach(image => {
+        image.addEventListener('mouseenter', () => {
+            image.style.transform = 'scale(1.05)'; // Aumenta el tamaño
+        });
+        image.addEventListener('mouseleave', () => {
+            image.style.transform = 'scale(1)'; // Vuelve al tamaño original
+        });
+    });
+
+vegaEmbed('#collage', spec4).catch(console.error);
