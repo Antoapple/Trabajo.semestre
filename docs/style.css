@@ -9,7 +9,6 @@ body {
     a:hover {
     color: blue; 
 }
-}
 
 header {
     display: flex;
@@ -174,13 +173,10 @@ body {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        align: center 
+        align-items: center;
         }
 .highlight-box {
-            display: flex;
             flex-direction: row;
-            justify-content: center;
-            align: center;
             border: 2px solid #f7b0c9; /* Color del borde */
             background-color: #ff005b; /* Color de fondo */
             color: white; /* Color del texto */
@@ -189,7 +185,7 @@ body {
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             margin: 10px;
             width: 400px; /* Ancho fijo para los recuadros */
-            height: 200px; /* Altura fija para los recuadros */
+            height: 150px; /* Altura fija para los recuadros */
             transition: transform 0.2s; /* Suaviza la transición */
         }
         .highlight-box:hover {
