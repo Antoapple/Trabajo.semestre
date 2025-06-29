@@ -7825,7 +7825,8 @@ vegaEmbed('#visualizacion_recintosmasivos', spec4).catch(console.error);
 
 };
 
-const images = document.querySelectorAll('.collage img');
+document.addEventListener("DOMContentLoaded", () => {
+    const images = document.querySelectorAll('.collage img');
 
     images.forEach(image => {
         image.addEventListener('mouseenter', () => {
@@ -7835,5 +7836,4 @@ const images = document.querySelectorAll('.collage img');
             image.style.transform = 'scale(1)'; // Vuelve al tamaño original
         });
     });
-
-vegaEmbed('#collage', spec4).catch(console.error);
+});
