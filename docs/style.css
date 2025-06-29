@@ -177,6 +177,10 @@ body {
         align: center 
         }
 .highlight-box {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align: center;
             border: 2px solid #f7b0c9; /* Color del borde */
             background-color: #ff005b; /* Color de fondo */
             color: white; /* Color del texto */
@@ -184,12 +188,8 @@ body {
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             margin: 10px;
-            width: 200px; /* Ancho fijo para los recuadros */
+            width: 400px; /* Ancho fijo para los recuadros */
             height: 200px; /* Altura fija para los recuadros */
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align: center;
             transition: transform 0.2s; /* Suaviza la transición */
         }
         .highlight-box:hover {
