@@ -125,28 +125,6 @@ text-align: center; }
   user-select: none;
 }
 
-.collage {
-    align-items: center
-    gap: 10px;
-    width: 90%;
-    max-width: 800px;
-}
-
-.collage img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.small {
-    grid-row: span 1;
-}
-
-.large {
-    grid-row: span 2;
-}
-
 @keyframes bajarLento {
   0% {
     transform: translateY(0);
