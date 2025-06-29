@@ -125,15 +125,14 @@ text-align: center; }
   user-select: none;
 }
 
-.collage {
-        .collage design {
-           display: grid;
+.collage {  
+            display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2, 200px);
             gap: 10px;
             width: 90%;
             max-width: 800px;
-        }
+    
         .collage img {
             width: 100%;
             height: auto;
