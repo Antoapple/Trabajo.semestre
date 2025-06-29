@@ -7824,3 +7824,14 @@ const spec4 = {
 vegaEmbed('#visualizacion_recintosmasivos', spec4).catch(console.error);
 
 };
+
+document.addEventListener("DOMContentLoaded", function () {
+  const btn = document.getElementById("mostrarTodoBtn");
+  const contenido = document.getElementById("contenido");
+
+  btn.addEventListener("click", function () {
+    contenido.style.display = "block";
+    btn.style.display = "none"; // Oculta el botón una vez que se muestra el contenido
+  });
+});
+
