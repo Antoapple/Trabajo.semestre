@@ -75,6 +75,28 @@ p {
     margin-top: 80px; /* Espacio suficiente para el header */
     padding: 20px; /* Espaciado interno */
     color: #f9f6f1;
+
+    .collage {
+    align-items: center
+    gap: 10px;
+    width: 90%;
+    max-width: 800px;
+}
+
+.collage img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.small {
+    grid-row: span 1;
+}
+
+.large {
+    grid-row: span 2;
+}
 }
 
 .parent {
@@ -123,28 +145,6 @@ text-align: center; }
   animation: bajarLento 8s linear forwards;
   pointer-events: none;
   user-select: none;
-}
-
-.collage {
-    align-items: center
-    gap: 10px;
-    width: 10%;
-    max-width: 800px;
-}
-
-.collage img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.small {
-    grid-row: span 1;
-}
-
-.large {
-    grid-row: span 2;
 }
 
 @keyframes bajarLento {
