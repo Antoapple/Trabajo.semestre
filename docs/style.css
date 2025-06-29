@@ -174,6 +174,7 @@ body {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        align: center 
         }
 .highlight-box {
             border: 2px solid #f7b0c9; /* Color del borde */
@@ -186,9 +187,9 @@ body {
             width: 200px; /* Ancho fijo para los recuadros */
             height: 200px; /* Altura fija para los recuadros */
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: center;
-            align-items: center;
+            align: center;
             transition: transform 0.2s; /* Suaviza la transición */
         }
         .highlight-box:hover {
