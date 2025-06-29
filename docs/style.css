@@ -75,9 +75,41 @@ p {
     margin-top: 80px; /* Espacio suficiente para el header */
     padding: 20px; /* Espaciado interno */
     color: #f9f6f1;
+}
 
+.parent {
+display: grid;
+grid-template-columns: repeat(8, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 2px;
+grid-row-gap: 4px;
+}
+
+.div1, .div2 {
+    background-image: url('https://github.com/Antoapple/Trabajo.semestre/blob/main/docs/relleno.png?raw=true');
+    background-repeat: repeat-y; /* Repite la imagen verticalmente */
+    background-size: auto; /* Mantiene el tamaño original de la imagen */
+    background-position: center-top; /* Centra la imagen en el div */
+min-height: 1020px; /* Altura mínima para asegurar que se muestre bien */
+padding-bottom: 60px  
+
+}
+.div1 { grid-area: 1 / 1 / 6 / 2; }
+.div2 { grid-area: 1 / 8 / 6 / 9; }
+.título { grid-area: 1 / 2 / 2 / 8; 
+align-items: center;
+text-align: center; }
+.div4 { grid-area: 2 / 2 / 3 / 8; }
+.div5 { grid-area: 3 / 2 / 4 / 8; }
+.div6 { grid-area: 4 / 2 / 5 / 5; }
+.div7 { grid-area: 4 / 5 / 5 / 8; }
+.div8 { grid-area: 5 / 2 / 6 / 8; }
+
+.div8 {
     .collage {
-    align-items: center
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 200px);
     gap: 10px;
     width: 90%;
     max-width: 800px;
@@ -97,35 +129,14 @@ p {
 .large {
     grid-row: span 2;
 }
-}
 
-.parent {
-display: grid;
-grid-template-columns: repeat(8, 1fr);
-grid-template-rows: repeat(5, 1fr);
-grid-column-gap: 2px;
-grid-row-gap: 4px;
+@media (max-width: 600px) {
+    .collage {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
 }
-
-.div1, .div2 {
-    background-image: url('https://github.com/Antoapple/Trabajo.semestre/blob/main/docs/relleno.png?raw=true');
-    background-repeat: repeat-y; /* Repite la imagen verticalmente */
-    background-size: auto; /* Mantiene el tamaño original de la imagen */
-    background-position: center-top; /* Centra la imagen en el div */
-min-height: 1020px; /* Altura mínima para asegurar que se muestre bien */
-padding-bottom: 60px
-
-}
-.div1 { grid-area: 1 / 1 / 6 / 2; }
-.div2 { grid-area: 1 / 8 / 6 / 9; }
-.título { grid-area: 1 / 2 / 2 / 8; 
-align-items: center;
-text-align: center; }
-.div4 { grid-area: 2 / 2 / 3 / 8; }
-.div5 { grid-area: 3 / 2 / 4 / 8; }
-.div6 { grid-area: 4 / 2 / 5 / 5; }
-.div7 { grid-area: 4 / 5 / 5 / 8; }
-.div8 { grid-area: 5 / 2 / 6 / 8; }
+        }
 
 #bloque-notas {
   position: relative;
