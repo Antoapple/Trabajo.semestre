@@ -3,7 +3,7 @@ body {
     font-family:  "Noto Serif Thai", sans-serif;
     background-color: #080d21;
     a {
-    color:#080d21; 
+    color: white; 
 }
 }
     a:hover {
@@ -170,8 +170,8 @@ img {
 }
 
 .highlight-box {
-            flex-wrap: wrap; /* Permite que los recuadros se ajusten en múltiples filas si es necesario */
-            justify-content: flex-start; /* Alinea los elementos al inicio */
+            display: flex;
+            justify-content: space-between; /* Espacia los recuadros uniformemente */
             border: 2px solid #f7b0c9; /* Color del borde */
             background-color: #ff005b; /* Color de fondo */
             font-family:  "Noto Serif Thai", sans-serif;
