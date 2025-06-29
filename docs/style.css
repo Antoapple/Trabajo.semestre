@@ -172,9 +172,8 @@ img {
 .highlight-box {
             font-family: "Noto Serif Thai", sans-serif;
             margin: 20px;
-            display: flex;
-            justify-content: flex-start; /* Alinea los recuadros al inicio */
-            overflow-x: auto; /* Permite el desplazamiento horizontal si es necesario */
+            display: inline-block;
+            flex-grow: 1;
             border: 2px solid #f7b0c9; /* Color del borde */
             background-color: #ff005b; /* Color de fondo */
             color: white; /* Color del texto */
