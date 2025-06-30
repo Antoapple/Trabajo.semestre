@@ -1,13 +1,13 @@
 body {
-    margin-top: 100px;
+    margin-top: 5cm;
     font-family:  "Noto Serif Thai", sans-serif;
     background-color: #080d21;
-    a {
-    color: white; 
-}
-}
-    a:hover {
-    color: blue; 
+    background-image: url('https://github.com/Antoapple/Trabajo.semestre/blob/main/docs/relleno.png?raw=true');
+    background-repeat: repeat; /* Repite la imagen */
+    background-size: auto; /* Mantiene el tamaño original de la imagen */
+    background-position: center-top; /* Centra la imagen en el div */
+min-height: 1020px; /* Altura mínima para asegurar que se muestre bien */
+padding-bottom: 60px
 }
 
 header {
@@ -20,15 +20,9 @@ header {
     text-align: justify;
     justify-content: space-between;
     width: 100%; /* Asegura que el header ocupe todo el ancho */ 
-    height: 80px; /* Altura del header */
+    height: 100px; /* Altura del header */
     z-index: 1000; /* Asegura que el header esté por encima del contenido */
     padding-top: 2%;
-    padding-bottom: 2%;
-}
-.vacio {
-  width: 100px;
-  height: 100px;
-  background-color: transparent; /* Hace el fondo transparente */
 }
 
 .logo img {
@@ -76,128 +70,204 @@ p {
     color:#f9f6f1;
 }
 
+/* Espacio para el contenido bajo el header fijo */
+.content {
+    margin-top: 80px; /* Espacio suficiente para el header */
+    padding: 20px; /* Espaciado interno */
+    color: #f9f6f1;
+}
 
 .parent {
 display: grid;
 grid-template-columns: repeat(8, 1fr);
-grid-template-rows: auto;
 grid-column-gap: 2px;
-grid-row-gap: 4px;
-
 }
 
 
-.div1, .div2 {
-    background-image: url('https://github.com/Antoapple/Trabajo.semestre/blob/main/docs/relleno.png?raw=true');
-    background-repeat: repeat-y; /* Repite la imagen verticalmente */
-    background-size: auto; /* Mantiene el tamaño original de la imagen */
-    background-position: center-top; /* Centra la imagen en el div */
-min-height: 1020px; /* Altura mínima para asegurar que se muestre bien */
-padding-bottom: 60px  
-
+.child{
+  grid-column: 2 / 8;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #080d21; /* Fondo del grid */
 }
-.div1 { grid-area: 1 / 1 / 6 / 2; }
-.div2 { grid-area: 1 / 8 / 6 / 9; }
-.título { grid-area: 1 / 2 / 2 / 8; 
-align-items: center;
-text-align: center; 
-margin-top: 25px;}
-.div4 { grid-area: 2 / 2 / 3 / 8; }
-.div5 { grid-area: 3 / 2 / 4 / 8; }
-.div6 { grid-area: 4 / 2 / 5 / 5; }
-.div7 { grid-area: 4 / 5 / 5 / 8; }
-.div8 { grid-area: 5 / 2 / 6 / 8; }
+
+.titulo{
+  text-align: center;
+}
+
+.chart{
+  background: #f9f6f1;
+  grid-column: 1 / 9;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  align-content: center;
+  padding: 45px 0 45px 0;
+}
+
+.chart div, .chart img {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+.chart h1, .chart p{
+  text-align: center;
+  color: #080d21;
+  width: 55%;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
 
 #bloque-notas {
-  position: relative;
-  width: 80%;
-  height: 200px;
-  margin-top: 20px;
-  margin-left: 150px;
-  margin-right: 200px;
-  overflow: hidden;
+  position: relative; /* ya asegurado en JS, pero por si acaso */
+  height: 140px;       /* pasoY * maxFilas = 32 px * 2  */
+  /* corta lo que se salga */
+  overflow: visible;
+  margin-bottom: 40px;
 }
 
 .nota {
-  position: absolute;
-  width: 120px; /* Más grande */
+  width: 140px;
   height: auto;
   opacity: 0.95;
-  animation: bajarLento 8s linear forwards;
-  pointer-events: none;
-  user-select: none;
 }
 
-@keyframes bajarLento {
-  0% {
+
+@keyframes bajarlento {
+  from {
     transform: translateY(0);
-    opacity: 1;
+    opacity: 1; /* parte totalmente visible */
   }
-  100% {
+  to {
     transform: translateY(150px);
-    opacity: 0;
+    opacity: 0; /* termina transparente */
   }
 }
 
-.banner {
-  width: 100%;
-  align-items: center;
-  padding-top: 10px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.boton {
+.pantalla-dividida {
   display: flex;
-  justify-content: center;
-  margin-top: 20px;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-#mostrarTodoBtn {
-  margin-top: 20px;
-  padding: 12px 24px;
-  font-size: 18px;
-  background-color: #ff005b;
-  color: white;
+.panel-expandible {
+  width: calc(50% - 1rem);  /* 2rem de gap dividido entre 2 */
+  color: #111;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+}
+
+
+.panel-expandible .cabecera h2 {
+  margin: 0 0 0.5rem 0;
+}
+
+.panel-expandible .cabecera p {
+  margin: 0 0 1rem 0;
+  color: #444;
+}
+
+.toggle-btn {
+  background: none;
   border: none;
-  border-radius: 12px;
+  color: #0066cc;
+  font-size: 1rem;
   cursor: pointer;
-  font-family: "Noto Serif Thai", sans-serif
+  padding: 0;
+  margin-bottom: 1rem;
 }
 
-body {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: center;
-        }
-.highlight-box {
-            word-wrap: break-word;
-            flex-direction: row;
-            border: 2px solid #f7b0c9; /* Color del borde */
-            background-color: #ff005b; /* Color de fondo */
-            color: white; /* Color del texto */
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin: 10px;
-            width: 600px; /* Ancho fijo para los recuadros */
-            height: 100px; /* Altura fija para los recuadros */
-            transition: transform 0.2s; /* Suaviza la transición */
-        }
-        .highlight-box:hover {
-            transform: scale(1.05); /* Aumenta el tamaño al pasar el cursor */
-        }
-        @media (max-width: 600px) {
-            .highlight-box {
-                width: 100%; /* Ajusta el ancho en pantallas más pequeñas */
-                height: auto; /* Permite que la altura sea automática */
-                padding: 15px; 
-            }
-        }
+.toggle-btn:hover {
+  text-decoration: underline;
+}
+
+.contenido-oculto {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+  background-color: #f9f6f1; /* Fondo del contenido oculto */
+}
+
+.contenido-oculto.activo {
+  max-height: 500px;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .panel-expandible {
+    width: 100%;
+  }
+}
+.zona-detalle {
+  margin-top: 2rem;
+  display: none; /* oculta por defecto */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.contenido-dinamico {
+  margin: 0 auto;
+}
+
+.articulo-texto {
+  width: 70%;
+   margin: 0 auto;
+   text-align: left;
+   background-color: #080d21; /* Fondo del texto */
+   padding: 25px;
+}
+
+#zona-detalle{
+  margin-top:2rem;
+  display:flex;
+  justify-content:center;
+  animation: fadeIn 0.3s ease-in;
+  grid-column: 1 / 9;
+}
+.detalle{
+  display:none; /* oculto por defecto */
+  animation:fade .3s ease;
+}
+.detalle.activo{
+  display:block;
+}
+
+@keyframes fade{from{opacity:0; transform:translateY(10px)}
+                to{opacity:1; transform:translateY(0)}}
+
+.switch-btn{margin-top:1rem;background:none;border:none;color:#0066cc;
+            font-size:1rem;cursor:pointer}
+.switch-btn:hover{text-decoration:underline}
+
+.detalle{
+  scroll-margin-top: 300px; /* deja 100 px libres por encima */
+}
+
+/* resalta la cabecera del tab abierto */
+.panel-expandible.activa{
+  background-color: #eef5ff0a;
+  border-radius: 8px;
+  padding: 1rem;
+  border: 1px dotted #9316d9;
+}
+
+/* pinta también el texto del botón */
+.panel-expandible.activa .toggle-btn{
+  color: #9316d9;
+  font-weight:600;
+}
 
 @font-face {
   font-family: 'Gungsuh';
@@ -207,3 +277,21 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+.highlight-box {
+            word-wrap: break-word;
+            flex-direction: row;
+            border: 2px solid #f7b0c9; /* Color del borde */
+            background-color: #ff005b; /* Color de fondo */
+            color: white; /* Color del texto */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            width: 600px; /* Ancho fijo para los recuadros */
+            height: 100px; /* Altura fija para los recuadros */
+            transition: transform 0.2s; /* Suaviza la transición */
+        }
+        .highlight-box:hover {
+            transform: scale(1.05); /* Aumenta el tamaño al pasar el cursor */
+        }

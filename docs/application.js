@@ -1,7 +1,49 @@
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.__TOGGLE_BTN_LOADED__) return;
+  window.__TOGGLE_BTN_LOADED__ = true;
+
+  const botonesSuperiores = document.querySelectorAll(".toggle-btn");
+  const botonesSwitch     = document.querySelectorAll(".switch-btn");
+  const detalles          = document.querySelectorAll(".detalle");
+
+  /* función central */
+  function abrirDetalle(selector){
+    const objetivo = document.querySelector(selector);
+    const estabaActivo = objetivo.classList.contains("activo");
+
+    // — 1. colapsar todo —
+    detalles.forEach(d => d.classList.remove("activo"));
+    botonesSuperiores.forEach(b => b.textContent = "Ver más ▼");
+    document.querySelectorAll(".panel-expandible").forEach(c => c.classList.remove("activa"));  // ← NUEVO
+
+    // — 2. si estaba abierto, nada más —
+    if(estabaActivo) return;
+
+    // — 3. abrir nuevo —
+    objetivo.classList.add("activo");
+    const btnSuperior = [...botonesSuperiores]
+                        .find(b => b.dataset.target === selector);
+    if(btnSuperior) btnSuperior.textContent = "Ver menos ▲";
+    btnSuperior.parentElement.parentElement.classList.add("activa");  
+
+    // — 4. llevar la pantalla al inicio del panel —
+    objetivo.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  /* listeners */
+  [...botonesSuperiores, ...botonesSwitch].forEach(btn => {
+    btn.addEventListener("click", () => abrirDetalle(btn.dataset.target));
+  });
+});
+
+
+
+
+
 function cargarVisualizacion() {
 const spec1 = {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
-  "background": "white",
+  "background": "#f9f6f1",
   "padding": 5,
   "width": 800,
   "height": 400,
@@ -7156,68 +7198,87 @@ const spec1 = {
 vegaEmbed('#visualizacion_eventos', spec1).catch(console.error);
 }
 
+/*  Inicia la animación al cargar el documento */
+document.addEventListener("DOMContentLoaded", iniciarNotasDesdeTexto);
+
 function iniciarNotasDesdeTexto() {
   const contenedor = document.getElementById("bloque-notas");
   if (!contenedor) return;
 
-  let offsetX = 0;
-  const paso = 70;
-  const color = "#A20264";
-  let alternador = true; // alterna entre simple y corchea
+  /* ─── Ajustes básicos del contenedor ───────────────────────── */
+  /*  Así nos aseguramos de que sea el referente de posición      */
+  contenedor.style.position = "relative";
+  contenedor.style.overflow  = "visible";
 
+  /* ─── Variables de control ─────────────────────────────────── */
+  let offsetX   = 0;          // arranca un poco fuera de la vista
+  let offsetY   = 0;            // fila actual
+  const pasoX   = 110;           // separación horizontal entre notas
+  const pasoY   = 42;           // alto de cada fila de notas
+  const maxFilas = 1;           // << SOLO dos filas
+  const color   = "#A20264";
+  let alternador = true;        // alterna simple/corchea
+
+  /* ─── Generador de SVG para cada nota ──────────────────────── */
   function crearNotaSVG(tipo) {
     const svgNS = "http://www.w3.org/2000/svg";
-    const svg = document.createElementNS(svgNS, "svg");
+    const svg   = document.createElementNS(svgNS, "svg");
     svg.setAttribute("viewBox", "0 0 64 64");
-    svg.setAttribute("width", "40");
+    svg.setAttribute("width",  "40");
     svg.setAttribute("height", "40");
     svg.classList.add("nota");
 
     const path = document.createElementNS(svgNS, "path");
-    
-    // Nota simple o corchea
-    const d_simple = "M48 8v32.6c-2.4-1.2-5.1-1.9-8-1.9-6.6 0-12 3.6-12 8s5.4 8 12 8 12-3.6 12-8V8h-4z";
+    const d_simple  = "M48 8v32.6c-2.4-1.2-5.1-1.9-8-1.9-6.6 0-12 3.6-12 8s5.4 8 12 8 12-3.6 12-8V8h-4z";
     const d_corchea = "M44 8v28.6c-2.4-1.2-5.1-1.9-8-1.9-6.6 0-12 3.6-12 8s5.4 8 12 8 12-3.6 12-8V16h4V8h-8z";
 
     path.setAttribute("d", tipo === "corchea" ? d_corchea : d_simple);
     path.setAttribute("fill", color);
-
     svg.appendChild(path);
     return svg;
   }
 
+  /* ─── Crea y posiciona una nueva nota ──────────────────────── */
   function crearNota() {
     const tipo = alternador ? "simple" : "corchea";
     alternador = !alternador;
 
     const nota = crearNotaSVG(tipo);
-    nota.style.position = "absolute";
-    nota.style.left = `${offsetX}px`;
-    nota.style.top = `0px`;
-    nota.style.animation = "bajarLento 6s linear forwards";
+    nota.style.position = "absolute";      // se ubica dentro del contenedor
+    nota.style.left     = `${offsetX}px`;
+    nota.style.top      = `${offsetY}px`;
+    nota.style.animation = "bajarlento 8s linear forwards"; // animación de entrada
     nota.style.pointerEvents = "none";
-    nota.style.userSelect = "none";
+    nota.style.userSelect    = "none";
 
     contenedor.appendChild(nota);
+
+    /* elimina la nota después de 6 s para no llenar el DOM */
     setTimeout(() => nota.remove(), 6000);
 
-    offsetX += paso;
-    if (offsetX > contenedor.clientWidth - paso) {
+    /* ─── Avanza posiciones ─────────────────────────────────── */
+    offsetX += pasoX;
+
+    if (offsetX > contenedor.clientWidth - pasoX) {
+      /* fin de línea → vuelve al inicio y baja una fila */
       offsetX = 0;
+      offsetY += pasoY;
+
+      /* ¿pasamos el máximo de filas? → vuelve arriba */
+      if (offsetY >= pasoY * maxFilas) {
+        offsetY = 0;
+      }
     }
   }
 
+  /* crea una nota cada 500 ms */
   setInterval(crearNota, 500);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  iniciarNotasDesdeTexto();
-});
-
 function cargarVisualizacion2() {
 const spec2 = {
-  "$schema": "https://vega.github.io/schema/vega/v5.json",
-  "background": "white",
+ "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "background": "#f9f6f1",
   "padding": 5,
   "width": 700,
   "height": 350,
@@ -8128,9 +8189,9 @@ vegaEmbed('#visualizacion_movistar', spec2).then(result => {
 function cargarVisualizacion3() {
 const spec3 = {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
-  "background": "white",
+  "background": "#f9f6f1",
   "padding": 5,
-  "width":  450,
+  "width":  800,
   "height": 250,
   "title": {"text": "Artistas únicos por familia musical", "frame": "group"},
   "style": "cell",
@@ -8317,7 +8378,7 @@ vegaEmbed('#visualizacion_genero', spec3).catch(console.error);
 function cargarVisualizacion4() {
 const spec4 = {
  "$schema": "https://vega.github.io/schema/vega/v5.json",
-  "background": "white",
+  "background": "#f9f6f1",
   "padding": 5,
   "width": 900,
   "height": 300,
@@ -8568,16 +8629,4 @@ const spec4 = {
   "config": {"axis": {"grid": true}}
 };
 vegaEmbed('#visualizacion_recintosmasivos', spec4).catch(console.error);
-
-};
-
-document.addEventListener("DOMContentLoaded", function () {
-  const btn = document.getElementById("mostrarTodoBtn");
-  const contenido = document.getElementById("contenido");
-
-  btn.addEventListener("click", function () {
-    contenido.style.display = "block";
-    btn.style.display = "none"; // Oculta el botón una vez que se muestra el contenido
-  });
-});
-
+}

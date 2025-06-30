@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,7 +11,6 @@
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-    <script src="application.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+Thai:wght@100..900&display=swap" rel="stylesheet">
@@ -29,120 +29,164 @@
         <a href="#div7">Conciertos</a>
         <a href="#div8">Proyecciones de los recintos</a>
     </nav>
-    <div class="vacio"> </div>
-
 </header>
 
 <div class="parent">
-<div class="div1"> 
-    <img src="relleno.png?raw=true" alt="relleno">
-</div>
-<div class="div2"> 
-    <img src="relleno.png?raw=true" alt="relleno">
-</div>
-<div class="título">
-<p>
-
-</p>
+<div class="titulo child">
     <p>El 2 y 3 de marzo de 2025, el Estadio Nacional recibiría la visita de una de las mayores representantes de la música pop latinoamericana, Shakira, con su tour "Las mujeres ya no lloran".</p>
 
 <p>Horas antes del primer recital, sus fanáticos se enteraron de que el concierto había sido cancelado. El show del 3 de marzo tuvo el mismo desenlace. La suspensión de ambos conciertos se debió a problemas técnicos en el montaje del escenario, pero el evento fue reagendado tiempo después. Shakira se presentó el 4, 5 y 7 de abril, con una fecha adicional, aunque, esta vez, el lugar escogido fue el Parque Estadio Nacional, a un costado del estadio.</p>
 
 <p>Esta situación no pasó a mayores. Sin embargo, surge la pregunta:</p>
-<h1> ¿Los recintos de gran capacidad que existen en la ciudad de Santiago son capaces de albergar, con éxito, eventos musicales masivos? </h1>
-
-   <div id="bloque-notas"></div>
-<div style="height: 200 px;"></div>
-    <img src="banner.png" alt="banner" class="banner">
 </div>
-<div class="boton">
-<button id="mostrarTodoBtn">ver información</button>
-</div>
-  <div id="contenido" style="display: none;">
 
-<div class="div4" id="div4">
+<div class="titulo child" id="">
+    <h1> ¿Los recintos de gran capacidad que existen en la ciudad de Santiago son capaces de albergar eventos musicales masivos? </h1>
+ <div id="bloque-notas"></div>
+      <h1 style="margin-top: 80px;">Más espacio para la música en Santiago</h1>
+
+  <h2>Por Antonia Appelgren, Luciana González y Analía Ortega</h2>
+</div>
+<div class="child" id="div4">
     <h1>Muchos recintos, pocos escenarios</h1>
-    
     <p>Durante 2024, se realizaron más de 200 conciertos y festivales solo en la RM. Además, cada semana se anuncian nuevas fechas para artistas tanto nacionales como internacionales, lo que confirma una demanda creciente por espectáculos en vivo. A pesar de eso, la oferta de espacios destinados a acoger este fenómeno no ha crecido al mismo ritmo.</p>
 
-    <p>Los recintos que se ocupan actualmente para este tipo de eventos se dividieron en cinco categorías. </p>
+    <p>Se dividieron en cinco los recintos que se ocupan actualmente para este tipo de eventos. </p>
 
     <p> <i>En el siguiente gráfico se puede visualizar la distribución de los recintos por categoría y capacidad</i></p>
+</div>
+<div class="chart">
     <div id="visualizacion_recintosmasivos"></div>
-    <p>Por una parte están los recintos culturales —que en este caso solo es una pequeña muestra para dar cuenta de que en la Región Metropolitana no existen recintos culturales de gran capacidad, es decir, para más de 3.000 personas— y que corresponden a teatros y centros culturales. En estos se realizan conciertos más pequeños.</p>
+</div>
+<div class="child">
+    <p>Por una parte están los recintos culturales —que en este caso solo es una pequeña muestra para dar cuenta de que en la Región Metropolitana no existen recintos culturales masivos, sobre 3.000 personas— y que corresponden a teatros y centros culturales donde se han realizados conciertos más pequeños.</p>
 
-    <p>En el caso de los recintos deportivos, estos son los que disponen de la mayor capacidad para este tipo de eventos, de los cuales seis se ocupan para la realización de conciertos y festivales en toda la región. Aquí podemos ver que son espacios como el Estadio Nacional, el Monumental, el Bicentenario de La Florida o el Santa Laura. Estos han sido utilizados para conciertos de gran envergadura, <a href="https://radio.uchile.cl/2025/03/09/shakira-reabre-el-debate-priorizar-el-deporte-o-destinar-estadios-a-conciertos/">pero su uso ha sido controversial</a>. El daño al césped es el principal problema que se vive, lo que ha generado retrasos en las competencias y los reclamos de los hinchas.</p>
+    <p>En el caso de los recintos deportivos, son los que más se encontraron con capacidad para este tipo de eventos, existiendo seis que se ocupan para la realización de conciertos y festivales en toda la región. Aquí podemos ver que son espacios como el Estadio Nacional, el Monumental, el Bicentenario de La Florida o el Santa Laura. Estos han sido utilizados para conciertos de gran envergadura, pero su uso ha sido controversial. El daño al césped es el principal problema que se vive, lo que ha generado retrasos en las competencias y los reclamos de los hinchas.</p>
 
     <p>Los recintos recreacionales, por su parte, corresponden a parques que se han adaptado a eventos de esta envergadura. Estos lugares no suelen ser usados de forma tan recurrente como los estadios, pero de todas formas presentan un amplio espacio para los festivales que llegan al país, aunque muchos no fueron diseñados para eventos musicales.</p>
 
-    <p>Un ejemplo es el Parque Bicentenario de Cerrillos, hoy el lugar que da vida al festival Lollapalooza en Chile. Este parque, inaugurado en 2017 como espacio público recreativo, fue pensado para la visita de familias, no fue construido para albergar grandes escenarios, pero hoy es el recinto con mayor capacidad de la capital, permitiendo el ingreso de hasta 80.000 personas, lo que lo convierte en un lugar ideal en términos de aforo.</p>
+    <p>Un ejemplo es el Parque Bicentenario de Cerrillos, hoy el lugar que da vida al festival Lollapalooza en Chile. Este parque, inaugurado en 2017 como espacio público recreativo, fue pensado para la visita de familias, no fue construido para albergar grandes escenarios, pero hoy es el recinto con mayor capacidad de la capital, permitiendo el ingreso de hasta 80.000 personas, lo que lo convierte en un lugar ideal en temas de aforo.</p>
 
     <p>Lo mismo ocurre en el Club Hípico, originalmente creado por fans de la hípica para ver carreras de caballos. Su distribución, infraestructura e incluso la vegetación del recinto no están pensadas para conciertos, pero su capacidad de 50.000 asistentes lo convierte en una opción frecuente para festivales como Creamfields o eventos de reguetón masivo.</p>
 
-    <p>Los espacios multipropósito son los más difíciles de catalogar, por eso se asocian a este nombre. Estos lugares pueden ser parques diseñados para la recreación pero también como espacios musicales; pueden ser estadios que también tengan una infraestructura disponible para conciertos. En esta categoría encontramos el <a href="https://www.claroarena.cl/">Claro Arena</a>, un lugar pensado para albergar no solo un tipo de evento (deportivo en este caso), sino que busca ser un espacio que también reúna a las personas en torno a la música.</p>
+    <p>Los espacios multipropósito son los más difíciles de catalogar, por eso se asocian a este nombre. Estos lugares pueden ser parques diseñados para la recreación pero también como espacios musicales; pueden ser estadios que también tengan una infraestructura disponible para conciertos. En esta categoría encontramos el Claro Arena, un lugar pensado para albergar no solo un tipo de evento (deportivo en este caso), sino que buscando ser un espacio que también reúna a las personas en torno a la música.</p>
 
     <p>Por último, están los recintos que fueron creados específicamente para eventos musicales. Estos solo son dos dentro de la región, y bastante más pequeños en comparación a los espacios deportivos y recreacionales. Aquí es donde está el Teatro Caupolicán y el Movistar Arena. Dos espacios conocidos por su buena acústica y visibilidad para los conciertos, aunque, si juntamos el aforo de ambos, suman menos que el total de personas que pueden entrar al Estadio Bicentenario de La Florida. </p>
-    
- <div class="highlight-box">
-        <p><b>Los recintos culturales superan en número a las demás clases de recintos, pero ninguno de ellos es de gran capacidad.</b></p>
+
+     <div class="highlight-box">
+        <p><b>Los recintos culturales superan en número a las demás clases de recintos, pero en la capital no existen espacios culturales de gran capacidad</b></p>
     </div>
 
 
-
-</div>
-<div class="div5" id="div5">
-    <h1>Conciertos y festivales: ¿con qué frecuencia sonaron en 2024?</h1>
- <div id="visualizacion_eventos"></div>
-</body>
-</div>
-<div class="div6" id="div6">
-    <h1>Los festivales, un caso excepcional en los recintos santiaguinos</h1>
-
-<p>Durante 2024, los 32 festivales que tuvieron lugar en la Región Metropolitana convocaron a un total de 579 artistas, tanto nacionales como sudamericanos y de diferentes rincones del mundo. Para alojar estos eventos, la ciudad de Santiago puso a disposición una variada oferta de recintos de gran capacidad (más de 3.000 personas). En esta nómina figuran nombres conocidos, como son los del Movistar Arena y el Teatro Caupolicán, pero también destacan otros espacios que no fueron diseñados (necesariamente) para eventos musicales. Este es el caso del Club Hípico, el Parque Padre Hurtado, el Espacio Riesco o la nueva Hacienda Lo Aguirre (ex Parque Fisa). En total, once recintos de la Región Metropolitana fueron ocupados para estos fines, en algunas ocasiones más de una vez.</p>
-<p><i>En el siguiente gráfico se puede apreciar la distribución de los artistas que actuaron en Santiago:</i></p>
     
-    <img src="visualizacion-festivales-artistas.png?raw=true" alt="visualizacion-artistas">
+</div>
 
-<p>El Club Hípico, un hipódromo que data de 1869, fue el recinto que más artistas recibió en 2024, con 49 cantantes nacionales, 42 internacionales, 18 músicos latinoamericanos, y una dupla de un artista nacional y otro latinoamericano; es decir, 110 en total. Le siguen el Parque Bicentenario de Cerrillos (109) y la Hacienda Lo Aguirre (109). Si miramos los datos más de cerca, se da la casualidad de que el Club Hípico también fue el espacio que congregó a más artistas internacionales (42); el Parque Bicentenario atrajo la mayor cantidad de intérpretes latinoamericanos (25); y la Hacienda Lo Aguirre alojó el mayor número de artistas nacionales (66). </p>
-<p>Por el contrario, el Estadio Nacional, la primera opción de Shakira para su tour mundial, no figura entre los recintos utilizados para festivales, y el Parque Estadio Nacional apenas tiene protagonismo.</p>
+<div class="chart" id="div5">
+     <h1>Conciertos y festivales: ¿con qué frecuencia sonaron en 2024?</h1>
+    <div id="visualizacion_eventos"></div>
+</div>
+<div class="child">
 
-<p>En Chile, existe la idea de que <a href="https://radio.uchile.cl/2024/03/03/el-deficit-de-salas-en-chile-es-dramatico-productores-de-conciertos-insisten-en-la-falta-de-recintos-para-eventos-culturales/"> los artistas nacionales no tienen las mismas posibilidades que los intérpretes internacionales de acceder a espacios para sus recitales </a>, más aún si son de gran capacidad. Cuando el evento es un festival, la oportunidad pareciera ser más asequible: de los 579 artistas que se presentaron en 2024, 304 fueron nacionales (52,5%). La diferencia con los otros tipos, en términos de cantidad, es significativa: 179 fueron internacionales (30,9%); 95, latinoamericanos (16,4%), y hubo solo una dupla compuesta por un artista latino y otro nacional (0,17%).</p>
+    <div class="pantalla-dividida">
+        <!-- Panel 1: Conciertos -->
+        <div class="panel-expandible">
+            <div class="cabecera">
+            <h1>Los festivales, un caso excepcional en los recintos santiaguinos</h1>
+            <h2>Los casi 600 artistas que se presentaron en Chile el año pasado, en el marco de algún festival, se distribuyeron entre hipódromos, parques, y centros de eventos. El Club Hípico resultó ser el recinto que más intérpretes recibió, mientras que el Movistar Arena fue el que atrajo más festivales. Además, la música nacional predominó en estos encuentros masivos.</h2>
+            <button class="toggle-btn original" data-target="#detalle-conciertos">Ver más ▼</button>
+            </div>
+            <div class="contenido-oculto">
+            </div><!-- fin seccion oculta 1-->
+        </div>
 
-<p> Ahora, también hubo recintos que albergaron más festivales que otros. El Movistar Arena fue el <i>venue</i> donde se realizaron más eventos, con un total de 7. Algunos de ellos fueron The Metal Fest y Fiebre de Cumbia 2024. El Parque Padre Hurtado le sigue de cerca, con 6 festivales, los que incluyen la 9ᵃ temporada de Piknic Electronik y Bierfest Santiago. En tercer lugar, tanto el Club Hípico como el Hipódromo de Chile fueron escenario de 4 espectáculos musicales, como Creamfields 2024 y la Fiesta del Memo por un lado (Club Hípico), y Santiago Rocks junto con Vibra Fest por el otro (Hipódromo de Chile). 
+        <!-- Panel 2: Festivales -->
+        <div class="panel-expandible">
+            <div class="cabecera">
+            <h1>Los acordes que más resonaron en el suelo nacional en 2024</h1>
+            <h2>El interés de la población chilena por los eventos musicales se materializó en la realización de 197 conciertos masivos en la Región Metropolitana durante 2024, destacando artistas de gran envergadura como Luis Miguel, André Rieu o, en la escena nacional, Los Bunkers y Los Tres.</h2>
+            <button class="toggle-btn original" data-target="#detalle-festivales">Ver más ▼</button>
+            </div>
+        </div>
+    </div>
+</div>
+ <div id="zona-detalle" class="zona-detalle">
+    <div id="detalle-conciertos" class="detalle contenido-dinamico">
+        <div class="articulo-texto">
+            <h2>Los festivales, un caso excepcional en los recintos santiaguinos</h2>
+            <p>Durante 2024, los 32 festivales que tuvieron lugar en la Región Metropolitana convocaron a un total de 579 artistas, tanto nacionales como sudamericanos y de diferentes rincones del mundo. Para alojar estos eventos, la ciudad de Santiago puso a disposición una variada oferta de recintos de gran capacidad (más de 3.000 personas). En esta nómina figuran nombres conocidos, como son los del Movistar Arena y el Teatro Caupolicán, pero también destacan otros espacios que no fueron diseñados (necesariamente) para eventos musicales. Este es el caso del Club Hípico, el Parque Padre Hurtado, el Espacio Riesco o la nueva Hacienda Lo Aguirre (ex Parque Fisa). En total, once recintos de la Región Metropolitana fueron ocupados para estos fines, en algunas ocasiones más de una vez.</p>
 
-En la mayoría de los lugares restantes se concretó solo un festival. Hay un caso excepcional, el del Parque Bicentenario de Cerrillos, espacio a cielo abierto donde solo tuvo lugar Lollapalooza 2024, y bastó ese evento para congregar, como se señaló, a 109 artistas. En cuanto a la Hacienda Lo Aguirre, los 109 intérpretes se distribuyeron en dos eventos de música electrónica: Baum Festival y Magik Garden 2024.</p>
-  
+            <p>En el siguiente gráfico se puede apreciar la distribución de los artistas que actuaron en Santiago: </p> 
+        </div>
+        <div class="chart">
+            <img src="visualizacion-festivales-artistas.png?raw=true" alt="visualizacion-artistas">
+        </div>
+        <div class="articulo-texto">
+            <p>El Club Hípico, un hipódromo que data de 1869, fue el recinto que más artistas recibió en 2024, con 49 cantantes nacionales, 42 internacionales, 18 músicos latinoamericanos, y una dupla de un artista nacional y otro latinoamericano; es decir, 110 en total. Le siguen el Parque Bicentenario de Cerrillos (109) y la Hacienda Lo Aguirre (109). Si se aplica este mismo análisis pero por tipo de artista, los nombres se repiten: el Club Hípico congregó a más artistas internacionales (42), en el Parque Bicentenario predominaron los intérpretes latinoamericanos (25), y los artistas nacionales superaron en número a los demás tipos en la Hacienda Lo Aguirre (66). </p>
+
+            <p>En Chile, existe la idea de que<a href="https://radio.uchile.cl/2024/03/03/el-deficit-de-salas-en-chile-es-dramatico-productores-de-conciertos-insisten-en-la-falta-de-recintos-para-eventos-culturales/"> los artistas nacionales no tienen las mismas posibilidades que los intérpretes internacionales de acceder a espacios para sus recitales </a>, más aún si son de gran capacidad. Cuando el evento es un festival, la oportunidad pareciera ser más asequible: de los 579 artistas que se presentaron en 2024, 304 fueron nacionales (52,5%). La diferencia con los otros tipos, en términos de cantidad, es significativa: 179 fueron internacionales (30,9%); 95, latinoamericanos (16,4%), y hubo una dupla compuesta por un artista latino y otro nacional (0,17%).</p>
+
+            <p> Ahora, también hubo recintos que albergaron más festivales que otros. El Movistar Arena fue el venue donde se realizaron más eventos, con un total de 7. Algunos de ellos fueron The Metal Fest y Fiebre de Cumbia 2024. El Parque Padre Hurtado le sigue de cerca, con 6 festivales, los que incluyen a la 9ᵃ temporada de Piknic Electronik y Bierfest Santiago. En tercer lugar, tanto el Club Hípico como el Hipódromo de Chile fueron escenario de 4 espectáculos musicales, como Creamfields 2024 y la Fiesta del Memo por un lado (Club Hípico), y Santiago Rocks junto con Vibra Fest por el otro (Hipódromo de Chile). 
+
+            En la mayoría de los lugares restantes se concretó solo un festival. Hay un caso excepcional, el del Parque Bicentenario de Cerrillos, espacio a cielo abierto donde solamente se realizó Lollapalooza 2024, y bastó ese evento para congregar, como se señaló, a 109 artistas. En cuanto a la Hacienda Lo Aguirre, los 109 intérpretes se distribuyeron en dos eventos de música electrónica: Baum Festival y Magik Garden 2024.</p>
  <div class="highlight-box">
         <p><b>Cuando se trata de eventos esporádicos como los festivales, los grandes recintos que existen en Santiago, especialmente los espacios abiertos, son una alternativa funcional. Pueden albergar a los cientos de artistas y miles de asistentes que demandan estos eventos.</b></p>
     </div>
-    
-<div class="div7" id="div7"> 
-    <h1>Los acordes que más resonaron en el suelo nacional en 2024</h1>
+            <!-- Botón que salta al otro detalle -->
+            <button class="switch-btn" data-target="#detalle-festivales">
+            👩‍🎤 Ahora leer “Festivales” →
+            </button>
+        </div>
+    </div>
+    <div id="detalle-festivales" class="detalle contenido-dinamico">
+        <div class="articulo-texto">    
+             <h2>Los acordes que más resonaron en el suelo nacional en 2024</h2>
+            <p>El público chileno vibró en 2024 con 197 conciertos masivos que respondieron a distintos gustos, abarcando desde la música romántica internacional hasta el rock clásico nacional y la nueva escena urbana.</p>
+            <p>En ese contexto, Los Tres marcaron un hito al convertirse en el artista nacional con más fechas vendidas durante el año pasado en el Movistar Arena, consolidando su vigencia y arrastre popular. Este recinto fue uno de los más utilizados en 2024, albergando más de 10.000 personas durante 112 noches de pura música, siendo noviembre el mes con mayor número de presentaciones (18).</p>
+        </div>
+        <div class="chart">
+            <p> <i>En el siguiente gráfico se puede apreciar el detalle y la distribución de los conciertos que se realizaron en el Movistar Arena.</i></p>
+            <div id=visualizacion_movistar></div>
+        </div>
+        <div class="articulo-texto">
+            <p>El segundo espacio más utilizado fue el Teatro Caupolicán, con 57 conciertos, cifra que quedó muy por debajo del Movistar Arena. Los conciertos realizados en estadios estuvieron mucho más rezagados. El Estadio Nacional y el reciente Parque Estadio Nacional, que se caracterizan por tener las mayores capacidades para asistentes (46.190 y 60.000 personas respectivamente), y que se reservan casi exclusivamente para espectáculos de gran escala, recibieron solo 11 eventos.</p>
 
-    <p>El público chileno vibró en 2024 con 197 conciertos masivos que respondieron a distintos gustos, abarcando desde la música romántica internacional hasta el rock clásico nacional y la nueva escena urbana.</p>
-    <p>En ese contexto, Los Tres marcaron un hito al convertirse en el artista nacional con más fechas vendidas durante el año pasado en el Movistar Arena, consolidando su vigencia y arrastre popular. Este recinto fue uno de los más utilizados en 2024, albergando más de 10.000 personas durante 112 noches de pura música, siendo noviembre el mes con mayor número de presentaciones (18).</p>
+            <p>Aun así, estos conciertos destacaron por el nivel de los artistas que pisaron el escenario, con nombres como Luis Miguel, Los Bunkers e Iron Maiden. Karol G fue la sorpresa del año, no solo representando el género urbano, sino también siendo la única artista femenina solista que se presentó en el Estadio Nacional, y lo hizo no solo con una, sino con tres fechas seguidas en abril.</p>
 
-<p> <i>En el siguiente gráfico se puede apreciar el detalle y la distribución de los conciertos que se realizaron en el Movistar Arena.</i></p>
-<div id=visualizacion_movistar></div>
-<p>El segundo espacio más utilizado fue el Teatro Caupolicán, con 57 conciertos, cifra que quedó muy por debajo del Movistar Arena. Los conciertos realizados en estadios estuvieron mucho más rezagados. El Estadio Nacional y el reciente Parque Estadio Nacional, que se caracterizan por tener las mayores capacidades para asistentes (46.190 y 60.000 personas respectivamente), y que se reservan casi exclusivamente para espectáculos de gran escala, recibieron solo 11 eventos. No obstante, los estadios supieron responder como alternativa para artistas que, por el número de personas que convocan o el tipo de show, requerían otro tipo de escenario.</p>
+            <p>En la misma línea, una de las mayores sorpresas de 2024 fue el protagonismo de la música urbana. Artistas como Emilia, Young Cister o Pablo Chill-E llenaron el Movistar Arena con rapidez, evidenciando el crecimiento sostenido del género en el país. Su presencia en escenarios tradicionalmente ocupados por nombres consagrados confirma el recambio generacional que se está dando en la música en vivo.</p>
+        </div>
+        <div class="chart">
+            <p> <i>En el siguiente gráfico se puede apreciar el detalle de la clasificación de artistas por género musical (agrupados en familias para mejorar la visualización) en los conciertos que se realizaron en Santiago.</i></p>
+            <div id=visualizacion_genero></div>
+        </div>
+        <div class="articulo-texto">
+            <p>De todas maneras, la familia de géneros que más se repitió el plato el año pasado fue el rock, que llenó diversos escenarios. Por ejemplo, dos monstruos del rock, Journey y Deep Purple, tocaron juntos por primera vez el 17 de noviembre en el Estadio Santa Laura. Fue el único concierto realizado en ese recinto. También, otra figura iconica del rock se presentó, no una, sino dos veces en el Movistar Arena. Lenny Kravitz, se presentó con su gira mundial Blue Electric Light Tour 2024 el 4 y 5 de diciembre. El Teatro Caupolicán no se quedó atrás y albergó a reconocidos exponentes como Interpol, Airbag o Congreso, en su concierto conmemorativo de 55 años de trayectoria.</p>
 
-<p>Aun así, estos conciertos destacaron por el nivel de los artistas que pisaron el escenario, con nombres como Luis Miguel, Los Bunkers y Iron Maiden. Karol G fue la sorpresa del año, no solo representando el género urbano, sino también siendo la única artista femenina solista que se presentó en el Estadio Nacional, y lo hizo no solo con una, sino con tres fechas seguidas en abril.</p>
+            <p>Otro dato destacado fue que la mayor concentración de eventos se dio en el segundo semestre del año pasado. En enero, el único evento que se realizó fue el Listening Party de Young Cister en el Movistar Arena y paulatinamente la escena musical fue activándose. Los meses de septiembre, octubre y noviembre fueron lo más agetreados en ese sentido. En el mes de las fiestas patrias, por ejemplo, el violinista y director de orquesta holandés que cautivó a la población chilena durante el Festival de Viña del Mar 2024, André Rieu, se presentó cinco días seguidos en el Movistar.</p>
 
-<p>En la misma línea, una de las mayores sorpresas de 2024 fue el protagonismo de la música urbana. Artistas como Emilia, Young Cister o Pablo Chill-E llenaron el Movistar Arena con rapidez, evidenciando el crecimiento sostenido del género en el país. Su presencia en escenarios tradicionalmente ocupados por nombres consagrados confirma el recambio generacional que se está dando en la música en vivo.</p>
-
-<p> <i>En el siguiente gráfico se puede apreciar el detalle de la clasificación de artistas por género musical (agrupados en familias para mejorar la visualización) en los conciertos que se realizaron en Santiago.</i></p>
-<div id=visualizacion_genero></div>
-<p>De todas maneras, la familia de géneros que más se repitió el plato el año pasado fue el rock, que llenó diversos escenarios. Por ejemplo, dos monstruos del rock, Journey y Deep Purple, tocaron juntos por primera vez el 17 de noviembre en el Estadio Santa Laura. Fue el único concierto realizado en ese recinto. También, otra figura iconica del rock se presentó, no una, sino dos veces en el Movistar Arena. Lenny Kravitz, se presentó con su gira mundial Blue Electric Light Tour 2024 el 4 y 5 de diciembre. El Teatro Caupolicán no se quedó atrás y albergó a reconocidos exponentes como Interpol, Airbag o Congreso, en su concierto conmemorativo de 55 años de trayectoria.</p>
-
-<p>Otro dato destacado fue que la mayor concentración de eventos se dio en el segundo semestre del año pasado. En enero, el único evento que se realizó fue el Listening Party de Young Cister en el Movistar Arena y paulatinamente la escena musical fue activándose. Los meses de septiembre, octubre y noviembre fueron lo más agetreados en ese sentido. En el mes de las fiestas patrias, por ejemplo, el violinista y director de orquesta holandés que cautivó a la población chilena durante el Festival de Viña del Mar 2024, André Rieu, se presentó cinco días seguidos en el Movistar.</p>
-
- <div class="highlight-box">
+            <p>Así, 2024 cerró con una actividad de conciertos que no solo reafirma la fuerte demanda cultural en la capital, sino que también traza un mapa claro de preferencias, hábitos y tendencias del público chileno, que continúa vibrando al ritmo de sus artistas favoritos, tanto nacionales como internacionales, en los espacios consagrados para disfrutar estos eventos, como lo son el Movistar Arena y el Teatro Caupolicán. No obstante, los estadios supieron responder como alternativa para artistas que, por el número de personas que convocan o el tipo de show, requerían otro tipo de escenario.</p> 
+             <div class="highlight-box">
         <p><b>2024 cerró con una actividad de conciertos que no solo reafirma la fuerte demanda cultural en la capital y los gustos del público chileno, sino que consolida al Movistar Arena como el espacio favorito de los artistas y productoras para llevar a cabo esta clase de eventos.</b></p>
     </div>
 
+            <!-- Botón que regresa al primero -->
+            <button class="switch-btn" data-target="#detalle-conciertos">
+            ← Volver a “Conciertos” 🎸
+            </button> 
+        </div>
+    </div>
 </div>
 
-<div class="div8" id="div8">
+<div class="child" id="div6">
+   
+    
+    
+
+</div>
+<div class="child" id="div7"> 
+    
+    
+</div>
+<div class="child" id="div8">
 <h1>Proyecciones de los recintos</h1>
 </div>
 </div>
