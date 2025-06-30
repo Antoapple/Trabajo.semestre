@@ -8630,3 +8630,421 @@ const spec4 = {
 };
 vegaEmbed('#visualizacion_recintosmasivos', spec4).catch(console.error);
 }
+function cargarVisualizacion5() {
+const spec5 = {
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "background": "white",
+  "padding": 5,
+  "width": 300,
+  "height": 300,
+  "title": {
+    "anchor": "middle",
+    "text": "Distribución de artistas por recinto (festivales)",
+    "frame": "group"
+  },
+  "style": "cell",
+  "data": [
+    {
+      "name": "data-2f6cbf7b3231eec62f8c114daf090c9c",
+      "values": [
+        {
+          "Recintos": "Club Hipico",
+          "Tipo de artista": "Internacional",
+          "Cantidad de artistas (2024)": 42
+        },
+        {
+          "Recintos": "Espacio Caren",
+          "Tipo de artista": "Internacional",
+          "Cantidad de artistas (2024)": 0
+        },
+        {
+          "Recintos": "Espacio Riesco",
+          "Tipo de artista": "Internacional",
+          "Cantidad de artistas (2024)": 22
+        },
+        {
+          "Recintos": "Hipodromo Chile",
+          "Tipo de artista": "Internacional",
+          "Cantidad de artistas (2024)": 1
+        },
+        {
+          "Recintos": "Movistar Arena",
+          "Tipo de artista": "Internacional",
+          "Cantidad de artistas (2024)": 13
+        },
+        {
+          "Recintos": "Parque Bicentenario de Cerrillos",
+          "Tipo de artista": "Internacional",
+          "Cantidad de artistas (2024)": 36
+        },
+        {
+          "Recintos": "Parque Ciudad Empresarial",
+          "Tipo de artista": "Internacional",
+          "Cantidad de artistas (2024)": 10
+        },
+        {
+          "Recintos": "Parque Estadio Nacional",
+          "Tipo de artista": "Internacional",
+          "Cantidad de artistas (2024)": 7
+        },
+        {
+          "Recintos": "Parque Fisa (hoy Hacienda Lo Aguirre)",
+          "Tipo de artista": "Internacional",
+          "Cantidad de artistas (2024)": 36
+        },
+        {
+          "Recintos": "Parque Padre Hurtado",
+          "Tipo de artista": "Internacional",
+          "Cantidad de artistas (2024)": 7
+        },
+        {
+          "Recintos": "Teatro Caupolican",
+          "Tipo de artista": "Internacional",
+          "Cantidad de artistas (2024)": 5
+        },
+        {
+          "Recintos": "Club Hipico",
+          "Tipo de artista": "Latinoamericano",
+          "Cantidad de artistas (2024)": 18
+        },
+        {
+          "Recintos": "Espacio Caren",
+          "Tipo de artista": "Latinoamericano",
+          "Cantidad de artistas (2024)": 0
+        },
+        {
+          "Recintos": "Espacio Riesco",
+          "Tipo de artista": "Latinoamericano",
+          "Cantidad de artistas (2024)": 0
+        },
+        {
+          "Recintos": "Hipodromo Chile",
+          "Tipo de artista": "Latinoamericano",
+          "Cantidad de artistas (2024)": 16
+        },
+        {
+          "Recintos": "Movistar Arena",
+          "Tipo de artista": "Latinoamericano",
+          "Cantidad de artistas (2024)": 16
+        },
+        {
+          "Recintos": "Parque Bicentenario de Cerrillos",
+          "Tipo de artista": "Latinoamericano",
+          "Cantidad de artistas (2024)": 25
+        },
+        {
+          "Recintos": "Parque Ciudad Empresarial",
+          "Tipo de artista": "Latinoamericano",
+          "Cantidad de artistas (2024)": 3
+        },
+        {
+          "Recintos": "Parque Estadio Nacional",
+          "Tipo de artista": "Latinoamericano",
+          "Cantidad de artistas (2024)": 0
+        },
+        {
+          "Recintos": "Parque Fisa (hoy Hacienda Lo Aguirre)",
+          "Tipo de artista": "Latinoamericano",
+          "Cantidad de artistas (2024)": 7
+        },
+        {
+          "Recintos": "Parque Padre Hurtado",
+          "Tipo de artista": "Latinoamericano",
+          "Cantidad de artistas (2024)": 10
+        },
+        {
+          "Recintos": "Teatro Caupolican",
+          "Tipo de artista": "Latinoamericano",
+          "Cantidad de artistas (2024)": 0
+        },
+        {
+          "Recintos": "Club Hipico",
+          "Tipo de artista": "Latinoamericano y nacional",
+          "Cantidad de artistas (2024)": 1
+        },
+        {
+          "Recintos": "Espacio Caren",
+          "Tipo de artista": "Latinoamericano y nacional",
+          "Cantidad de artistas (2024)": 0
+        },
+        {
+          "Recintos": "Espacio Riesco",
+          "Tipo de artista": "Latinoamericano y nacional",
+          "Cantidad de artistas (2024)": 0
+        },
+        {
+          "Recintos": "Hipodromo Chile",
+          "Tipo de artista": "Latinoamericano y nacional",
+          "Cantidad de artistas (2024)": 0
+        },
+        {
+          "Recintos": "Movistar Arena",
+          "Tipo de artista": "Latinoamericano y nacional",
+          "Cantidad de artistas (2024)": 0
+        },
+        {
+          "Recintos": "Parque Bicentenario de Cerrillos",
+          "Tipo de artista": "Latinoamericano y nacional",
+          "Cantidad de artistas (2024)": 0
+        },
+        {
+          "Recintos": "Parque Ciudad Empresarial",
+          "Tipo de artista": "Latinoamericano y nacional",
+          "Cantidad de artistas (2024)": 0
+        },
+        {
+          "Recintos": "Parque Estadio Nacional",
+          "Tipo de artista": "Latinoamericano y nacional",
+          "Cantidad de artistas (2024)": 0
+        },
+        {
+          "Recintos": "Parque Fisa (hoy Hacienda Lo Aguirre)",
+          "Tipo de artista": "Latinoamericano y nacional",
+          "Cantidad de artistas (2024)": 0
+        },
+        {
+          "Recintos": "Parque Padre Hurtado",
+          "Tipo de artista": "Latinoamericano y nacional",
+          "Cantidad de artistas (2024)": 0
+        },
+        {
+          "Recintos": "Teatro Caupolican",
+          "Tipo de artista": "Latinoamericano y nacional",
+          "Cantidad de artistas (2024)": 0
+        },
+        {
+          "Recintos": "Club Hipico",
+          "Tipo de artista": "Nacional",
+          "Cantidad de artistas (2024)": 49
+        },
+        {
+          "Recintos": "Espacio Caren",
+          "Tipo de artista": "Nacional",
+          "Cantidad de artistas (2024)": 6
+        },
+        {
+          "Recintos": "Espacio Riesco",
+          "Tipo de artista": "Nacional",
+          "Cantidad de artistas (2024)": 21
+        },
+        {
+          "Recintos": "Hipodromo Chile",
+          "Tipo de artista": "Nacional",
+          "Cantidad de artistas (2024)": 44
+        },
+        {
+          "Recintos": "Movistar Arena",
+          "Tipo de artista": "Nacional",
+          "Cantidad de artistas (2024)": 32
+        },
+        {
+          "Recintos": "Parque Bicentenario de Cerrillos",
+          "Tipo de artista": "Nacional",
+          "Cantidad de artistas (2024)": 48
+        },
+        {
+          "Recintos": "Parque Ciudad Empresarial",
+          "Tipo de artista": "Nacional",
+          "Cantidad de artistas (2024)": 4
+        },
+        {
+          "Recintos": "Parque Estadio Nacional",
+          "Tipo de artista": "Nacional",
+          "Cantidad de artistas (2024)": 4
+        },
+        {
+          "Recintos": "Parque Fisa (hoy Hacienda Lo Aguirre)",
+          "Tipo de artista": "Nacional",
+          "Cantidad de artistas (2024)": 66
+        },
+        {
+          "Recintos": "Parque Padre Hurtado",
+          "Tipo de artista": "Nacional",
+          "Cantidad de artistas (2024)": 29
+        },
+        {
+          "Recintos": "Teatro Caupolican",
+          "Tipo de artista": "Nacional",
+          "Cantidad de artistas (2024)": 1
+        }
+      ]
+    },
+    {
+      "name": "data_0",
+      "source": "data-2f6cbf7b3231eec62f8c114daf090c9c",
+      "transform": [
+        {
+          "type": "stack",
+          "groupby": ["Recintos"],
+          "field": "Cantidad de artistas (2024)",
+          "sort": {"field": ["Tipo de artista"], "order": ["descending"]},
+          "as": [
+            "Cantidad de artistas (2024)_start",
+            "Cantidad de artistas (2024)_end"
+          ],
+          "offset": "zero"
+        },
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"Cantidad de artistas (2024)\"]) && isFinite(+datum[\"Cantidad de artistas (2024)\"])"
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "type": "group",
+      "from": {
+        "facet": {
+          "data": "data_0",
+          "name": "stack_group_main",
+          "groupby": ["Recintos"],
+          "aggregate": {
+            "fields": [
+              "Cantidad de artistas (2024)_start",
+              "Cantidad de artistas (2024)_start",
+              "Cantidad de artistas (2024)_end",
+              "Cantidad de artistas (2024)_end"
+            ],
+            "ops": ["min", "max", "min", "max"]
+          }
+        }
+      },
+      "encode": {
+        "update": {
+          "x": {"scale": "x", "field": "Recintos"},
+          "width": {"signal": "max(0.25, bandwidth('x'))"},
+          "y": {
+            "signal": "min(scale('y',datum[\"min_Cantidad de artistas (2024)_start\"]),scale('y',datum[\"max_Cantidad de artistas (2024)_start\"]),scale('y',datum[\"min_Cantidad de artistas (2024)_end\"]),scale('y',datum[\"max_Cantidad de artistas (2024)_end\"]))"
+          },
+          "y2": {
+            "signal": "max(scale('y',datum[\"min_Cantidad de artistas (2024)_start\"]),scale('y',datum[\"max_Cantidad de artistas (2024)_start\"]),scale('y',datum[\"min_Cantidad de artistas (2024)_end\"]),scale('y',datum[\"max_Cantidad de artistas (2024)_end\"]))"
+          },
+          "clip": {"value": true},
+          "cornerRadiusTopLeft": {"value": 3},
+          "cornerRadiusTopRight": {"value": 3}
+        }
+      },
+      "marks": [
+        {
+          "type": "group",
+          "encode": {
+            "update": {
+              "y": {"field": {"group": "y"}, "mult": -1},
+              "width": {"field": {"group": "width"}}
+            }
+          },
+          "marks": [
+            {
+              "name": "marks",
+              "type": "rect",
+              "style": ["bar"],
+              "from": {"data": "stack_group_main"},
+              "encode": {
+                "update": {
+                  "fill": {"scale": "color", "field": "Tipo de artista"},
+                  "ariaRoleDescription": {"value": "bar"},
+                  "description": {
+                    "signal": "\"Recintos: \" + (isValid(datum[\"Recintos\"]) ? datum[\"Recintos\"] : \"\"+datum[\"Recintos\"]) + \"; Cantidad de artistas (2024): \" + (format(datum[\"Cantidad de artistas (2024)\"], \"\")) + \"; Tipo de artista: \" + (isValid(datum[\"Tipo de artista\"]) ? datum[\"Tipo de artista\"] : \"\"+datum[\"Tipo de artista\"])"
+                  },
+                  "width": {"field": {"group": "width"}},
+                  "y": {
+                    "scale": "y",
+                    "field": "Cantidad de artistas (2024)_end"
+                  },
+                  "y2": {
+                    "scale": "y",
+                    "field": "Cantidad de artistas (2024)_start"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "band",
+      "domain": {"data": "data_0", "field": "Recintos", "sort": true},
+      "range": [0, {"signal": "width"}],
+      "paddingInner": 0.1,
+      "paddingOuter": 0.05
+    },
+    {
+      "name": "y",
+      "type": "linear",
+      "domain": {
+        "data": "data_0",
+        "fields": [
+          "Cantidad de artistas (2024)_start",
+          "Cantidad de artistas (2024)_end"
+        ]
+      },
+      "range": [{"signal": "height"}, 0],
+      "nice": true,
+      "zero": true
+    },
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": [
+        "Internacional",
+        "Latinoamericano",
+        "Latinoamericano y nacional",
+        "Nacional"
+      ],
+      "range": ["#FF5187", "#A34EA0", "#F4F0CD", "#3F4270"]
+    }
+  ],
+  "axes": [
+    {
+      "scale": "y",
+      "orient": "left",
+      "gridScale": "x",
+      "grid": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "domain": false,
+      "labels": false,
+      "aria": false,
+      "maxExtent": 0,
+      "minExtent": 0,
+      "ticks": false,
+      "zindex": 0
+    },
+    {
+      "scale": "x",
+      "orient": "bottom",
+      "grid": false,
+      "title": "Recintos",
+      "labelAlign": "right",
+      "labelAngle": 270,
+      "labelBaseline": "middle",
+      "zindex": 0
+    },
+    {
+      "scale": "y",
+      "orient": "left",
+      "grid": false,
+      "title": "Cantidad de artistas (2024)",
+      "labelOverlap": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "zindex": 0
+    }
+  ],
+  "legends": [
+    {"fill": "color", "symbolType": "square", "title": "Tipo de artista"}
+  ],
+  "config": {
+    "axis": {"domain": false, "labelFontSize": 10, "titleFontSize": 11},
+    "style": {
+      "cell": {"strokeWidth": 0},
+      "group-title": {"align": "center"},
+      "group-subtitle": {"align": "center"}
+    }
+  }
+};
+vegaEmbed('#visualizacion_festivales', spec5).catch(console.error);
+}
