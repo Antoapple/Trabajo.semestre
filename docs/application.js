@@ -7216,42 +7216,815 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function cargarVisualizacion2() {
 const spec2 = {
-   "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
   "background": "white",
   "padding": 5,
-  "width": 480,
-  "height": 250,
+  "width": 700,
+  "height": 350,
   "title": {
-    "text": "Conciertos mensuales en el Movistar Arena (2024)",
+    "text": "Mapa de calor diario: Conciertos realizados en el Movistar Arena en 2024",
     "frame": "group"
   },
   "style": "cell",
   "data": [
     {
-      "name": "data-02b3ee1e0d952d2de759826c1d0909e8",
+      "name": "data-16a99451047ef1ce9c2a850b0ac3169b",
       "values": [
-        {"Mes_num": 1, "Mes": "Enero", "Conciertos": 1},
-        {"Mes_num": 2, "Mes": "Febrero", "Conciertos": 5},
-        {"Mes_num": 3, "Mes": "Marzo", "Conciertos": 6},
-        {"Mes_num": 4, "Mes": "Abril", "Conciertos": 17},
-        {"Mes_num": 5, "Mes": "Mayo", "Conciertos": 9},
-        {"Mes_num": 6, "Mes": "Junio", "Conciertos": 6},
-        {"Mes_num": 7, "Mes": "Julio", "Conciertos": 6},
-        {"Mes_num": 8, "Mes": "Agosto", "Conciertos": 8},
-        {"Mes_num": 9, "Mes": "Septiembre", "Conciertos": 16},
-        {"Mes_num": 10, "Mes": "Octubre", "Conciertos": 6},
-        {"Mes_num": 11, "Mes": "Noviembre", "Conciertos": 18},
-        {"Mes_num": 12, "Mes": "Diciembre", "Conciertos": 14}
+        {
+          "Fecha": "2024-01-17T00:00:00",
+          "Día": 17,
+          "Mes_num": 1,
+          "Mes": "Enero",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-02-20T00:00:00",
+          "Día": 20,
+          "Mes_num": 2,
+          "Mes": "Febrero",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-02-25T00:00:00",
+          "Día": 25,
+          "Mes_num": 2,
+          "Mes": "Febrero",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-02-27T00:00:00",
+          "Día": 27,
+          "Mes_num": 2,
+          "Mes": "Febrero",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-02-28T00:00:00",
+          "Día": 28,
+          "Mes_num": 2,
+          "Mes": "Febrero",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-02-29T00:00:00",
+          "Día": 29,
+          "Mes_num": 2,
+          "Mes": "Febrero",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-03-02T00:00:00",
+          "Día": 2,
+          "Mes_num": 3,
+          "Mes": "Marzo",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-03-07T00:00:00",
+          "Día": 7,
+          "Mes_num": 3,
+          "Mes": "Marzo",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-03-08T00:00:00",
+          "Día": 8,
+          "Mes_num": 3,
+          "Mes": "Marzo",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-03-09T00:00:00",
+          "Día": 9,
+          "Mes_num": 3,
+          "Mes": "Marzo",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-03-20T00:00:00",
+          "Día": 20,
+          "Mes_num": 3,
+          "Mes": "Marzo",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-03-21T00:00:00",
+          "Día": 21,
+          "Mes_num": 3,
+          "Mes": "Marzo",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-04-04T00:00:00",
+          "Día": 4,
+          "Mes_num": 4,
+          "Mes": "Abril",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-04-05T00:00:00",
+          "Día": 5,
+          "Mes_num": 4,
+          "Mes": "Abril",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-04-06T00:00:00",
+          "Día": 6,
+          "Mes_num": 4,
+          "Mes": "Abril",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-04-09T00:00:00",
+          "Día": 9,
+          "Mes_num": 4,
+          "Mes": "Abril",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-04-10T00:00:00",
+          "Día": 10,
+          "Mes_num": 4,
+          "Mes": "Abril",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-04-11T00:00:00",
+          "Día": 11,
+          "Mes_num": 4,
+          "Mes": "Abril",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-04-12T00:00:00",
+          "Día": 12,
+          "Mes_num": 4,
+          "Mes": "Abril",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-04-13T00:00:00",
+          "Día": 13,
+          "Mes_num": 4,
+          "Mes": "Abril",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-04-14T00:00:00",
+          "Día": 14,
+          "Mes_num": 4,
+          "Mes": "Abril",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-04-15T00:00:00",
+          "Día": 15,
+          "Mes_num": 4,
+          "Mes": "Abril",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-04-16T00:00:00",
+          "Día": 16,
+          "Mes_num": 4,
+          "Mes": "Abril",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-04-18T00:00:00",
+          "Día": 18,
+          "Mes_num": 4,
+          "Mes": "Abril",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-04-22T00:00:00",
+          "Día": 22,
+          "Mes_num": 4,
+          "Mes": "Abril",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-04-26T00:00:00",
+          "Día": 26,
+          "Mes_num": 4,
+          "Mes": "Abril",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-04-27T00:00:00",
+          "Día": 27,
+          "Mes_num": 4,
+          "Mes": "Abril",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-04-28T00:00:00",
+          "Día": 28,
+          "Mes_num": 4,
+          "Mes": "Abril",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-04-30T00:00:00",
+          "Día": 30,
+          "Mes_num": 4,
+          "Mes": "Abril",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-05-01T00:00:00",
+          "Día": 1,
+          "Mes_num": 5,
+          "Mes": "Mayo",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-05-06T00:00:00",
+          "Día": 6,
+          "Mes_num": 5,
+          "Mes": "Mayo",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-05-11T00:00:00",
+          "Día": 11,
+          "Mes_num": 5,
+          "Mes": "Mayo",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-05-12T00:00:00",
+          "Día": 12,
+          "Mes_num": 5,
+          "Mes": "Mayo",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-05-14T00:00:00",
+          "Día": 14,
+          "Mes_num": 5,
+          "Mes": "Mayo",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-05-16T00:00:00",
+          "Día": 16,
+          "Mes_num": 5,
+          "Mes": "Mayo",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-05-17T00:00:00",
+          "Día": 17,
+          "Mes_num": 5,
+          "Mes": "Mayo",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-05-18T00:00:00",
+          "Día": 18,
+          "Mes_num": 5,
+          "Mes": "Mayo",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-05-23T00:00:00",
+          "Día": 23,
+          "Mes_num": 5,
+          "Mes": "Mayo",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-06-05T00:00:00",
+          "Día": 5,
+          "Mes_num": 6,
+          "Mes": "Junio",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-06-07T00:00:00",
+          "Día": 7,
+          "Mes_num": 6,
+          "Mes": "Junio",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-06-08T00:00:00",
+          "Día": 8,
+          "Mes_num": 6,
+          "Mes": "Junio",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-06-27T00:00:00",
+          "Día": 27,
+          "Mes_num": 6,
+          "Mes": "Junio",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-06-28T00:00:00",
+          "Día": 28,
+          "Mes_num": 6,
+          "Mes": "Junio",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-06-30T00:00:00",
+          "Día": 30,
+          "Mes_num": 6,
+          "Mes": "Junio",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-07-02T00:00:00",
+          "Día": 2,
+          "Mes_num": 7,
+          "Mes": "Julio",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-07-05T00:00:00",
+          "Día": 5,
+          "Mes_num": 7,
+          "Mes": "Julio",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-07-06T00:00:00",
+          "Día": 6,
+          "Mes_num": 7,
+          "Mes": "Julio",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-07-18T00:00:00",
+          "Día": 18,
+          "Mes_num": 7,
+          "Mes": "Julio",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-07-26T00:00:00",
+          "Día": 26,
+          "Mes_num": 7,
+          "Mes": "Julio",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-07-27T00:00:00",
+          "Día": 27,
+          "Mes_num": 7,
+          "Mes": "Julio",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-08-15T00:00:00",
+          "Día": 15,
+          "Mes_num": 8,
+          "Mes": "Agosto",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-08-16T00:00:00",
+          "Día": 16,
+          "Mes_num": 8,
+          "Mes": "Agosto",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-08-17T00:00:00",
+          "Día": 17,
+          "Mes_num": 8,
+          "Mes": "Agosto",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-08-18T00:00:00",
+          "Día": 18,
+          "Mes_num": 8,
+          "Mes": "Agosto",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-08-21T00:00:00",
+          "Día": 21,
+          "Mes_num": 8,
+          "Mes": "Agosto",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-08-24T00:00:00",
+          "Día": 24,
+          "Mes_num": 8,
+          "Mes": "Agosto",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-08-29T00:00:00",
+          "Día": 29,
+          "Mes_num": 8,
+          "Mes": "Agosto",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-08-30T00:00:00",
+          "Día": 30,
+          "Mes_num": 8,
+          "Mes": "Agosto",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-09-01T00:00:00",
+          "Día": 1,
+          "Mes_num": 9,
+          "Mes": "Septiembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-09-02T00:00:00",
+          "Día": 2,
+          "Mes_num": 9,
+          "Mes": "Septiembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-09-05T00:00:00",
+          "Día": 5,
+          "Mes_num": 9,
+          "Mes": "Septiembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-09-09T00:00:00",
+          "Día": 9,
+          "Mes_num": 9,
+          "Mes": "Septiembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-09-11T00:00:00",
+          "Día": 11,
+          "Mes_num": 9,
+          "Mes": "Septiembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-09-12T00:00:00",
+          "Día": 12,
+          "Mes_num": 9,
+          "Mes": "Septiembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-09-13T00:00:00",
+          "Día": 13,
+          "Mes_num": 9,
+          "Mes": "Septiembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-09-14T00:00:00",
+          "Día": 14,
+          "Mes_num": 9,
+          "Mes": "Septiembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-09-15T00:00:00",
+          "Día": 15,
+          "Mes_num": 9,
+          "Mes": "Septiembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-09-23T00:00:00",
+          "Día": 23,
+          "Mes_num": 9,
+          "Mes": "Septiembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-09-24T00:00:00",
+          "Día": 24,
+          "Mes_num": 9,
+          "Mes": "Septiembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-09-26T00:00:00",
+          "Día": 26,
+          "Mes_num": 9,
+          "Mes": "Septiembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-09-27T00:00:00",
+          "Día": 27,
+          "Mes_num": 9,
+          "Mes": "Septiembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-09-28T00:00:00",
+          "Día": 28,
+          "Mes_num": 9,
+          "Mes": "Septiembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-09-29T00:00:00",
+          "Día": 29,
+          "Mes_num": 9,
+          "Mes": "Septiembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-09-30T00:00:00",
+          "Día": 30,
+          "Mes_num": 9,
+          "Mes": "Septiembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-10-03T00:00:00",
+          "Día": 3,
+          "Mes_num": 10,
+          "Mes": "Octubre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-10-04T00:00:00",
+          "Día": 4,
+          "Mes_num": 10,
+          "Mes": "Octubre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-10-05T00:00:00",
+          "Día": 5,
+          "Mes_num": 10,
+          "Mes": "Octubre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-10-06T00:00:00",
+          "Día": 6,
+          "Mes_num": 10,
+          "Mes": "Octubre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-10-10T00:00:00",
+          "Día": 10,
+          "Mes_num": 10,
+          "Mes": "Octubre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-10-11T00:00:00",
+          "Día": 11,
+          "Mes_num": 10,
+          "Mes": "Octubre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-11-07T00:00:00",
+          "Día": 7,
+          "Mes_num": 11,
+          "Mes": "Noviembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-11-08T00:00:00",
+          "Día": 8,
+          "Mes_num": 11,
+          "Mes": "Noviembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-11-09T00:00:00",
+          "Día": 9,
+          "Mes_num": 11,
+          "Mes": "Noviembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-11-10T00:00:00",
+          "Día": 10,
+          "Mes_num": 11,
+          "Mes": "Noviembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-11-11T00:00:00",
+          "Día": 11,
+          "Mes_num": 11,
+          "Mes": "Noviembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-11-12T00:00:00",
+          "Día": 12,
+          "Mes_num": 11,
+          "Mes": "Noviembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-11-13T00:00:00",
+          "Día": 13,
+          "Mes_num": 11,
+          "Mes": "Noviembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-11-14T00:00:00",
+          "Día": 14,
+          "Mes_num": 11,
+          "Mes": "Noviembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-11-15T00:00:00",
+          "Día": 15,
+          "Mes_num": 11,
+          "Mes": "Noviembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-11-16T00:00:00",
+          "Día": 16,
+          "Mes_num": 11,
+          "Mes": "Noviembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-11-19T00:00:00",
+          "Día": 19,
+          "Mes_num": 11,
+          "Mes": "Noviembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-11-20T00:00:00",
+          "Día": 20,
+          "Mes_num": 11,
+          "Mes": "Noviembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-11-21T00:00:00",
+          "Día": 21,
+          "Mes_num": 11,
+          "Mes": "Noviembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-11-23T00:00:00",
+          "Día": 23,
+          "Mes_num": 11,
+          "Mes": "Noviembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-11-24T00:00:00",
+          "Día": 24,
+          "Mes_num": 11,
+          "Mes": "Noviembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-11-25T00:00:00",
+          "Día": 25,
+          "Mes_num": 11,
+          "Mes": "Noviembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-11-26T00:00:00",
+          "Día": 26,
+          "Mes_num": 11,
+          "Mes": "Noviembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-11-28T00:00:00",
+          "Día": 28,
+          "Mes_num": 11,
+          "Mes": "Noviembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-12-01T00:00:00",
+          "Día": 1,
+          "Mes_num": 12,
+          "Mes": "Diciembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-12-02T00:00:00",
+          "Día": 2,
+          "Mes_num": 12,
+          "Mes": "Diciembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-12-04T00:00:00",
+          "Día": 4,
+          "Mes_num": 12,
+          "Mes": "Diciembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-12-05T00:00:00",
+          "Día": 5,
+          "Mes_num": 12,
+          "Mes": "Diciembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-12-06T00:00:00",
+          "Día": 6,
+          "Mes_num": 12,
+          "Mes": "Diciembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-12-09T00:00:00",
+          "Día": 9,
+          "Mes_num": 12,
+          "Mes": "Diciembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-12-10T00:00:00",
+          "Día": 10,
+          "Mes_num": 12,
+          "Mes": "Diciembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-12-13T00:00:00",
+          "Día": 13,
+          "Mes_num": 12,
+          "Mes": "Diciembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-12-14T00:00:00",
+          "Día": 14,
+          "Mes_num": 12,
+          "Mes": "Diciembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-12-15T00:00:00",
+          "Día": 15,
+          "Mes_num": 12,
+          "Mes": "Diciembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-12-19T00:00:00",
+          "Día": 19,
+          "Mes_num": 12,
+          "Mes": "Diciembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-12-20T00:00:00",
+          "Día": 20,
+          "Mes_num": 12,
+          "Mes": "Diciembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-12-21T00:00:00",
+          "Día": 21,
+          "Mes_num": 12,
+          "Mes": "Diciembre",
+          "Conciertos": 1
+        },
+        {
+          "Fecha": "2024-12-22T00:00:00",
+          "Día": 22,
+          "Mes_num": 12,
+          "Mes": "Diciembre",
+          "Conciertos": 1
+        }
       ]
     },
     {
       "name": "data_0",
-      "source": "data-02b3ee1e0d952d2de759826c1d0909e8",
+      "source": "data-16a99451047ef1ce9c2a850b0ac3169b",
       "transform": [
+        {"type": "formula", "expr": "toDate(datum[\"Fecha\"])", "as": "Fecha"},
         {
           "type": "formula",
           "expr": "datum[\"Mes\"]===\"Enero\" ? 0 : datum[\"Mes\"]===\"Febrero\" ? 1 : datum[\"Mes\"]===\"Marzo\" ? 2 : datum[\"Mes\"]===\"Abril\" ? 3 : datum[\"Mes\"]===\"Mayo\" ? 4 : datum[\"Mes\"]===\"Junio\" ? 5 : datum[\"Mes\"]===\"Julio\" ? 6 : datum[\"Mes\"]===\"Agosto\" ? 7 : datum[\"Mes\"]===\"Septiembre\" ? 8 : datum[\"Mes\"]===\"Octubre\" ? 9 : datum[\"Mes\"]===\"Noviembre\" ? 10 : datum[\"Mes\"]===\"Diciembre\" ? 11 : 12",
-          "as": "x_Mes_sort_index"
+          "as": "y_Mes_sort_index"
         }
       ]
     },
@@ -7268,46 +8041,23 @@ const spec2 = {
   ],
   "marks": [
     {
-      "name": "layer_0_marks",
-      "type": "line",
-      "style": ["line"],
-      "sort": {"field": "x"},
-      "from": {"data": "data_0"},
-      "encode": {
-        "update": {
-          "stroke": {"value": "#49007E"},
-          "tooltip": {
-            "signal": "{\"Mes\": isValid(datum[\"Mes\"]) ? datum[\"Mes\"] : \"\"+datum[\"Mes\"], \"Conciertos\": format(datum[\"Conciertos\"], \"\")}"
-          },
-          "description": {
-            "signal": "\"Mes: \" + (isValid(datum[\"Mes\"]) ? datum[\"Mes\"] : \"\"+datum[\"Mes\"]) + \"; Cantidad de conciertos: \" + (format(datum[\"Conciertos\"], \"\")) + \"; Conciertos: \" + (format(datum[\"Conciertos\"], \"\"))"
-          },
-          "x": {"scale": "x", "field": "Mes"},
-          "y": {"scale": "y", "field": "Conciertos"},
-          "defined": {
-            "signal": "isValid(datum[\"Conciertos\"]) && isFinite(+datum[\"Conciertos\"])"
-          }
-        }
-      }
-    },
-    {
-      "name": "layer_1_marks",
-      "type": "symbol",
-      "style": ["point"],
+      "name": "marks",
+      "type": "rect",
+      "style": ["rect"],
       "from": {"data": "data_1"},
       "encode": {
         "update": {
-          "opacity": {"value": 1},
-          "fill": {"value": "#4c78a8"},
+          "fill": {"scale": "color", "field": "Conciertos"},
           "tooltip": {
-            "signal": "{\"Mes\": isValid(datum[\"Mes\"]) ? datum[\"Mes\"] : \"\"+datum[\"Mes\"], \"Conciertos\": format(datum[\"Conciertos\"], \"\")}"
+            "signal": "{\"Fecha\": timeFormat(datum[\"Fecha\"], '%b %d, %Y'), \"Conciertos\": format(datum[\"Conciertos\"], \"\")}"
           },
-          "ariaRoleDescription": {"value": "point"},
           "description": {
-            "signal": "\"Mes: \" + (isValid(datum[\"Mes\"]) ? datum[\"Mes\"] : \"\"+datum[\"Mes\"]) + \"; Cantidad de conciertos: \" + (format(datum[\"Conciertos\"], \"\")) + \"; Conciertos: \" + (format(datum[\"Conciertos\"], \"\"))"
+            "signal": "\"Día del mes: \" + (isValid(datum[\"Día\"]) ? datum[\"Día\"] : \"\"+datum[\"Día\"]) + \"; Mes: \" + (isValid(datum[\"Mes\"]) ? datum[\"Mes\"] : \"\"+datum[\"Mes\"]) + \"; Conciertos: \" + (format(datum[\"Conciertos\"], \"\")) + \"; Fecha: \" + (timeFormat(datum[\"Fecha\"], '%b %d, %Y'))"
           },
-          "x": {"scale": "x", "field": "Mes"},
-          "y": {"scale": "y", "field": "Conciertos"}
+          "x": {"scale": "x", "field": "Día"},
+          "width": {"signal": "max(0.25, bandwidth('x'))"},
+          "y": {"scale": "y", "field": "Mes"},
+          "height": {"signal": "max(0.25, bandwidth('y'))"}
         }
       }
     }
@@ -7315,64 +8065,60 @@ const spec2 = {
   "scales": [
     {
       "name": "x",
-      "type": "point",
-      "domain": {
-        "data": "data_0",
-        "field": "Mes",
-        "sort": {"op": "min", "field": "x_Mes_sort_index"}
-      },
+      "type": "band",
+      "domain": {"data": "data_1", "field": "Día", "sort": true},
       "range": [0, {"signal": "width"}],
-      "padding": 0.5
+      "paddingInner": 0,
+      "paddingOuter": 0
     },
     {
       "name": "y",
-      "type": "linear",
+      "type": "band",
       "domain": {
-        "fields": [
-          {"data": "data_0", "field": "Conciertos"},
-          {"data": "data_1", "field": "Conciertos"}
-        ]
+        "data": "data_0",
+        "field": "Mes",
+        "sort": {"op": "min", "field": "y_Mes_sort_index"}
       },
-      "range": [{"signal": "height"}, 0],
-      "nice": true,
-      "zero": true
+      "range": [0, {"signal": "height"}],
+      "paddingInner": 0,
+      "paddingOuter": 0
+    },
+    {
+      "name": "color",
+      "type": "linear",
+      "domain": [1, 1],
+      "range": [
+        "#ffe6f0",
+        "#ff99b5",
+        "#ff4c84",
+        "#ff005b",
+        "#cc0049",
+        "#80002f"
+      ],
+      "interpolate": "hcl",
+      "zero": false
     }
   ],
   "axes": [
     {
-      "scale": "y",
-      "orient": "left",
-      "gridScale": "x",
-      "grid": true,
-      "tickCount": {"signal": "ceil(height/40)"},
-      "domain": false,
-      "labels": false,
-      "aria": false,
-      "maxExtent": 0,
-      "minExtent": 0,
-      "ticks": false,
-      "zindex": 0
-    },
-    {
       "scale": "x",
       "orient": "bottom",
       "grid": false,
-      "title": "Mes",
-      "labelAlign": "right",
-      "labelAngle": 270,
-      "labelBaseline": "middle",
-      "zindex": 0
+      "title": "Día del mes",
+      "labelAngle": 0,
+      "labelBaseline": "top",
+      "zindex": 1
     },
+    {"scale": "y", "orient": "left", "grid": false, "title": "Mes", "zindex": 1}
+  ],
+  "legends": [
     {
-      "scale": "y",
-      "orient": "left",
-      "grid": false,
-      "title": "Cantidad de conciertos",
-      "labelOverlap": true,
-      "tickCount": {"signal": "ceil(height/40)"},
-      "zindex": 0
+      "title": "Conciertos",
+      "fill": "color",
+      "gradientLength": {"signal": "clamp(height, 64, 200)"}
     }
-  ]
+  ],
+  "config": {"style": {"cell": {"stroke": null}}}
 }
 vegaEmbed('#visualizacion_movistar', spec2).then(result => {
       // gráfico 2 insertado
