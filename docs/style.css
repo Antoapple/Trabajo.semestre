@@ -10,6 +10,13 @@ min-height: 1020px; /* Altura mínima para asegurar que se muestre bien */
 padding-bottom: 60px
 }
 
+a:link {
+  color: white;
+}
+a:hover {
+  color: blue;
+}
+
 header {
     display: flex;
     align-items: center;
