@@ -694,3 +694,49 @@ body widget .-bold {
 .carousel__content span.liked {
   color: #C61608;
 }
+
+/*Este es el collage*/
+.masonry-container {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  grid-column: 1/9;
+}
+.masonry {
+  column-count: 2;
+  column-gap: 5px;
+}
+@media (min-width: 768px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+@media (min-width: 992px) {
+  .masonry {
+    column-count: 4;
+  }
+}
+@media (min-width: 1199px) {
+  .masonry {
+    column-count: 5;
+  }
+}
+.masonry .brick {
+  box-sizing: border-box;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+  counter-increment: brick-counter;
+}
+.masonry img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.masonry img:hover {animation:zoom 2s ease-in-out alternate; 
+                     transition:transform 1s ease}
+@keyframes zoom {                     
+0%   { transform: scale(0.9);    }   /* ← mismo valor que en :hover */
+50%,
+100%  { transform: scale(1.15); }    
+}
