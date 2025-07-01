@@ -748,8 +748,8 @@ body widget .-bold {
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            width: 300px; /* Ancho fijo para los recuadros */
-            height: 200px; /* Altura fija para los recuadros */
+            width: 350px; /* Ancho fijo para los recuadros */
+            height: 150px; /* Altura fija para los recuadros */
             display: inline-flex;
             flex-direction: column-reverse;
             justify-content: center;
