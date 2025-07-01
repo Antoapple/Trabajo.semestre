@@ -31,6 +31,12 @@ header {
     align-items: center;
 }
 
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.8em;
+    color:#49007E;
+}
 
 nav {
     display: flex;
