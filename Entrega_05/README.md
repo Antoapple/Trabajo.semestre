@@ -6,7 +6,8 @@
 
 # 4. Tabla de autoria
 
-| Nombre           | Rol en el proyecto                                |
-|------------------|----------------------------------------------------|
-| Analía Ortega    | Investigación, redacción del texto, edición final |
-| Luciana Gónzalez | Visualización de datos, entrevistas, diseño web   |
+| Elemento | Antonia Appelgren | Luciana Gónzalez | Analía Ortega |
+|:---------|:-------------|:-------------|:-------------|
+| A        |              |              |              |
+| B        |              |              |              |
+| C        |              |              |              |
