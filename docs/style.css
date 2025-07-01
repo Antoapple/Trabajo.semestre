@@ -74,6 +74,15 @@ h3 {
 p {
     font-family: "Noto Serif Thai", sans-serif;
     color:#f9f6f1;
+     a {
+      color: white;
+    }
+    a:hover {
+      color: blue; 
+    }
+    a:visited {
+      color: purple; 
+    }
 }
 
 /* Espacio para el contenido bajo el header fijo */
