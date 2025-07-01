@@ -1,3 +1,4 @@
+
 // Carrusel
 $( document ).ready(function() {
     let prevSlide = null;
@@ -48,103 +49,26 @@ $( document ).ready(function() {
   
 });
 
-var words = [{
-    id: 1,
-    word: 'Forelsket',
-    image: 'https://cataas.com/cat',
-    language: 'Norwegian',
-    description: 'The indescribable euphoria experienced as you begin to fall in love.'
-  }, {
-    word: 'Saudade',
-    image: 'https://i.natgeofe.com/n/4cebbf38-5df4-4ed0-864a-4ebeb64d33a4/NationalGeographic_1468962_16x9.jpg',
-    language: 'Portuguese',
-    description: 'A bitter-sweet melancholic yearning for something beautiful that is now gone.'
-  }];
-  
-  var body = document.body,
-      card = document.getElementById('card'),
-      cardWord = document.getElementById('word'),
-      cardImage = document.getElementById('card-image'),
-      cardLang = document.getElementById('language'),
-      cardDesc = document.getElementById('card-description'),
-      lastBtn = document.getElementById('last'),
-      nextBtn = document.getElementById('next'),
-      i = 0,
-      numWords = words.length,
-      cardUrl = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/380275/lightpaperfibers.png',
-      cardImg = new Image();
-  
-  cardWord.textContent = words[i].word;
-  cardImage.src = words[i].image;
-  cardLang.textContent = words[i].language;
-  cardDesc.textContent = words[i].description;
-  
-  cardImg.onload = function() {
-    card.style.background = "#FFF url(" + cardUrl + ") repeat fixed center";
-  }
-  cardImg.src = cardUrl;
-  
-  document.onkeydown = checkKey;
-  function checkKey(e) {
-    e = e || window.event;
-    if (e.keyCode == '37') {
-      goLeft();
-    } else if (e.keyCode == '39') {
-      goRight();
-    }
-  }
-  lastBtn.addEventListener("click", function(e) {
-    goLeft();
-  }, false);
-  nextBtn.addEventListener("click", function(e) {
-    goRight();
-  }, false);
-  
-  function goLeft() {
-    if (i > 0)
-      i--;
-    else
-      i = numWords - 1;
-    changeCard();
-  }
-  
-  function goRight() {
-    if (i < numWords - 1)
-      i++;
-    else
-      i = 0;
-    changeCard();
-  }
-  
-  function changeCard() {
-    setTimeout(loadCard, 900);
-    card.className += " fadeout";
-    body.className += " fadeout";
-  }
-  
-  function loadCard() {
-    removeClass(card, "fadeout");
-    cardWord.textContent = words[i].word;
-    cardImage.src = words[i].image;
-    cardLang.textContent = words[i].language;
-    cardDesc.textContent = words[i].description;
-  }
-  
-  //Function to easily remove classes, it takes two parameters: 
-  //1. The element to have a class removed
-  //2. The name of the class we want to remove from our element
-  function removeClass(el, _class) {
-    //Check if the element exists, 
-    //if it has a class,
-    //& specifically if it has the class we want to remove
-    if (el && el.className && el.className.indexOf(_class) >= 0) {
-      //Find the class to be removed (including any white space around it) using a regex search pattern
-      var pattern = new RegExp('\\s*' + _class + '\\s*');
-      //Replace that search with white space, therefore removing the class 
-      el.className = el.className.replace(pattern, ' ');
-    }
-  }
-  
+document.addEventListener("DOMContentLoaded", () => {
+  /* (3) bloquea scroll mientras la cover vive */
+  document.body.classList.add("cover-activa");
+
+  const cover  = document.getElementById("landing-cover");
+
+  /* función para ocultar con animación y luego limpiar */
+  const ocultarCover = () => {
+    cover.classList.add("oculto");               // activa fade + zoom-out
+    setTimeout(() => {
+      cover.remove();                            // saca del DOM (opcional)
+      document.body.classList.remove("cover-activa");
+    }, 400);  // mismo tiempo que los .4 s de transición CSS
+  };
+
+  /* clic en cualquier parte de la cover (incluido el ticket) */
+  cover.addEventListener("click", ocultarCover);
+
+});
+
 // Menú
 document.addEventListener("DOMContentLoaded", () => {
   if (window.__TOGGLE_BTN_LOADED__) return;
@@ -8781,7 +8705,7 @@ vegaEmbed('#visualizacion_recintosmasivos', spec4).catch(console.error);
 function cargarVisualizacion5() {
 const spec5 = {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
-  "background": "white",
+  "background": "#f9f6f1",
   "padding": 5,
   "width": 300,
   "height": 300,
