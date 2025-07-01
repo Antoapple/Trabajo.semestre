@@ -748,14 +748,15 @@ body widget .-bold {
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin-right: 15px
-            width: 45%; /* Ancho fijo para los recuadros */
+            width: 300px; /* Ancho fijo para los recuadros */
             height: 200px; /* Altura fija para los recuadros */
             display: inline-flex;
-            flex-direction: column;
+            flex-direction: column-reverse;
             justify-content: center;
             align-items: center;
             transition: transform 0.2s; /* Suaviza la transición */
+            flex-wrap: nowrap;
+            align-content:center;
         }
         .highlight-box:hover {
             transform: scale(1.05); /* Aumenta el tamaño al pasar el cursor */
