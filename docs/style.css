@@ -26,11 +26,17 @@ header {
 }
 
 .logo img {
- max-height: 80px; /* Ajusta el tamaño máximo de la imagen del logo (más pequeño) */
+    max-height: 45px; /* Ajusta el tamaño máximo de la imagen del logo (más pequeño) */
     margin-right: 60px; /* Espacio entre el logo y el menú */
     align-items: center;
 }
 
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.8em;
+    color:#49007E;
+}
 
 nav {
     display: flex;
@@ -68,6 +74,15 @@ h3 {
 p {
     font-family: "Noto Serif Thai", sans-serif;
     color:#f9f6f1;
+     a {
+      color: white;
+    }
+    a:hover {
+      color: blue; 
+    }
+    a:visited {
+      color: purple; 
+    }
 }
 
 /* Espacio para el contenido bajo el header fijo */
@@ -748,14 +763,15 @@ body widget .-bold {
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin-right: 15px
-            width: 45%; /* Ancho fijo para los recuadros */
-            height: 200px; /* Altura fija para los recuadros */
+            width: 350px; /* Ancho fijo para los recuadros */
+            height: 150px; /* Altura fija para los recuadros */
             display: inline-flex;
-            flex-direction: column;
+            flex-direction: column-reverse;
             justify-content: center;
             align-items: center;
             transition: transform 0.2s; /* Suaviza la transición */
+            flex-wrap: nowrap;
+            align-content:center;
         }
         .highlight-box:hover {
             transform: scale(1.05); /* Aumenta el tamaño al pasar el cursor */
