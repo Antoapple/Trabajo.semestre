@@ -1,3 +1,151 @@
+// Carrusel
+$( document ).ready(function() {
+    let prevSlide = null;
+  
+    $('.carousel').on('init', function(event, slick) {
+      $('.slick-slide').find('h1, a, span').hide();
+      $('.slick-current').find('h1, a, span').slideDown(500).delay(1500);
+    });
+  
+    $('.carousel').slick({
+        slidesToShow: 3,
+        dots: false,
+        arrows: true,
+        speed: 500,
+        slidesToScroll: 1,
+        infinite: true,
+        centerMode: true,
+        centerPadding: '0',
+        focusOnSelect: true,
+        cssEase: 'cubic-bezier(.1, .2, .1, .02)',
+        prevArrow: $('.nav__prev'),
+        nextArrow: $('.nav__next'),
+    });
+  
+    $('.carousel').on('beforeChange', function(event, slick, currentSlide, nextSlide) {      
+      if(currentSlide !== nextSlide) {
+          $('.slick-current').find('h1, a, span').slideUp('fast');
+      }
+      liked();
+    });
+  
+    $('.carousel').on('afterChange', function(event, slick, currentSlide) {
+      if(currentSlide !== prevSlide) {
+        $('.slick-current').find('h1, a, span').slideDown(500).delay(1000);
+        prevSlide = currentSlide;
+      };
+    });
+  
+    const liked = () => {
+      $('.slick-current').find('span').on('click', function() {
+         if($(this).hasClass('liked')) {
+           $(this).removeClass('liked');
+         } else {
+           $(this).addClass('liked');
+         }
+       });
+    }
+  
+});
+
+var words = [{
+    id: 1,
+    word: 'Forelsket',
+    image: 'https://cataas.com/cat',
+    language: 'Norwegian',
+    description: 'The indescribable euphoria experienced as you begin to fall in love.'
+  }, {
+    word: 'Saudade',
+    image: 'https://i.natgeofe.com/n/4cebbf38-5df4-4ed0-864a-4ebeb64d33a4/NationalGeographic_1468962_16x9.jpg',
+    language: 'Portuguese',
+    description: 'A bitter-sweet melancholic yearning for something beautiful that is now gone.'
+  }];
+  
+  var body = document.body,
+      card = document.getElementById('card'),
+      cardWord = document.getElementById('word'),
+      cardImage = document.getElementById('card-image'),
+      cardLang = document.getElementById('language'),
+      cardDesc = document.getElementById('card-description'),
+      lastBtn = document.getElementById('last'),
+      nextBtn = document.getElementById('next'),
+      i = 0,
+      numWords = words.length,
+      cardUrl = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/380275/lightpaperfibers.png',
+      cardImg = new Image();
+  
+  cardWord.textContent = words[i].word;
+  cardImage.src = words[i].image;
+  cardLang.textContent = words[i].language;
+  cardDesc.textContent = words[i].description;
+  
+  cardImg.onload = function() {
+    card.style.background = "#FFF url(" + cardUrl + ") repeat fixed center";
+  }
+  cardImg.src = cardUrl;
+  
+  document.onkeydown = checkKey;
+  function checkKey(e) {
+    e = e || window.event;
+    if (e.keyCode == '37') {
+      goLeft();
+    } else if (e.keyCode == '39') {
+      goRight();
+    }
+  }
+  lastBtn.addEventListener("click", function(e) {
+    goLeft();
+  }, false);
+  nextBtn.addEventListener("click", function(e) {
+    goRight();
+  }, false);
+  
+  function goLeft() {
+    if (i > 0)
+      i--;
+    else
+      i = numWords - 1;
+    changeCard();
+  }
+  
+  function goRight() {
+    if (i < numWords - 1)
+      i++;
+    else
+      i = 0;
+    changeCard();
+  }
+  
+  function changeCard() {
+    setTimeout(loadCard, 900);
+    card.className += " fadeout";
+    body.className += " fadeout";
+  }
+  
+  function loadCard() {
+    removeClass(card, "fadeout");
+    cardWord.textContent = words[i].word;
+    cardImage.src = words[i].image;
+    cardLang.textContent = words[i].language;
+    cardDesc.textContent = words[i].description;
+  }
+  
+  //Function to easily remove classes, it takes two parameters: 
+  //1. The element to have a class removed
+  //2. The name of the class we want to remove from our element
+  function removeClass(el, _class) {
+    //Check if the element exists, 
+    //if it has a class,
+    //& specifically if it has the class we want to remove
+    if (el && el.className && el.className.indexOf(_class) >= 0) {
+      //Find the class to be removed (including any white space around it) using a regex search pattern
+      var pattern = new RegExp('\\s*' + _class + '\\s*');
+      //Replace that search with white space, therefore removing the class 
+      el.className = el.className.replace(pattern, ' ');
+    }
+  }
+  
+// Menú
 document.addEventListener("DOMContentLoaded", () => {
   if (window.__TOGGLE_BTN_LOADED__) return;
   window.__TOGGLE_BTN_LOADED__ = true;

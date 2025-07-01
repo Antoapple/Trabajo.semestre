@@ -10,13 +10,6 @@ min-height: 1020px; /* Altura mínima para asegurar que se muestre bien */
 padding-bottom: 60px
 }
 
-a:link {
-  color: white;
-}
-a:hover {
-  color: #49007E;
-}
-
 header {
     display: flex;
     align-items: center;
@@ -112,7 +105,7 @@ grid-column-gap: 2px;
   padding: 45px 0 45px 0;
 }
 
-.chart div, .chart img {
+.chart div {
   width: 80%;
   height: 100%;
   display: flex;
@@ -120,6 +113,20 @@ grid-column-gap: 2px;
   align-items: center;
   position: relative;
   margin: 0 auto;
+}
+
+.chart img {
+ width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+.no-padding {
+  padding: 0; /* Elimina el padding */
 }
 
 .chart h1, .chart p{
@@ -276,6 +283,159 @@ grid-column-gap: 2px;
   font-weight:600;
 }
 
+/* ===== LANDING COVER =================================================== */
+
+body widget, body widget:hover {
+  filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
+}
+body widget[type="ticket"] {
+  width: 255px;
+}
+body widget[type="ticket"] .top > div,
+body widget[type="ticket"] .bottom > div {
+  padding: 0 18px;
+}
+body widget[type="ticket"] .top > div:first-child,
+body widget[type="ticket"] .bottom > div:first-child {
+  padding-top: 18px;
+}
+body widget[type="ticket"] .top > div:last-child,
+body widget[type="ticket"] .bottom > div:last-child {
+  padding-bottom: 18px;
+}
+body widget[type="ticket"] .top img,
+body widget[type="ticket"] .bottom img {
+  padding: 18px 0;
+}
+body widget[type="ticket"] .top,
+body widget[type="ticket"] .bottom,
+body widget[type="ticket"] .rip {
+  background-color: #fff;
+}
+body widget[type="ticket"] .top {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+body widget[type="ticket"] .top .deetz {
+  padding-bottom: 10px !important;
+}
+body widget[type="ticket"] .bottom {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 18px;
+  height: auto;
+  padding-top: 10px;
+  display: flex;
+}
+body widget[type="ticket"] .bottom .barcode {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAAABCAYAAABXChlMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuOWwzfk4AAACPSURBVChTXVAJDsMgDOsrVpELiqb+/4c0DgStQ7JMYogNh2gdvg5VfXFCRIZaC6BOtnoNFpvaumNmwb/71Frrm8XvgYkker1/g9WzMOsohaOGNziRs5inDsAn8yEPengTapJ5bmdZ2Yv7VvfPN6AH2NJx7nOWPTf1/78hoqgxhzw3ZqYG1Dr/9ur3y8vMxgNZhcAUnR4xKgAAAABJRU5ErkJggg==);
+  background-repeat: repeat-y;
+  min-width: 58px;
+  margin-right: 20px;
+}
+body widget[type="ticket"] .bottom .buy {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #080d21;
+  padding: 12px 18px;
+  line-height: 15px;
+  border-radius: 15px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+body widget[type="ticket"] .bottom .buy:hover {
+  background-color: #ff005b;
+}
+
+body widget[type="ticket"] .rip {
+  height: 20px;
+  margin: 0 10px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAACCAYAAAB7Xa1eAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuOWwzfk4AAAAaSURBVBhXY5g7f97/2XPn/AcCBmSMQ+I/AwB2eyNBlrqzUQAAAABJRU5ErkJggg==);
+  background-size: 4px 2px;
+  background-repeat: repeat-x;
+  background-position: center;
+  position: relative;
+  box-shadow: 0 1px 0 0 #fff, 0 -1px 0 0 #fff;
+}
+body widget[type="ticket"] .rip:before,
+body widget[type="ticket"] .rip:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border: 5px solid transparent;
+  border-top-color: #fff;
+  border-right-color: #fff;
+  border-radius: 100%;
+  pointer-events: none;
+}
+body widget[type="ticket"] .rip:before {
+  left: -10px;
+}
+body widget[type="ticket"] .rip:after {
+  transform: translate(-50%, -50%) rotate(225deg);
+  right: -40px;
+}
+body widget .-bold {
+  font-weight: bold;
+}
+
+
+/* === Keyframes del vaivén =========================================== */
+@keyframes zoom {
+  0%   { transform: rotate(-7deg) scale(0.9);    }   /* ← mismo valor que en :hover */
+  50%,
+  70%  { transform: rotate( 2deg) scale(1.15); }
+  100% { transform: rotate(-7deg) scale(0.9);    }
+}
+
+/* === Cover y ticket (ya los tenías) ================================= */
+#landing-cover{
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(-45deg,#8067b7,#080d21);
+  background: url('https://github.com/Antoapple/Trabajo.semestre/blob/main/docs/relleno.png?raw=true');
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity .8s ease;
+}
+#landing-cover.oculto{opacity:0;pointer-events:none}
+
+/* === Estado base: animación SIEMPRE corriendo ========================= */
+#landing-cover widget[type="ticket"]{
+  animation: zoom 4s ease-in-out infinite alternate;
+  animation-play-state: running;     /* (valor por defecto, explícito) */
+  transition: transform .45s ease;   /* sigue sirviendo para cierre cover */
+}
+
+/* === Al pasar el mouse: PAUSA la animación =========================== */
+#landing-cover widget[type="ticket"]:hover{
+  animation-play-state: paused;      /* se “congela” donde esté */
+  cursor: pointer;                   /* opcional, indica que es clicable */
+}
+
+/* === Cuando la cover se oculta (sigue igual) ========================= */
+#landing-cover.oculto widget[type="ticket"]{
+  transform: scale(1.05);
+}
+
+
+/* ===== FIN LANDING COVER ============================================== */
+
+
+.size-pre-header{
+  font-size: 30px;
+  font-weight: 600;
+}
+
 @font-face {
   font-family: 'Gungsuh';
   src: url('Batang.woff2') format('woff2'),
@@ -302,3 +462,235 @@ grid-column-gap: 2px;
         .highlight-box:hover {
             transform: scale(1.05); /* Aumenta el tamaño al pasar el cursor */
         }
+
+
+  .trans-quick {
+    transition: all 0.4s;
+  }
+  
+  #container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  
+  #card {
+    overflow: hidden;
+    z-index: 10;
+    padding: 3rem;
+    width: 95vw;
+    max-width: 21rem;
+    min-height: 15.75rem;
+    box-shadow: 0 50px 70px -50px rgba(0, 0, 0, 0.45), 0 50px 200px -50px rgba(0, 0, 0, 0.5);
+    background: #FFF;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  #card * {
+    transition: opacity 0.4s, text-shadow 0.8s, color 0.4s, transform 0s;
+    opacity: 1;
+  }
+  
+  #word {
+    align-self: flex-end;
+    font-size: 2rem;
+    line-height: 1rem;
+  }
+  
+  #language {
+    font-size: 1.1rem;
+    align-self: flex-end;
+    font-style: italic;
+    line-height: auto;
+    font-weight: 700;
+    color: #0b64d1;
+  }
+  
+  #card-description {
+    width: 100%;
+  }
+  
+  button {
+    margin: 20px;
+    width: 0px;
+    height: 0px;
+    z-index: 25;
+    background: transparent;
+    border-radius: 0;
+    outline: none;
+    border: none;
+  }
+  
+  #last {
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid rgba(255, 255, 255, 0.5);
+    transition: 0.1s;
+  }
+  #last:hover {
+    border-right: 20px solid rgba(255, 255, 255, 0.9);
+  }
+  
+  #next {
+    order: 3;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid rgba(255, 255, 255, 0.5);
+    transition: 0.1s;
+  }
+  #next:hover {
+    border-left: 20px solid rgba(255, 255, 255, 0.9);
+  }
+  
+  #container > button:active ~ #card {
+    transition: 0.05s 0s;
+    transform: translateY(0.5rem);
+  }
+
+  
+  #card.fadeout #word,
+  #card.fadeout #card-description,
+  #card.fadeout #language {
+    opacity: 0;
+    color: transparent;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-21rem) scale(3);
+    transition: all 1.2s 0.1s, color 0.5s 0s, text-shadow 0.5s 0s;
+  }
+  
+  #card.fadeout #card-description {
+    transform: translateY(21rem) translateX(-6rem) scale(2);
+  }
+  
+  @media (max-width: 600px) {
+    a {
+      width: 50px;
+      height: 50px;
+    }
+  
+    button {
+      padding: 0;
+    }
+  
+    #last {
+      margin: 0 0.4rem 0 0;
+    }
+  
+    #next {
+      margin: 0 0 0 0.4rem;
+    }
+  
+    #card {
+      padding: 1rem;
+      min-height: 10rem;
+    }
+  
+    #word {
+      font-size: 1.5rem;
+    }
+  
+    #language, #card-description {
+      font-size: 0.8rem;
+    }
+  }
+
+  #card-image {
+    width: 100%;
+    max-height: 200px;
+    margin: 0 auto;
+  }
+
+  .container {
+  position: relative;
+  display: block;
+  height: 500px;
+  width: 80%;
+  margin: auto;
+}
+
+.nav__prev, .nav__next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #749393;
+}
+.nav__prev:hover, .nav__next:hover {
+  color: #9AB6B6;
+}
+.nav__prev {
+  left: 10px;
+}
+.nav__next {
+  right: 10px;
+}
+
+.carousel {
+  margin: auto;
+  padding: 50px;
+}
+.carousel .slick-current .carousel__slide {
+  transform: scale(1);
+  box-shadow: 0 0 30px 5px #E8E8E8;
+}
+.carousel .slick-current .carousel__content {
+  display: block;
+}
+.carousel__slide {
+  width: 250px;
+  padding: 10px;
+  margin: 0 30px;
+  border-radius: 20px;
+  margin: 30px auto;
+  box-shadow: 0 0 10px 5px #E8E8E8;
+  transform: scale(0.8);
+  transition: all 400ms linear;
+}
+.carousel__visual {
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.carousel__visual img {
+  width: 100%;
+}
+.carousel__content {
+  position: relative;
+}
+.carousel__content h1 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+}
+.carousel__content a {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: #464546;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.carousel__content a:hover {
+  text-decoration: underline;
+}
+.carousel__content span {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  color: #9AB6B6;
+  transition: all 100ms linear;
+  cursor: pointer;
+}
+.carousel__content span.liked {
+  color: #C61608;
+}

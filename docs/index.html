@@ -8,14 +8,53 @@
 	<meta name="description" content="Sold Out">
     <title>Sold Out</title> 
     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="slider.css">
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+Thai:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="carrousel/carrousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 </head>
 <body>
+
+<!-- LANDING COVER ------------------------------------------------------>
+<div id="landing-cover">
+  <widget type="ticket" class="--flex-column">
+    <div class="top --flex-column">
+      <div class="bandname -bold">Sold Out</div>
+      <div class="tourname">World Tour</div>
+
+      <!-- tu imagen -->
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/concert.png" alt="" />
+
+      <div class="deetz --flex-row-j!sb">
+        <div class="event --flex-column">
+          <div class="date">10 de julio, 2025</div>
+          <div class="location -bold">Santiago, Chile</div>
+        </div>
+        <div class="price --flex-column">
+          <div class="label">Precio</div>
+          <div class="cost -bold">$50.000</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rip"></div>
+
+    <div class="bottom --flex-row-j!sb">
+      <div class="barcode"></div>
+      <a class="buy" href="index.html">OBTÉN TUS TICKETS</a>
+    </div>
+  </widget>
+</div>
+<!-- /LANDING COVER -->
+
 
 <header>
     <div class="header-container"></div>
@@ -31,25 +70,41 @@
     </nav>
 </header>
 
-<div class="parent">
+<div class="parent">    
 <div class="titulo child">
     <p>El 2 y 3 de marzo de 2025, el Estadio Nacional recibiría la visita de una de las mayores representantes de la música pop latinoamericana, Shakira, con su tour "Las mujeres ya no lloran".</p>
 
 <p>Horas antes del primer recital, sus fanáticos se enteraron de que el concierto había sido cancelado. El show del 3 de marzo tuvo el mismo desenlace. La suspensión de ambos conciertos se debió a problemas técnicos en el montaje del escenario, pero el evento fue reagendado tiempo después. Shakira se presentó el 4, 5 y 7 de abril, con una fecha adicional, aunque, esta vez, el lugar escogido fue el Parque Estadio Nacional, a un costado del estadio.</p>
 
 <p>Esta situación no pasó a mayores. Sin embargo, surge la pregunta:</p>
-
-   <div id="bloque-notas"></div>
-<div style="height: 200 px;"></div>
 </div>
 
 <div class="titulo child" id="">
-    <h1> ¿Los recintos de gran capacidad que existen en la ciudad de Santiago son capaces de albergar eventos musicales masivos? </h1>
+    <h2 class="size-pre-header"> ¿Los recintos de gran capacidad que existen en la ciudad de Santiago son capaces de albergar, con éxito, eventos musicales masivos? </h2>
  <div id="bloque-notas"></div>
-      <h1 style="margin-top: 80px;">Más espacio para la música en Santiago</h1>
-
-  <h2>Por Antonia Appelgren, Luciana González y Analía Ortega</h2>
 </div>
+<div class="chart no-padding">
+    <img src="https://placecats.com/neo/1080/300">
+ </div>
+
+ <div class="child">
+    <h2>Por Antonia Appelgren, Luciana González y Analía Ortega</h2>
+</div>
+<header>
+    <div class="header-container"></div>
+    <div class="logo">
+        <img src="Logo%20.png?raw=true" alt="Logo" class="logo">
+    </div>
+    <nav>
+        <a href="#div4">Recintos de Santiago</a>
+        <a href="#div5">¿Con qué frecuencia sonaron?</a>
+        <a href="#div6">Festivales</a>
+        <a href="#div7">Conciertos</a>
+        <a href="#div8">Proyecciones de los recintos</a>
+    </nav>
+</header>
+
+<div class="parent">
 <div class="child" id="div4">
     <h1>Muchos recintos, pocos escenarios</h1>
     <p>Durante 2024, se realizaron más de 200 conciertos y festivales solo en la RM. Además, cada semana se anuncian nuevas fechas para artistas tanto nacionales como internacionales, lo que confirma una demanda creciente por espectáculos en vivo. A pesar de eso, la oferta de espacios destinados a acoger este fenómeno no ha crecido al mismo ritmo.</p>
@@ -75,11 +130,84 @@
     <p>Los espacios multipropósito son los más difíciles de catalogar, por eso se asocian a este nombre. Estos lugares pueden ser parques diseñados para la recreación pero también como espacios musicales; pueden ser estadios que también tengan una infraestructura disponible para conciertos. En esta categoría encontramos el Claro Arena, un lugar pensado para albergar no solo un tipo de evento (deportivo en este caso), sino que buscando ser un espacio que también reúna a las personas en torno a la música.</p>
 
     <p>Por último, están los recintos que fueron creados específicamente para eventos musicales. Estos solo son dos dentro de la región, y bastante más pequeños en comparación a los espacios deportivos y recreacionales. Aquí es donde está el Teatro Caupolicán y el Movistar Arena. Dos espacios conocidos por su buena acústica y visibilidad para los conciertos, aunque, si juntamos el aforo de ambos, suman menos que el total de personas que pueden entrar al Estadio Bicentenario de La Florida. </p>
-    <div class="highlight-box"></div>
-        <p><b>Los recintos culturales superan en número a las demás clases de recintos, pero en la capital no existen espacios culturales de gran capacidad</b></p>
-    </div>
+   
+<div class="container">
+  <div class="carousel" id="carousel">
+      <div>
+          <div class="carousel__slide">
+          <div class="carousel__visual">
+              <img src="https://images.unsplash.com/photo-1559181567-c3190ca9959b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt=""/>
+          </div>
+          <div class="carousel__content">
+              <h1>Cherry</h1>
+              <a href="https://unsplash.com/photos/vbAEHCrvXZ0">@picoftasty</a>
+              <span><i class="fas fa-music"></i></span>
+          </div>
+          </div>
+      </div>
 
+      <div>
+          <div class="carousel__slide">
+          <div class="carousel__visual">
+              <img src="https://images.unsplash.com/photo-1557800634-7bf3c7305596?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=802&q=80" alt="" />
+          </div>
+          <div class="carousel__content">
+              <h1>Orange</h1>
+              <a href="https://unsplash.com/photos/1APtYqzNajA">@picoftasty</a>
+              <span><i class="fas fa-music"></i></span>
+          </div>
+          </div>
+      </div>
 
+      <div>
+          <div class="carousel__slide">
+          <div class="carousel__visual">
+              <img src="https://images.unsplash.com/photo-1533910534207-90f31029a78e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80" alt="" />
+          </div>
+          <div class="carousel__content">
+              <h1>Donut</h1>
+              <a href="https://unsplash.com/photos/PFzy4N0_R3M">@lenneek</a>
+              <span><i class="fas fa-music"></i></span>
+          </div>
+          </div>
+      </div>
+
+      <div>
+          <div class="carousel__slide">
+          <div class="carousel__visual">
+              <img src="https://images.unsplash.com/photo-1506810487030-e7f94a5eef74?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="" />
+          </div>
+          <div class="carousel__content">
+              <h1>Eggplant</h1>
+              <a href="https://unsplash.com/photos/GfuxfFJt7cw">@foodism360</a>
+              <span><i class="fas fa-music"></i></span>
+          </div>
+          </div>
+      </div>
+
+      <div>
+          <div class="carousel__slide">
+          <div class="carousel__visual">
+              <img src="https://images.unsplash.com/photo-1559703248-dcaaec9fab78?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="" />
+          </div>
+          <div class="carousel__content">
+              <h1>Ice cream cone</h1>
+              <a href="https://unsplash.com/photos/Rz5o0osnN6Q">@picoftasty</a>
+              <span><i class="fas fa-music"></i></span>
+          </div>
+          </div>
+      </div>
+
+            <div>
+          <div class="carousel__slide">
+          <div class="carousel__visual">
+              <img src="https://images.unsplash.com/photo-1559703248-dcaaec9fab78?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="" />
+          </div>
+          <div class="carousel__content">
+              <h1>ESTE ES NUEVO</h1>
+              <a href="https://unsplash.com/photos/Rz5o0osnN6Q">@picoftasty</a>
+              <span><i class="fas fa-music"></i></span>
+          </div>
     
 </div>
 
@@ -197,8 +325,16 @@
 <p> la atención que el británico <a href = https://www.puntoticket.com/claro-arena>Rod Stewart</a> vaya a ser el segundo artista en presentarse en el Claro Arena; en 1989, Stewart dio un recital que marcó el inicio de los megaconciertos en Chile y, este próximo 19 de octubre de 2025 volverá a reunir a miles de personas amantes de la música.</p>
 
 </div>
+  <div class='nav__prev'><i class="fas fa-chevron-left"></i></div>
+  <div class='nav__next'><i class="fas fa-chevron-right"></i></div>
 </div>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
 <script src="application.js"></script>
+<script src="slider.js"></script>
+<script src="carrousel/carrousel.js"></script>
 <script>
   cargarVisualizacion();        // esto carga el gráfico> {
   cargarVisualizacion2();
