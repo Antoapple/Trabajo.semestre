@@ -26,7 +26,7 @@ header {
 }
 
 .logo img {
- max-height: 45px; /* Ajusta el tamaño máximo de la imagen del logo (más pequeño) */
+    max-height: 45px; /* Ajusta el tamaño máximo de la imagen del logo (más pequeño) */
     margin-right: 60px; /* Espacio entre el logo y el menú */
     align-items: center;
 }
