@@ -9120,3 +9120,17 @@ const spec5 = {
 };
 vegaEmbed('#visualizacion_festivales', spec5).catch(console.error);
 }
+
+const audio = document.getElementById('miMusica');
+
+pausarBtn.addEventListener('click', () => {
+    if (!audio.paused) {
+        audio.pause();
+    } else {
+        audio.play();
+    }
+});
+vegaEmbed('#miMusica', spec).then(result => {
+  // visualización cargada con éxito
+}).catch(console.error);        
+
