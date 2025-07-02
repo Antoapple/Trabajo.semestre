@@ -785,18 +785,3 @@ body widget .-bold {
             }
         }
 
-a:link,
-a:visited {
-  color: white;
-  text-decoration: none;
-}
-
-a:hover,
-a:focus {
-  color: #49007E;
-  text-decoration: underline;
-}
-
-a:active {
-  color: #320055;
-}
