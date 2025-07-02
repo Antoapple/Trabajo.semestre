@@ -785,3 +785,10 @@ body widget .-bold {
             }
         }
 
+a:link {
+  color: white;
+}
+a:hover {
+  color: #49007E;
+}
+
