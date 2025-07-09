@@ -7,7 +7,7 @@
   font-style: normal;
 }
 .p {
-  font-family: "Noto Serif Thai";
+  font: "Noto Serif Thai";
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Thai&display=swap');
