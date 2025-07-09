@@ -12,9 +12,9 @@ padding-bottom: 60px
 
 @font-face {
   font-family: 'Gungsuh';
-  src: url('https://github.com/Antoapple/Trabajo.semestre/blob/main/docs/fonts/gungsuh.woff') format('woff'),
-       url('https://github.com/Antoapple/Trabajo.semestre/blob/main/docs/fonts/Batang.woff2') format('woff2'),
-       url('https://github.com/Antoapple/Trabajo.semestre/blob/main/docs/fonts/gungsuh.ttf') format('ttf');
+  src: url('fonts/gungsuh.woff') format('woff'),
+       url('fonts/Batang.woff2') format('woff2'),
+       url('fonts/gungsuh.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
 }
