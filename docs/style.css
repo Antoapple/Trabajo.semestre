@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Thai&display=swap');
+
 @font-face {
   font-family: 'Batang';
   src: url('fonts/gungsuh.woff') format('woff'),
@@ -6,11 +8,6 @@
   font-weight: normal;
   font-style: normal;
 }
-.p {
-  font: "Noto Serif Thai";
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Thai&display=swap');
 
 body {
     margin-top: 5cm;
@@ -22,6 +19,10 @@ body {
     background-position: center-top; /* Centra la imagen en el div */
 min-height: 1020px; /* Altura mínima para asegurar que se muestre bien */
 padding-bottom: 60px
+}
+
+p {
+  font-family: 'Noto Serif Thai';
 }
 
 header {
