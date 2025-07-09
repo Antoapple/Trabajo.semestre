@@ -11,7 +11,7 @@
 
 body {
     margin-top: 5cm;
-    font-family:  "Anonymous Pro", sans-serif;
+    font-family:  "Anonymous Pro", monospace;
     background-color: #080d21;
     background-image: url('https://github.com/Antoapple/Trabajo.semestre/blob/main/docs/relleno.png?raw=true');
     background-repeat: repeat; /* Repite la imagen */
@@ -22,7 +22,7 @@ padding-bottom: 60px
 }
 
 p {
-  font-family: 'Anonymous Pro', sans-serif;
+  font-family: 'Anonymous Pro', monospace;
 }
 
 header {
