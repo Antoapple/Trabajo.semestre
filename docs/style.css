@@ -13,7 +13,7 @@ padding-bottom: 60px
 @font-face {
   font-family: 'Batang';
   src: url('fonts/gungsuh.woff') format('woff'),
-       url('fonts/Batang.woff2') format('woff2'),
+       url('https://raw.githubusercontent.com/Antoapple/Trabajo.semestre/main/docs/fonts/Batang.woff2') format('woff2'),
        url('fonts/gungsuh.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
