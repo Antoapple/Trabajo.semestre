@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto&display=swap");
 
-.containerp {
+
+.container {
   position: relative;
   display: block;
   height: 500px;
@@ -102,7 +103,7 @@
       cursor: pointer;
 
       &.liked {
-        color: yellow;
+        color: #c61608;
       }
     }
   }
