@@ -9,7 +9,7 @@
     <title>Sold Out</title> 
     <link rel="stylesheet" href="style.css">
      <link rel="stylesheet" href="slider.css">
-     <link rel="stylesheet" href="carrusel.css">
+     <link rel="stylesheet" href="carrusel_recintos.css">
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
@@ -22,8 +22,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <link rel="stylesheet" type="text/css" href="carrusel_recintos.css">
-    <link rel="stylesheet" type="text/css" href="carrusel_productoras.css">
-
+    <link rel="stylesheet" type="text/css" href="productoras.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.8.6/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.6/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.6/umd/react-dom.production.min.js"></script> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 
 
@@ -492,114 +494,64 @@
 <p>Un ejemplo de mala gestión es Noix Entertainment. El año pasado prometió sorprender a los fanáticos del k-pop con un evento que reuniría a figuras destacadas de este género musical, el festival All At Once.16 días antes de la esperada fecha, Noix Entertainment afirmó <a href = https://www.instagram.com/p/C52GKkvRRyI/?img_index=2>a través de un comunicado que el festival fue cancelado</a>, al ser incapaz de cumplir con los estándares necesarios para un buen espectáculo. Previamente, se dio a conocer que All At Once sería trasladado desde el Club Hípico al Movistar Arena, ante la posibilidad de precipitaciones.</p> 	
 </div>	
 	
-<!--Este es el carrusel de productoras-->
-<div class='container'>
-  <div class="carousel" id="carousel">
-      <div>
-          <div class="carousel__slide">
-          <div class="carousel__visual">
-              <img src="carrusel_productoras\bizarro.png" alt=""/>
-          </div>
-          <div class="carousel__content">
-              <h1>Bizarro Live Entertainment</h1>
-              <a href="https://bizarro.cl/">bizarro.cl</a>
-              <span>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-              </span>
-          </div>
-          </div>
-      </div>
+  <!-- CONTENIDO DEL SLIDER DE PRODUCTORAS -->
 
-      <div>
-          <div class="carousel__slide">
-          <div class="carousel__visual">
-              <img src="https://images.unsplash.com/photo-1557800634-7bf3c7305596?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=802&q=80" alt="" />
-          </div>
-          <div class="carousel__content">
-              <h1>Orange</h1>
-              <a href="https://unsplash.com/photos/1APtYqzNajA">@picoftasty</a>
-              <span>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-              </span>
-          </div>
-          </div>
+<div id= "parent" class= "child">
+    <div class="cards">
+    <div class="outer">
+    <div class="card" style="--delay:-1;">
+      <div class="content">
+        <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAFIvBPH9fIMQZis4SHYTuv485uqr38bg1VQ&usqp=CAU"></div>
+        <div class="details">
+          <span class="name">Bizarro</span>
+          <p>fenixchile.cl</p>
+        </div>
       </div>
-
-      <div>
-          <div class="carousel__slide">
-          <div class="carousel__visual">
-              <img src="https://images.unsplash.com/photo-1533910534207-90f31029a78e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80" alt="" />
-          </div>
-          <div class="carousel__content">
-              <h1>Donut</h1>
-              <a href="https://unsplash.com/photos/PFzy4N0_R3M">@lenneek</a>
-              <span><i class="fas fa-star"></i></span>
-          </div>
-          </div>
+      <a href="https://www.fenixchile.cl/">Ver más</a>
+    </div>
+    <div class="card" style="--delay:0;">
+      <div class="content">
+        <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIMYmBQyoz9BWjEiMi5XipSPOmhamZUyI1gQ&usqp=CAU" alt=""></div>
+        <div class="details">
+          <span class="name">Spider Man</span>
+          <p>Full-stack Developer</p>
+        </div>
       </div>
-
-      <div>
-          <div class="carousel__slide">
-          <div class="carousel__visual">
-              <img src="https://images.unsplash.com/photo-1506810487030-e7f94a5eef74?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="" />
-          </div>
-          <div class="carousel__content">
-              <h1>Eggplant</h1>
-              <a href="https://unsplash.com/photos/GfuxfFJt7cw">@foodism360</a>
-              <span>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-              </span>
-          </div>
-          </div>
+      <a href="#">Follow</a>
+    </div>
+    <div class="card" style="--delay:1;">
+      <div class="content">
+        <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe2k6vsAWhq5UPsCW58Q2RSCKqPxMDq75wfg&usqp=CAU" alt=""></div>
+        <div class="details">
+          <span class="name">Venom</span>
+          <p>Tester</p>
+        </div>
       </div>
-
-      <div>
-          <div class="carousel__slide">
-          <div class="carousel__visual">
-              <img src="https://images.unsplash.com/photo-1559703248-dcaaec9fab78?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="" />
-          </div>
-          <div class="carousel__content">
-              <h1>Ice cream cone</h1>
-              <a href="https://unsplash.com/photos/Rz5o0osnN6Q">@picoftasty</a>
-              <span>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-              </span>
-          </div>
-                      <div class="carousel__content">
-              <h1>Ice cream cone</h1>
-              <a href="https://unsplash.com/photos/Rz5o0osnN6Q">@picoftasty</a>
-              <span>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-              </span>
-          </div>
-                      <div class="carousel__content">
-              <h1>Ice cream cone</h1>
-              <a href="https://unsplash.com/photos/Rz5o0osnN6Q">@picoftasty</a>
-              <span>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-              </span>
-          </div>
-            
-          </div>
+      <a href="#">Follow</a>
+    </div>
+    <div class="card" style="--delay:2;">
+      <div class="content">
+        <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStwJX81iy7cnzgclyjTKlNnDlzIzPN1KSIgA&usqp=CAU" alt=""></div>
+        <div class="details">
+          <span class="name">Batman</span>
+          <p>Backend Developer</p>
+        </div>
       </div>
-  </div>
-  <div class='nav__prev'><i class="fas fa-chevron-left"></i></div>
-  <div class='nav__next'><i class="fas fa-chevron-right"></i></div>
+      <a href="#">Follow</a>
+    </div>
+    <div class="card" style="--delay:2;">
+      <div class="content">
+        <div class="img"><img src="https://static.rogerebert.com/uploads/review/primary_image/reviews/great-movie-superman-1978/EB20101104REVIEWS08101109987AR.jpg" alt=""></div>
+        <div class="details">
+          <span class="name">Superman</span>
+          <p>Youtuber</p>
+        </div>
+      </div>
+      <a href="#">Follow</a>
+    </div>
+    </div>
+    </div>
 </div>
-
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
 <!-- Este es el collage -->	 
 <div class="masonry-container">
@@ -658,8 +610,7 @@
 
 <script src="application.js"></script>
 <script src="carrusel.js"></script>
-<script src="carruselp.js"></script>
-<script>
+
   cargarVisualizacion();        // esto carga el gráfico> {
   cargarVisualizacion2();
   cargarVisualizacion3();
