@@ -10,6 +10,12 @@ min-height: 1020px; /* Altura mínima para asegurar que se muestre bien */
 padding-bottom: 60px
 }
 
+.p {
+  font-family: "Noto Serif Thai", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Thai&display=swap');
+
 header {
     display: flex;
     align-items: center;
