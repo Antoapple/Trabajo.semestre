@@ -21,10 +21,6 @@ min-height: 1020px; /* Altura mínima para asegurar que se muestre bien */
 padding-bottom: 60px
 }
 
-p {
-  font-family: inherit; /* para que tome la fuente del body */
-}
-
 header {
     display: flex;
     align-items: center;
@@ -807,3 +803,6 @@ a:hover {
   color: #49007E;
 }
 
+p {
+  font-family: 'Anonymous Pro', monospace; /* para que tome la fuente del body */
+}
