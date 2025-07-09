@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Batang';
+  src: url('fonts/gungsuh.woff') format('woff'),
+       url('fonts/Batang.woff2') format('woff2'),
+       url('fonts/gungsuh.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+.p {
+  font-family: "Noto Serif Thai", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Thai&display=swap');
+
 body {
     margin-top: 5cm;
     font-family:  "Noto Serif Thai", sans-serif;
@@ -9,20 +23,6 @@ body {
 min-height: 1020px; /* Altura mínima para asegurar que se muestre bien */
 padding-bottom: 60px
 }
-
-@font-face {
-  font-family: 'Batang';
-  src: url('fonts/gungsuh.woff') format('woff'),
-       url('https://raw.githubusercontent.com/Antoapple/Trabajo.semestre/main/docs/fonts/Batang.woff2') format('woff2'),
-       url('fonts/gungsuh.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-.p {
-  font-family: "Noto Serif Thai", sans-serif;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Thai&display=swap');
 
 header {
     display: flex;
