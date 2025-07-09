@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Thai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+Thai:wght@100..900&display=swap');
 
 @font-face {
   font-family: 'Batang';
@@ -11,7 +11,7 @@
 
 body {
     margin-top: 5cm;
-    font-family:  "Noto Serif Thai";
+    font-family:  "Anonymous Pro", sans-serif;
     background-color: #080d21;
     background-image: url('https://github.com/Antoapple/Trabajo.semestre/blob/main/docs/relleno.png?raw=true');
     background-repeat: repeat; /* Repite la imagen */
@@ -22,7 +22,7 @@ padding-bottom: 60px
 }
 
 p {
-  font-family: 'Noto Serif Thai';
+  font-family: 'Anonymous Pro', sans-serif;
 }
 
 header {
