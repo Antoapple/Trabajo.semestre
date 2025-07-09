@@ -10,6 +10,15 @@ min-height: 1020px; /* Altura mínima para asegurar que se muestre bien */
 padding-bottom: 60px
 }
 
+@font-face {
+  font-family: 'Gungsuh';
+  src: url('fonts/gungsuh.woff') format('woff'),
+       url(fonts/Batang.woff2) format ('woff2')
+       url('fonts/Gungsuh.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .p {
   font-family: "Noto Serif Thai", sans-serif;
 }
