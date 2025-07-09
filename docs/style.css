@@ -467,7 +467,7 @@ body widget .-bold {
 }
 
 @font-face {
-  font-family: 'Gungsuh';
+  font-family: 'Batang';
   src: url('Batang.woff2') format('woff2'),
        url('Gungsuh.woff') format('woff');
          src: url('fonts/Gungsuh.ttf') format('truetype');
