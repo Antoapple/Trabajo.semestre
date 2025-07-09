@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+Thai:wght@100..900&display=swap');
+
 @font-face {
   font-family: 'Batang';
   src: url('fonts/gungsuh.woff') format('woff'),
@@ -6,15 +8,10 @@
   font-weight: normal;
   font-style: normal;
 }
-.p {
-  font-family: "Noto Serif Thai";
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Thai&display=swap');
 
 body {
     margin-top: 5cm;
-    font-family:  "Noto Serif Thai";
+    font-family:  "Anonymous Pro", monospace;
     background-color: #080d21;
     background-image: url('https://github.com/Antoapple/Trabajo.semestre/blob/main/docs/relleno.png?raw=true');
     background-repeat: repeat; /* Repite la imagen */
@@ -78,7 +75,7 @@ h1 {
 
 h2 {
     font-size: 20px;
-    font-family: "Gungsuh", serif;
+    font-family: "Batang", serif;
     color: #ff005b;
 }
 
@@ -86,7 +83,7 @@ h3 {
     color:#f9f6f1;
 }
 p {
-    font-family: "Noto Serif Thai", sans-serif;
+    font-family: "Anonymous Pro", sans-serif;
     color:#f9f6f1;
      a {
       color: white;
@@ -466,7 +463,7 @@ body widget .-bold {
 }
 
 @font-face {
-  font-family: 'Gungsuh';
+  font-family: 'Batang';
   src: url('Batang.woff2') format('woff2'),
        url('Gungsuh.woff') format('woff');
          src: url('fonts/Gungsuh.ttf') format('truetype');
@@ -698,12 +695,12 @@ body widget .-bold {
 .carousel__content h1 {
   margin-top: 15px;
   margin-bottom: 10px;
-  font-family: "Playfair Display", serif;
+  font-family: "Batang", serif;
   font-size: 24px;
 }
 .carousel__content a {
   display: block;
-  font-family: "Roboto", sans-serif;
+  font-family: "Batang", sans-serif;
   text-decoration: none;
   color: #464546;
   font-size: 12px;
@@ -805,4 +802,3 @@ a:link {
 a:hover {
   color: #49007E;
 }
-
