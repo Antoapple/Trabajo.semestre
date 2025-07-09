@@ -802,7 +802,3 @@ a:link {
 a:hover {
   color: #49007E;
 }
-
-p {
-  font-family: 'Anonymous Pro', monospace; /* para que tome la fuente del body */
-}
