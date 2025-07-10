@@ -1,9 +1,9 @@
 const slideData = [
   {
     index: 0,
-    headline: "New Fashion Apparel",
-    button: "Shop now",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/fashion.jpg"
+    headline: "Bizarro Live Entertainment",
+    button: "Ir a web",
+    src: "https://bizarro.cl/"
   },
   {
     index: 1,
