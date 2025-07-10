@@ -3,7 +3,7 @@
 .containerp {
   position: relative;
   display: block;
-  height: 500px;
+  height: 550px;
   max-width: 1000px;
   margin: auto;
 }
@@ -50,7 +50,7 @@
   transition: all 400ms linear;
 }
 .slides__visualp {
-  height: 300px;
+  height: 260px;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -86,5 +86,5 @@
   cursor: pointer;
 }
 .slides__contentp span.liked {
-  color: #c61608;
+  color: yellow; 
 }

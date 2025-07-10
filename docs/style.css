@@ -32,14 +32,15 @@ header {
     justify-content: space-between;
     width: 100%; /* Asegura que el header ocupe todo el ancho */ 
     height: 100px; /* Altura del header */
-    z-index: 1000; /* Asegura que el header esté por encima del contenido */
-    padding-top: 2%;
+    padding-top: 6px; /* Espacio entre el borde superior y el contenido del header */
+    z-index: 2000; /* Asegura que el header esté por encima del contenido */
 }
 
 .logo img {
     max-height: 45px; /* Ajusta el tamaño máximo de la imagen del logo (más pequeño) */
-    margin-right: 60px; /* Espacio entre el logo y el menú */
+    margin-right: 50px; /* Espacio entre el logo y el menú */
     align-items: center;
+    margin-left: 10px; /* Espacio entre el logo y el borde izquierdo */
 }
 
 footer {
@@ -71,16 +72,19 @@ h1 {
     font-size: 50px;
     font-family: "Batang", serif;
     color: #f9f6f1;
+    text-align: justify;
 }
 
 h2 {
     font-size: 20px;
     font-family: "Batang", serif;
     color: #ff005b;
+    text-align: justify;
 }
 
 h3 {
     color:#f9f6f1;
+    text-align: justify;
 }
 p {
     font-family: "Anonymous Pro", sans-serif;
@@ -94,6 +98,7 @@ p {
     a:visited {
       color: purple; 
     }
+    text-align: justify; 
 }
 
 /* Espacio para el contenido bajo el header fijo */
@@ -776,13 +781,14 @@ body widget .-bold {
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             width: 350px; /* Ancho fijo para los recuadros */
             height: 150px; /* Altura fija para los recuadros */
-            display: inline-flex;
+            display: flex;
             flex-direction: column-reverse;
             justify-content: center;
             align-items: center;
             transition: transform 0.2s; /* Suaviza la transición */
             flex-wrap: nowrap;
             align-content:center;
+            text-align: center;
         }
         .highlight-box:hover {
             transform: scale(1.05); /* Aumenta el tamaño al pasar el cursor */
@@ -801,4 +807,22 @@ a:link {
 }
 a:hover {
   color: #49007E;
+}
+.titular {
+  text-align:center
+}
+.vacio {
+  width: 5px;
+}
+.nombres {
+  text-align: center;
+}
+#div4 {
+  text-align: center;
+}
+.musica {
+  text-align: center;
+}
+.nomover {
+  text-align: left;
 }
