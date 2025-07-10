@@ -1,0 +1,27 @@
+﻿NOMBRE RECINTO;DIRECCIÓN;COMUNA;CAPACIDAD MÍNIMA;CAPACIDAD MÁXIMA;BUTACAS;ZONA RESIDENCIAL;PROPIETARIO;FUNCIÓN PRINCIPAL;ABIERTO O CERRADO
+Centro Cultural CEINA;Arturo Prat 33;Santiago;60;802;794 (sala principal);No;Sin información de propietario;Cultural;Cerrado
+Centro Cultural Gabriela Mistral (GAM);Avenida Alameda Libertador Bernardo O'Higgins 227;Santiago;70;2500;1800 (sala más grande);No ;Corporación Centro Cultural Gabriela Mistral;Cultural;Cerrado
+Centro Cultural Matucana 100;Avenida Matucana 100;Estación Central;56;2000;S/I;No;Corporación Cultural Matucana 100;Cultural;Cerrado
+Claro Arena;Avenida Las Flores 13000;Las Condes;16000;20000;16000;No;Club Deportivo Universidad Católica;Multipropósito;Abierto
+Club Hípico;Avenida Blanco Encalada 2540;Santiago;;50000;0;No;Diversos accionistas;Deportivo;Abierto
+Espacio Carén;Km 14  Ruta 68 interior Parque Carén;Pudahuel;;5000;0;No;Universidad de Chile;Multipropósito;Abierto
+Espacio Riesco;Avenida El Salto 5000;Huechuraba;;10000;0;No;GL Events Chile;Multipropósito;Abierto
+Estadio Bicentenario de La Florida;Enrique Olivares 1003;La Florida;25000;28000;12000;Si;Municipalidad de La Florida;Deportivo;Abierto
+Estadio Monumental David Arellano;Avenida Marathon 5300;Macul;40000;47000;40000;Si;Inmobiliaria Estadio Colo Colo SA.;Deportivo;Abierto
+Estadio Nacional Julio Martínez Prádanos;Avenida Grecia 2001;Ñuñoa;46000;60000;46190;Si;Instituto Nacional de Deportes (IND);Deportivo;Abierto
+Estadio Santa Laura;Santa Laura 1241;Independencia;19000;22000;19887;Si;Inmobiliaria Unión Española;Deportivo;Abierto
+Hacienda Lo Aguirre (ex Parque Fisa);Km 16 Ruta 68 ;Pudahuel;;S/I;0;No;GL Events Chile;Recreacional;Abierto
+Hipódromo Chile;Avenida Hipódromo Chile 1715;Independencia;20000;40000;S/I;Si;Sociedad Hipódromo Chile S.A.;Deportivo;Abierto
+Movistar Arena;Tupper 1941 interior Parque O’Higgins;Santiago;;16522;12000;No;HLR Group;Musical;Cerrado
+Parque Bicentenario de Cerrillos;Avenida Pedro Aguirre Cerda 6100;Cerrillos;;80000;0;No;Ministerio de la Vivienda y Urbanismo (MINVU);Recreacional;Abierto
+Parque Ciudad Empresarial;Avenida del Parque 420;Huechuraba;;S/I;0;No;Grupo Hispano Chilena de Inversiones (principal);Recreacional;Abierto
+Parque Deportivo Estadio Nacional;Avenida Marathón 1719;Ñuñoa;;60000;0;Si;Instituto Nacional de Deportes (IND);Recreacional;Abierto
+Parque Padre Hurtado ;Francisco Bilbao 8105;La Reina;2000;5000;0;Si;Junta de Alcaldes de Providencia, Las Condes y La Reina;Recreacional;Abierto
+Teatro Caupolicán;San Diego 850;Santiago;;7000;4500;Si;Sociedad familiar Inmobiliaria Oriente;Musical;Cerrado
+Teatro Coliseo;Nataniel Cox 59;Santiago;1800;2500;1800;No;Fundación Coliseo;Cultural;Cerrado
+Teatro Mori Bellavista;Constitución 183;Providencia;;162;162;No;Benjamín Vicuña, Gonzalo Valenzuela y Cristóbal Vial;Cultural;Cerrado
+Teatro Mori Parque Arauco;Avenida Pdte. Kennedy 5413;Las Condes;;248;248;No;Benjamín Vicuña, Gonzalo Valenzuela y Cristóbal Vial;Cultural;Cerrado
+Teatro Mori Recoleta;Bellavista 77;Recoleta;;222;222;No;Benjamín Vicuña, Gonzalo Valenzuela y Cristóbal Vial;Cultural;Cerrado
+Teatro Mori Vitacura ;Avenida Bicentenario 3800;Vitacura;;239;239;No;Benjamín Vicuña, Gonzalo Valenzuela y Cristóbal Vial;Cultural;Cerrado
+Teatro Municipal de Santiago;Agustinas 794;Santiago;;1500;1500;No;Corporación Cultural de Santiago;Cultural;Cerrado
+Teatro Nescafé de las Artes;Manuel Montt 032;Providencia;;983;983;Si;Familia Ghivarello;Cultural;Cerrado

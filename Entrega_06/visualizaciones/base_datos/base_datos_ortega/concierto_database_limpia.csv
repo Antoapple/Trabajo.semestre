@@ -1,0 +1,250 @@
+﻿Hipodromo;Concierto;Recinto;Productora/organizadora;Tiquetera ;Fecha;Numero_asistentes;Tipo_ artista;Artista;Rango_precios;Opcion_descuento_entradas;Preventa;Cancelado;Cambio_recinto;Genero_musical
+1;X The Future is Unknown;Club Hipico;Street Machine;PuntoTicket;28-09-2024;Sin datos;Internacional;Adriatique;39.000 - 99.000;No;1;0;0;Electronica
+1;X The Future is Unknown;Club Hipico;Street Machine;PuntoTicket;28-09-2024;Sin datos;Internacional;Mau P;39.000 - 99.000;No;1;0;0;Electronica
+1;X The Future is Unknown;Club Hipico;Street Machine;PuntoTicket;28-09-2024;Sin datos;Internacional;Layla Benítez;39.000 - 99.000;No;1;0;0;Electronica
+1;X The Future is Unknown;Club Hipico;Street Machine;PuntoTicket;28-09-2024;Sin datos;Internacional;Undercatt y Vomee;39.000 - 99.000;No;1;0;0;Electronica
+1;X The Future is Unknown;Club Hipico;Street Machine;PuntoTicket;28-09-2024;Sin datos;Nacional;Camila Govorcín;39.000 - 99.000;No;1;0;0;Electronica
+2;John Summit 2024;Club Hipico;Street Machine;PuntoTicket;01-12-2024;Sin datos;Internacional;John Summit ;29.000 - 79.000;No;1;0;0;Electronica
+3;LA FERIA ON TOUR: ARTBAT;Espacio Riesco;La Feria On Tour;Passline;31-10-2024;Sin datos;Internacional;ARTBAT;Sin datos;No;1;0;0;Electronica
+4;LA FERIA ON TOUR: MICHAEL BIBI;Espacio Riesco;La Feria On Tour;Passline;23-11-2024;Sin datos;Internacional;Michael Bibi;45.000 - 169.000;No;1;0;0;Electronica
+5;Jonas Brothers: THE TOUR;Estadio Bicentenario de La Florida;DG Medios;TicketMaster;23-04-2024;Sin datos;Internacional;Jonas Brothers;52.425 - 215.525;Descuento Entel - 20% Descuento Scotiabank - 20%;1;0;0;Pop
+6;FAITH IN THE FUTURE WORLD TOUR;Estadio Bicentenario de La Florida;DG Medios;TicketMaster;24-05-2024;Sin datos;Internacional;Louis Tomlinson;53.590 - 186.400;Descuento Entel - 20% Descuento Scotiabank - 20%;1;0;0;Pop
+7;Circus Maximus World Tour ;Estadio Bicentenario de La Florida;Fenix Entertainment Group ;TicketMaster;07-09-2024;10.000;Internacional;Travis Scott;79.350 - 258.750;No;1;0;0;Hip hop
+8;Gira Antes de que Amanezca;Estadio Bicentenario de La Florida;Swing Management;TicketMaster;05-10-2024;25.000;Internacional;Morat;57.500 - 391-000;Descuento Clientes Banco Falabella - 30-20%;0;0;0;Pop Rock
+9;El Primer Estadio;Estadio Bicentenario de La Florida;Bizarro Live Entertainment;TicketMaster;08-11-2024;25.000;Nacional;Young Cister;25.000 - 75.000;No;0;0;0;Urbana
+10;Got Back Tour;Estadio Monumental David Arellano;DG Medios;TicketMaster;11-10-2024;40.000;Internacional;Paul McCartney;67.570 - 291.250;Descuento Entel - 20% Descuento Scotiabank-  20%;1;0;0;Rock
+11;A.D.A Tour 2024;Estadio Monumental David Arellano;Bizarro Live Entertainment;PuntoTicket;15-11-2024;40.000;Internacional;Duki;34.500 - 97.750;No;1;0;0;Trap
+12;Ferxxocalipsis Tour 2024;Estadio Monumental David Arellano;DG Medios;TicketMaster;26-11-2024;Sin datos ;Internacional;Feid ;53.590 - 180.575;Descuento Entel - 20% Descuento Scotiabank-  20%;1;0;0;Reggaeton 
+13;Luis Miguel: Tour 2024;Estadio Nacional;Fenix Entertainment Group ;PuntoTicket;01-03-2024;Sin datos ;Internacional;Luis Miguel;61.200 - 506.800;Descuento Banco de Chile  - 20%;1;0;0;Balada
+14;Luis Miguel: Tour 2024;Estadio Nacional;Fenix Entertainment Group ;PuntoTicket;02-03-2024;Sin datos ;Internacional;Luis Miguel;61.200 - 506.800;Descuento Banco de Chile  - 20%;1;0;0;Balada
+15;Mañana sera bonito Tour;Estadio Nacional;Bizarro Live Entertainment;PuntoTicket;19-04-2024;Sin datos;Internacional;Karol G;57.500 - 368.000;Descuento Banco Estado - 20%;1;0;0;Urbana
+16;Mañana sera bonito Tour;Estadio Nacional;Bizarro Live Entertainment;PuntoTicket;20-04-2024;Sin datos;Internacional;Karol G;57.500 - 368.000;Descuento Banco Estado - 20%;1;0;0;Urbana
+17;Mañana sera bonito Tour;Estadio Nacional;Bizarro Live Entertainment;PuntoTicket;21-04-2024;Sin datos;Internacional;Karol G;57.500 - 368.000;Descuento Banco Estado - 20%;1;0;0;Urbana
+18;Ven Aqui;Estadio Nacional;La Oreja;PuntoTicket;27-04-2024;50.000;Nacional;Los Bunkers ;29.900 - 94.900;No;0;0;0;Rock
+19;Ven Aqui;Estadio Nacional;La Oreja;PuntoTicket;28-04-2024;50.000;Nacional;Los Bunkers ;29.900 - 94.900;No;0;0;0;Rock
+20;Cerrando Ciclos;Estadio Nacional;DG Medios;TicketMaster;29-10-2024;Sin datos;Internacional;Aventura ;70.850 - 332.975;Descuento Entel - 20% Descuento Scotiabank-  20%;1;0;0;Bachata
+21;Cerrando Ciclos;Estadio Nacional;DG Medios;TicketMaster;30-10-2024;Sin datos;Internacional;Aventura;70.850 - 332.975;Descuento Entel - 20% Descuento Scotiabank - 20%;1;0;0;Bachata
+22;Journey y Deep Purple;Estadio Santa Laura ;FanLab;PuntoTicket;17-09-2024;40.000;Internacional;Deep Purple;56.350 -218.500;Descuento Claro Club 30-40% Descuento Cencosud Scotiabank 30-40%;1;0;0;Rock
+23;Journey y Deep Purple;Estadio Santa Laura ;FanLab;PuntoTicket;17-09-2024;40.000;Internacional;Journey;56.350 - 218.500;Descuento Claro Club 30-40% Descuento Cencosud Scotiabank 30-40%;1;0;0;Rock
+24;Halloween Live;Hipodromo Chile;Next Producciones;Ticketplus ;31-10-2024;Sin datos;Nacional;Julianno Sosa;Sin datos;No;0;0;0;Urbana
+25;Año Nuevo Open Air;Hipodromo Chile;Techno Eventos;PuntoTicket;31-12-2024;Sin datos;Internacional;HOZHO;23.000 - 80.500;No;0;0;0;Electronica
+25;Año Nuevo Open Air;Hipodromo Chile;Techno Eventos;PuntoTicket;31-12-2024;Sin datos;Internacional;AMAZINGBLADE;23.000 - 80.500;No;0;0;0;Electronica
+26;Young Cister Listening Party;Movistar Arena;Bizarro Live Entertainment;PuntoTicket;17-01-2024;Sin datos;Nacional;Young Cister;9.990;No;0;0;0;Urbana
+27;Todo o Nada Tour ;Movistar Arena;Bizarro Live Entertainment;PuntoTicket;02-02-2024;No aplica;Internacional;Santa Fe Klan;11.500 - 40.250;No;0;1;0;Rap
+28;40 Years Of Morrisey;Movistar Arena;Lotus;PuntoTicket;15-02-2024;No aplica;Internacional;Morrisey;8.500 - 114.000;Descuento Banco de Chile  - 20%;1;1;0;Rock
+29;Oscar D'Leon;Movistar Arena;Product Show Entertainment;PuntoTicket;17-02-2024;No aplica;Internacional;Oscar D'Leon;Sin datos;No;0;1;0;Salsa
+30;La Ultima Función World Tour ;Movistar Arena;Snow Entertainment ;PuntoTicket;20-02-2024;Sin datos;Internacional;Voz Veis;21.850 - 97.750;No;0;0;0;Pop Balada
+31;Laura Pausini World Tour 2023/2024;Movistar Arena;MULTIMUSICA;PuntoTicket;25-02-2024;Sin datos;Internacional;Laura Pausini;40.250 - ;No;1;0;0;Balada
+32;Sanz En vivo;Movistar Arena;Bizarro Live Entertainment;PuntoTicket;27-02-2024;Sin datos;Internacional;Alejandro Sanz;11.500 - 287.500;No;0;0;0;Pop Balada
+33;Mexico Lindo y Querido Latam Tour 2024;Movistar Arena;Bizarro Live Entertainment;PuntoTicket;28-02-2024;Sin datos ;Internacional;Maná;11.500 - 322.000;No;0;0;0;Rock
+34;Tour Victoria;Movistar Arena;MULTIMUSICA;PuntoTicket;29-02-2024;Sin datos;Internacional;Raphael ;30.000 - 110.000;No;0;0;0;Balada
+35;Martin Garrix En Chile ;Movistar Arena;Street Machine;PuntoTicket;02-03-2024;Sin datos;Internacional;Martin Garrix;25.000 - 99.000;No;0;0;0;Electronica
+36;20 Años Sin Noticias;Movistar Arena;MIDEA4YOU PRODUCCIONES;PuntoTicket;07-03-2024;Sin datos;Internacional;Melendi;28.750 - 172.500;No;0;0;0;Pop Balada
+37;Tour 30 Años;Movistar Arena;MIDEA4YOU PRODUCCIONES;PuntoTicket;08-03-2024;Sin datos;Internacional;Victor Manuelle;28.750 - 109.250;Descuento 40% Ultimos Tickets;0;0;0;Salsa
+38;Tour Auténtico ;Movistar Arena;MULTIMUSICA;PuntoTicket;09-03-2024;Sin datos;Internacional;Gilberto Santa Rosa;32.200 - 138.000;No;0;0;0;Salsa
+39;Placebo;Movistar Arena;Lotus;PuntoTicket;20-03-2024;Sin datos ;Internacional;Placebo;28.500 - 109.300;Descuento Banco de Chile  - 20%;1;0;0;Rock
+40;Placebo;Movistar Arena;Lotus;PuntoTicket;21-03-2024;Sin datos ;Internacional;Placebo;28.500 - 109.300;Descuento Banco de Chile  - 20%;1;0;0;Rock
+41;Tour SE+M;Movistar Arena;Lotus;PuntoTicket;04-04-2024;Sin datos ;Internacional;Arcangel;42.800 - 92.000;Descuento Banco de Chile  - 20%;1;0;0;Reggaeton 
+42;Partyson;Movistar Arena;Iguana Producciones;PuntoTicket;05-04-2024;Sin datos;Nacional;Cris MJ;11.500 - 92.000;No;0;0;0;Urbana 
+43;The Ultimate Elvis Experience – From Memphis To Movistar Arena;Movistar Arena;AH Producciones;PuntoTicket;06-04-2024;Sin datos;Internacional;Shawn Klush;Sin datos;No;1;0;0;Rock & Roll
+43;The Ultimate Elvis Experience – From Memphis To Movistar Arena;Movistar Arena;AH Producciones;PuntoTicket;06-04-2024;Sin datos;Internacional;Ryan Pelton;Sin datos;No;1;0;0;Rock & Roll
+43;The Ultimate Elvis Experience – From Memphis To Movistar Arena;Movistar Arena;AH Producciones;PuntoTicket;06-04-2024;Sin datos;Internacional;Moses Snow;Sin datos;No;1;0;0;Rock & Roll
+44;Crush The World Tour;Movistar Arena;FanLab;PuntoTicket;09-04-2024;Sin datos;Internacional;Megadeth ;21.850 - 90.850;No;0;0;0;Metal
+45;Autopoietica Tour;Movistar Arena;Bizarro Live Entertainment;PuntoTicket;10-04-2024;Sin datos;Nacional;Mon Laferte ;28.750 - 126.500;No;0;0;0;Pop
+46;Ages & Stages Tour;Movistar Arena;DG Medios;PuntoTicket;11-04-2024;Sin datos;Internacional;Tom Jones;31.455 - 139.800;Descuento Entel - 20% Descuento Scotiabank-  20%;1;0;0;R&B
+47;El Leon del Ritmo Tour;Movistar Arena;Iguana Producciones;PuntoTicket;12-04-2024;Sin datos ;Internacional;Los Fabulosos Cadillacs;18.400 - 120.000;No;0;0;0;Rock
+48;The Lost In Love Experience;Movistar Arena;Free Time;PuntoTicket;13-04-2024;Sin datos ;Internacional;Air Supply;45.600 - 136.800;No;0;0;0;Rock
+48;The Lost In Love Experience;Movistar Arena;Free Time;PuntoTicket;13-04-2024;Sin datos ;Internacional;Daniel Boaventura ;45.600 - 136.800;No;0;0;0;R&B
+49;Milo J;Movistar Arena;Bizarro Live Entertainment;PuntoTicket;14-04-2024;Sin datos;Internacional;Milo J;23.000 - 74.750;No;0;0;0;Trap
+50;Partyson;Movistar Arena;Iguana Producciones;PuntoTicket;15-04-2024;Sin datos;Nacional;Cris MJ;11.500 - 92.000;No;0;0;0;Urbana 
+51;Partyson;Movistar Arena;Iguana Producciones;PuntoTicket;16-04-2024;Sin datos;Nacional;Cris MJ;11.500 - 92.000;No;0;0;0;Urbana 
+52;ITZY 2ND WORLD TOUR 'BORN TO BE';Movistar Arena;DG Medios;PuntoTicket;18-04-2024;Sin datos;Internacional;ITZY;46.600 - 81.550;Descuento Entel - 20% Descuento Scotiabank - 20%;1;0;0;K-Pop
+53;Mercyful Fate;Movistar Arena;FanLab;PuntoTicket;22-04-2024;Sin datos ;Internacional;Mercyful Fate;33.350 - 90.850;No;0;0;0;Metal
+54;Estopa Gira 25 Aniversario;Movistar Arena;MIDEA4YOU PRODUCCIONES;PuntoTicket;26-04-2024;Sin datos;Internacional;Estopa;28.750 - 80.500;No;0;0;0;Rumba
+55;Revuelta ;Movistar Arena;Parlante Producciones;PuntoTicket;27-04-2024;15.000;Nacional;Los Tres;28.750 - 109.250;No;0;0;0;Rock
+56;Revuelta;Movistar Arena;Parlante Producciones;PuntoTicket;28-04-2024;15.000;Nacional;Los Tres;28.750 - 109.250;No;0;0;0;Rock
+57;Revuelta ;Movistar Arena;Parlante Producciones;PuntoTicket;30-04-2024;15.000;Nacional;Los Tres;28.750 - 109.250;No;0;0;0;Rock
+59;Revuelta ;Movistar Arena;Parlante Producciones;PuntoTicket;01-05-2024;15.000;Nacional;Los Tres;28.750 - 109.250;No;0;0;0;Rock
+60;Roberto Carlos Santiago CL;Movistar Arena;Patagonia Live;PuntoTicket;06-05-2024;Sin datos ;Internacional;Roberto Carlos;28.750 - 247.250;Descuento Hites 20%;0;0;0;Balada
+61;Kool & The Gang & Village People ;Movistar Arena;Free Time;PuntoTicket;11-05-2024;Sin datos;Internacional;Kool & the Gang;22.800 - 114.000;No;0;0;0;Disco 
+61;Kool & The Gang & Village People ;Movistar Arena;Free Time;PuntoTicket;11-05-2024;Sin datos;Internacional;Village People;22.800 - 114.000;No;0;0;0;Disco
+62;DANNA L¡VE;Movistar Arena;Bizarro Live Entertainment;PuntoTicket;12-05-2024;Sin datos ;Internacional;Danna Paola;11.000 - 115.000;No;0;0;0;Pop
+63;Un Deseo Mas;Movistar Arena;MULTIMUSICA;PuntoTicket;14-05-2024;Sin datos;Internacional;Ana Gabriel;35.650 - 231.150;Descuento Hites 20%;0;0;0;Balada
+64;Un Deseo Mas;Movistar Arena;MULTIMUSICA;PuntoTicket;15-05-2024;No aplica;Internacional;Ana Gabriel;35.650 - 231.150;Descuento Hites 20%;0;1;1;Balada
+65;El After del After Tour;Movistar Arena;Lotus;PuntoTicket;16-05-2024;Sin datos;Internacional;YSY A;23.000 - 43.700;No;0;0;0;Trap
+66;La Pelea del Siglo;Movistar Arena;Iguana Producciones;PuntoTicket;17-05-2024;Sin datos;Nacional;Gino Mella;11.500 - 115.000;No;0;0;0;Urbana
+66;La Pelea del Siglo;Movistar Arena;Iguana Producciones;PuntoTicket;17-05-2024;Sin datos ;Nacional;Jairo Vera;11.500 - 115.000;No;0;0;0;Urbana
+67;La Pelea del Siglo;Movistar Arena;Iguana Producciones;PuntoTicket;18-05-2024;Sin datos;Nacional;Gino Mella;11.500 - 115.000;No;0;0;0;Urbana
+67;La Pelea del Siglo;Movistar Arena;Iguana Producciones;PuntoTicket;18-05-2024;Sin datos;Nacional;Jairo Vera;11.500 - 115.000;No;0;0;0;Urbana
+68;La Esencia de J aquí;Movistar Arena;La Oreja;PuntoTicket;23-05-2024;Sin datos;Internacional;Justin Quiles;19.990 - 79.990;Descuento Dia de la Madre 20%;0;0;0;Reggaeton 
+69;Tour Camila;Movistar Arena;Bizarro Live Entertainment;PuntoTicket;05-06-2024;Sin datos;Internacional;Camila;11.500 - 149.500;No;0;0;0;Balada
+70;I Am The Corte;Movistar Arena;Mycelium Producciones;PuntoTicket;06-06-2024;No aplica;Nacional;Marcianeke;17.250. - 40.250;No;0;1;0;Urbana
+71;Un Deseo Mas;Movistar Arena;MULTIMUSICA;PuntoTicket;07-06-2024;Sin datos;Internacional;Ana Gabriel;35.650 - 231.150;Descuento Hites 20%;0;0;0;Balada
+72;Babasonicos ;Movistar Arena;Lotus;PuntoTicket;08-06-2024;Sin datos ;Internacional;Babasonicos ;19.000 - 69.000;Descuento Banco de Chile  - 20%;1;0;0;Rock
+73;Carbon Amor Tour 2024;Movistar Arena;Bizarro Live Entertainment;PuntoTicket;19-06-2024;No aplica;Internacional;Farruko;11.500 - 97.750;No;0;1;0;Reggaeton 
+74;¿Quien trae las cornetas? World Tour Parte 2;Movistar Arena;Lotus;PuntoTicket;27-06-2024;Sin datos;Internacional;RAWAYANA;28.800 - 51.800;No;0;0;0;Trippy Pop
+75;Tour DM-T;Movistar Arena;Iguana Producciones;PuntoTicket;28-06-2024;Sin datos;Internacional;Dread Mar I;20.700 - 80.500; Descuento Dia del Padre 30% - Promocion 2xCancha - Promocion 2xCanchaVIP;0;0;0;Reggae
+76;IVE 1ST WORLD TOUR SHOW WHAT I HAVE;Movistar Arena;DG Medios;PuntoTicket;30-06-2024;Sin datos;Internacional;IVE;53.590 - 104.850;Descuento Entel - 20% Descuento Scotiabank - 20%;1;0;0;K-Pop
+77;Robles Huracan Latam Tour;Movistar Arena;Snow Entertainment ;PuntoTicket;02-07-2024;Sin datos;Internacional;Robleis ;24.450 - 86.250;No;0;0;0;Pop
+78;Proyecto A-Klein;Movistar Arena;Lotus;PuntoTicket;05-07-2024;15.000;Nacional;Jere Klein ;17.000 - 43.700;No;0;0;0;Urbana
+79;Noches de Palenque;Movistar Arena;Iguana Producciones;PuntoTicket;06-07-2024;12.000;Internacional;Jessi Uribe ;20.700 - 126.500;Descuento Dia del Padre 30%;0;0;0;Ranchera
+80;Gira Mundial 2024;Movistar Arena;Free Time;PuntoTicket;13-07-2024;No aplica;Internacional;Alejandro Lermer;45.600 - 91.200;No;0;1;0;Balada
+81;Gira Mundial 2024;Movistar Arena;Free Time;PuntoTicket;13-07-2024;No aplica;Internacional;Noel Schajris;45.600 - 91.200;No;0;1;0;Balada
+82;Pia Toscano En Concierto;Movistar Arena;Grupo Kam & Live Entertainment;PuntoTicket;18-07-2024;Sin datos ;Internacional;Pía Toscano;23.750 - 97.750;Descuento Especial 30% - Descuento Banco de Chile 20%;0;0;0;Pop
+83;El Señor de los Anillos: La Comunidad del Anillo en concierto;Movistar Arena;TRANSISTOR;PuntoTicket;26-07-2024;Sin datos ;Internacional;Banda sonora de Howard Shore;28.750 - 151.800;No;0;0;0;Instrumental
+84;No Te Va a Gustar Gira 30;Movistar Arena;TOMA;PuntoTicket;27-07-2024;Sin datos;Internacional;No Te Va A Gustar;20.700 - 41.400;No;1;0;0;Rock
+85;Ta Bueno Tour;Movistar Arena;Iguana Producciones;PuntoTicket;15-08-2024;Sin datos;Internacional;Silvestre Dangond;18.400 - 2.300.000;Descuento Bar de Rio 30%;0;0;0;Vallenato
+86;Descartable Gira 2024;Movistar Arena;Inversiones MP;PuntoTicket;16-08-2024;Sin datos ;Internacional;WOS;27.600 - 51.750;No;0;0;0;Rap
+87;Pal Cora Tour;Movistar Arena;Iguana Producciones;PuntoTicket;17-08-2024;Sin datos;Internacional;Christian Nodal;29.900 - 276.000;Descuento Bar de Rio 30%;0;0;0;Mariachi
+88;VIDA;Movistar Arena;Lotus;PuntoTicket;18-08-2024;Sin datos;Nacional;Ana Tijoux;23.000 - 51.800;No;0;0;0;Rap
+89;Boca Chueca Tour 2024;Movistar Arena;Bizarro Live Entertainment;PuntoTicket;21-08-2024;Sin datos;Internacional;Carin Leon;Sin datos;No;0;0;0;Mariachi
+90;Invencible World Tour;Movistar Arena;La Oreja;PuntoTicket;24-08-2024;Sin datos;Nacional;Myriam Hernandez;27.600 - 166.750;Descuento Comunidad de las Artes 20%;0;0;0;Balada
+91;Gladiator in Concert;Movistar Arena;Trussup;PuntoTicket;29-08-2024;Sin datos;Internacional;Banda sonora de Hans Zimmer;47.250 - 129.380;Descuento Tempo 25% - Descuento Itau 25% - Descuentos Convenios;0;0;0;Instrumental
+92;Evolut30n;Movistar Arena;Chargola Pro;PuntoTicket;30-08-2024;Sin datos;Internacional;DJ Bobo;22.000 - 69.000;No;0;0;0;Pop
+93;Preparaos?;Movistar Arena;Lotus;PuntoTicket;01-09-2024;Sin datos;Nacional;Movimiento Original;17.300 - 41.400;No;0;0;0;Hip hop
+94;Ke Personajes Santiago;Movistar Arena;Fridom Producciones;PuntoTicket;02-09-2024;Sin datos;Internacional;Ke Personajes;25.300 - 70.150;No;1;0;0;Cumbia 
+95;The Dream Show 3;Movistar Arena;DG Medios;PuntoTicket;05-09-2024;Sin datos;Internacional;NCT Dream;40.775 - 180.575;No;1;0;0;K-Pop
+96;Chulistar;Movistar Arena;Bizarro Live Entertainment;PuntoTicket;06-09-2024;No aplica;Internacional;De La Ghetto;11.500 - 80.500;No;0;1;0;Reggaeton 
+97;Los 4F;Movistar Arena;Bizarro Live Entertainment;PuntoTicket;09-09-2024;Sin datos;Nacional;Kidd Voodoo;11.500 - 69.000;No;1;0;0;Urbana
+97;Los 4F;Movistar Arena;Bizarro Live Entertainment;PuntoTicket;09-09-2024;Sin datos;Nacional;Young Cister;11.500 - 69.000;No;1;0;0;Urbana
+97;Los 4F;Movistar Arena;Bizarro Live Entertainment;PuntoTicket;09-09-2024;Sin datos;Nacional;Easykid ;11.500 - 69.000;No;1;0;0;Urbana
+97;Los 4F;Movistar Arena;Bizarro Live Entertainment;PuntoTicket;09-09-2024;Sin datos;Nacional;DrefQuila;11.500 - 69.000;No;1;0;0;Urbana
+98;Andre Rieu And His Johann Strauss Orchestra;Movistar Arena;Bizarro Live Entertainment;PuntoTicket;11-09-2024;12.000;Internacional;Andre Rieu;23.000 - 253.000;No;0;0;0;Clásica
+99;Andre Rieu And His Johann Strauss Orchestra;Movistar Arena;Bizarro Live Entertainment;PuntoTicket;12-09-2024;12.000;Internacional;Andre Rieu;23.000 - 253.000;No;0;0;0;Clásica
+100;Andre Rieu And His Johann Strauss Orchestra;Movistar Arena;Bizarro Live Entertainment;PuntoTicket;13-09-2024;12.000;Internacional;Andre Rieu;23.000 - 253.000;No;0;0;0;Clásica
+101;Andre Rieu And His Johann Strauss Orchestra;Movistar Arena;Bizarro Live Entertainment;PuntoTicket;14-09-2024;12.000;Internacional;Andre Rieu;23.000 - 253.000;No;0;0;0;Clásica
+102;Andre Rieu And His Johann Strauss Orchestra;Movistar Arena;Bizarro Live Entertainment;PuntoTicket;15-09-2024;12.000;Internacional;Andre Rieu;23.000 - 253.000;No;0;0;0;Clásica
+103;Historia Tour 2024;Movistar Arena;Bizarro Live Entertainment;PuntoTicket;23-09-2024;12.000;Internacional;Marc Anthony;11.500 - 345.000;No;1;0;0;Salsa
+104;Historia Tour 2024;Movistar Arena;Bizarro Live Entertainment;PuntoTicket;24-09-2024;Sin datos;Internacional;Marc Anthony;11.500 - 345.000;No;1;0;0;Salsa
+105;GOTTI A Tour;Movistar Arena;Lotus;PuntoTicket;25-09-2024;No aplica;Internacional;Tiago PZK;23.000 - 80.500;No;0;1;0;Reggaeton 
+106;Miranda!;Movistar Arena;Lotus;PuntoTicket;26-09-2024;15.000;Internacional;Miranda!;19.000 - 69.000;Descuento Banco de Chile  - 20%;1;0;0;Pop
+107;Miranda!;Movistar Arena;Lotus;PuntoTicket;27-09-2024;15.000;Internacional;Miranda!;19.000 - 69.000;Descuento Banco de Chile  - 20%;1;0;0;Pop
+108;Miranda!;Movistar Arena;Lotus;PuntoTicket;28-09-2024;15.000;Internacional;Miranda!;19.000 - 69.000;Descuento Banco de Chile  - 20%;1;0;0;Pop
+109;Juanes Latam Tour 2024;Movistar Arena;Lotus;PuntoTicket;29-09-2024;Sin datos;Internacional;Juanes;23.800 - 126.500;Descuento Banco de Chile  - 20%;1;0;0;Rock
+110;Garcia Tour 2024;Movistar Arena;Bizarro Live Entertainment;PuntoTicket;30-09-2024;Sin datos;Internacional;Kany Garcia;11.500 - 103.500;No;0;0;0;Pop
+111;Paraiso Pop;Movistar Arena;SA Producciones;PuntoTicket;03-10-2024;Sin datos;Nacional;Alex Anwandter;28.750 - 40.250;No;0;0;0;Pop
+111;Paraiso Pop;Movistar Arena;SA Producciones;PuntoTicket;03-10-2024;Sin datos;Nacional;Bandalos Chinos;28.750 - 40.250;No;0;0;0;Pop
+111;Paraiso Pop;Movistar Arena;SA Producciones;PuntoTicket;03-10-2024;Sin datos;Nacional;Fother Muckers;28.750 - 40.250;No;0;0;0;Pop
+112;The Show Live On Tour;Movistar Arena;DG Medios;PuntoTicket;04-10-2024;Sin datos;Internacional;Niall Horan;52.425 - 93.200;Descuento Entel - 20% Descuento Scotiabank-  20%;1;0;0;Pop
+113;Las Letras Ya No Importan;Movistar Arena;Bizarro Live Entertainment;PuntoTicket;05-10-2024;Sin datos;Internacional;Residente;51.750 - 97.750;No;0;0;0;Rap
+114;A Night With Matteo;Movistar Arena;Bizarro Live Entertainment;PuntoTicket;06-10-2024;Sin datos;Internacional;Matteo Bocelli;11.500 - 172.500;No;0;0;0;Clásica
+115;HOLO;Movistar Arena;Street Machine;PuntoTicket;10-10-2024;Sin datos;Internacional;Eric Prydz ;28.000 - 105.000;No;1;0;0;Electronica
+116;#Tour24;Movistar Arena;Bizarro Live Entertainment;PuntoTicket;11-10-2024;Sin datos;Internacional;Maria Becerra;10.450 - 172.500;Descuento Banco de Chile  - 20%;1;0;0;Pop
+117;Grasa Tour;Movistar Arena;Lotus;PuntoTicket;06-11-2024;No aplica;Internacional;Nathy Peluso;34.500 - 92.000;No;1;1;0;Hip hop
+118;RHLM 2;Movistar Arena;Iguana Producciones;PuntoTicket;06-11-2024;Sin datos;Internacional;Anuel AA;20.700 - 85.100;No;0;0;0;Reggaeton 
+119;Luis Fonsi: Tour 25 años;Movistar Arena;Swing Management;PuntoTicket;07-11-2024;Sin datos;Internacional;Luis Fonsi;23.000 - 195.500;No;0;0;0;Balada
+120;RHLM 2;Movistar Arena;Iguana Producciones;PuntoTicket;12-11-2024;Sin datos;Internacional;Anuel AA;20.700 - 85.100;No;0;0;0;Reggaeton 
+121;RHLM 2;Movistar Arena;Iguana Producciones;PuntoTicket;14-11-2024;Sin datos;Internacional;Anuel AA;20.700 - 85.100;No;0;0;0;Reggaeton 
+122;RHLM 2;Movistar Arena;Iguana Producciones;PuntoTicket;15-11-2024;Sin datos;Internacional;Anuel AA;20.700 - 85.100;No;0;0;0;Reggaeton 
+123;La Combo Tortuga 13th;Movistar Arena;FC Producciones;PuntoTicket;08-11-2024;Sin datos;Nacional;La Combo Tortuga;13.800 - 23.000;No;0;0;0;Cumbia 
+124;TWO´R AMIGOS;Movistar Arena;Swing Management;PuntoTicket;09-11-2024;Sin datos;Internacional;Emmanuel;41.400 - 161.000;Descuento Hites 20% - Descuento Radio Pudahuel 20% - Promocion 2x60.000;0;0;0;Balada
+124;TWO´R AMIGOS;Movistar Arena;Swing Management;PuntoTicket;09-11-2024;Sin datos;Internacional;Manuel Mijares;41.400 - 161.000;Descuento Hites 20% - Descuento Radio Pudahuel 20% - Promocion 2x60.000;0;0;0;Balada
+125;What Happened To Earth? Part 3;Movistar Arena;Lotus;PuntoTicket;10-11-2024;Sin datos;Internacional;Aurora;34.500 - 74.800;No;1;0;0;Pop
+126;Raze The Bar Tour;Movistar Arena;Patagonia Live;PuntoTicket;11-11-2024;Sin datos;Internacional;Travis;40.850 - 99.100;Promocion 2x1;0;0;0;Rock
+127;TRAPPii Tour;Movistar Arena;Sobrevolando;PuntoTicket;13-11-2024;Sin datos;Internacional;Jay Wheeler;32.300 - 195.500;Descuento Post Halloween 20%;0;0;0;Trap
+128;Siempre Juntos Tour 2024;Movistar Arena;Swing Management;PuntoTicket;16-11-2024;Sin datos;Internacional;Pimpinela;28.750 - 103.500;Descuento Hites 20% - Descuento Swing 30% - Promocion 2x45.000;0;0;0;Balada
+129;Amanda Miguel 2024;Movistar Arena;Next Producciones;PuntoTicket;18-11-2024;No aplica;Internacional;Amanda Miguel;9.200 - 103.500;No;0;1;0;Balada
+130;KEANE20;Movistar Arena;DG Medios;PuntoTicket;19-11-2024;Sin datos;Internacional;Keane;48.930 - 116.500;Descuento Entel 20% - Descuento Scotiabank 20%;1;0;0;Pop
+131;Dogz Of Oz;Movistar Arena;Lotus;PuntoTicket;20-11-2024;Sin datos;Internacional;Toto;33.300 - 207.000;Descuento Banco de Chile  - 20%;1;0;0;Rock
+132;Fonseca Tour 2024;Movistar Arena;La Oreja;PuntoTicket;21-11-2024;Sin datos;Internacional;Fonseca;25.300 - 92.000;No;1;0;0;Pop
+133;La Pantera Negra;Movistar Arena;Bizarro Live Entertainment;PuntoTicket;23-11-2024;Sin datos;Internacional;Mike Towers;9.500 - 97.750;Descuento Banco Estado - 20%;1;0;0;Trap
+134;.mp3 Tour;Movistar Arena;Bizarro Live Entertainment;PuntoTicket;24-11-2024;12.000;Internacional;Emilia;11.500 - 126.500;No;1;0;0;Pop
+135;.mp3 Tour;Movistar Arena;Bizarro Live Entertainment;PuntoTicket;25-11-2024;12.000;Internacional;Emilia;11.500 - 126.500;No;1;0;0;Pop
+136;.mp3 Tour;Movistar Arena;Bizarro Live Entertainment;PuntoTicket;26-11-2024;12.000;Internacional;Emilia;11.500 - 126.500;No;1;0;0;Pop
+137;Mi Progreso;Movistar Arena;La Oreja;PuntoTicket;28-11-2024;Sin datos ;Nacional;Bayron Fire;11.990 - 114.990;Descuento especial 35%;0;0;0;Urbana
+138;Yeliana World Tour;Movistar Arena;MIDEA4YOU PRODUCCIONES;PuntoTicket;01-12-2024;Sin datos ;Internacional;Greeicy;19.550 - 129.950;Descuento Adicional Esika 15% ;0;0;0;Pop
+139;Post Human: NeX Gen;Movistar Arena;BASIC SOUND ESPECTACULOS;PuntoTicket;02-12-2024;Sin datos;internacional;Bring Me The Horizon;34.368 -80.968;No;0;0;0;Rock
+140;Yung Beef & Family;Movistar Arena;Fauna Dos;PuntoTicket;03-12-2024;No aplica;Internacional;Yung Beef;28.750 - 43.700;No;0;1;0;Trap
+141;Blue Electric Light Tour 2024;Movistar Arena;Lotus;PuntoTicket;04-12-2024;15.000;Internacional;Lenny Kravitz ;46.320 - 168.925;Descuento Banco de Chile  - 20% - Descuento Movistar 15%;1;0;0;Rock
+142;Blue Electric Light Tour 2024;Movistar Arena;Lotus;PuntoTicket;05-12-2024;15.000;Internacional;Lenny Kravitz ;46.320 - 168.925;Descuento Banco de Chile  - 20% - Descuento Movistar 15%;1;0;0;Rock
+143;NARCOCULTOUR;Movistar Arena;Fauna Dos;PuntoTicket;06-12-2024;Sin datos;Nacional;Yung Beef;28.750 - 43.700;No;0;0;0;Trap
+144;Carlos XX Rivera;Movistar Arena;Bizarro Live Entertainment;PuntoTicket;09-12-2024;Sin datos;Internacional;Carlos Rivera;11.500 - 138.000;No;0;0;0;Balada
+145;Tour 4030;Movistar Arena;DG Medios;PuntoTicket;10-12-2024;Sin datos;Internacional;Fito Paez ;41.940 - 157.275;Descuento Cuenta Los Heroes 20% - Descuento Los Heroes 15% - Descuento Scotiabank 20%;1;0;0;Rock
+146;Puro Hits World Tour 2024;Movistar Arena;Chucao Producciones;PuntoTicket;12-12-2024;No aplica;Internacional;Monica Naranjo;Sin datos;No;0;1;0;Balada
+147;Zumbale Primo En Concierto;Movistar Arena;ZUMBALE PRIMO;PuntoTicket;12-12-2024;Sin datos;Nacional;Zumbale Primo;13.800 - 34.500;No;0;0;0;Cumbia 
+148;Los Vasquez: 14 Años de Trayectoria;Movistar Arena;Sello del Sur Producciones;PuntoTicket;13-12-2024;Sin datos;Nacional;Los Vasquez ;19.500 - 89.700;No;0;0;0;Balada
+149;The Greatest Love Of All;Movistar Arena;Free Time;PuntoTicket;14-12-2024;Sin datos;Internacional;Belinda Davids;22.800 - 68.400;Descuento BCI 20% - Descuento Ultimas Entradas;0;0;0;Pop
+150;La Despedida Tour;Movistar Arena;Latam Fest;PuntoTicket;15-12-2024;Sin datos;Internacional;Kim Loaiza;31.625 - 351.900;No;0;0;0;Pop
+151;Trueno 2024;Movistar Arena;Lotus;PuntoTicket;19-12-2024;Sin datos;Internacional;Trueno;19.000 - 92.000;Descuento Banco de Chile - 20% ;1;0;0;Hip hop
+152;PABLO VS PVBLO;Movistar Arena;Iguana Producciones;PuntoTicket;20-12-2024;Sin datos;Nacional;Pablo Chill-E;11.500 - 92.000;Descuento PIMPS 50%;0;0;0;Urbana
+153;40th Anniversary Tour;Movistar Arena;Lotus;PuntoTicket;21-12-2024;Sin datos;Internacional;Dream Theater;33.300 - 149.500;Descuento Banco de Chile - 20% ;1;0;0;Metal
+154;40th Anniversary Tour;Movistar Arena;Lotus;PuntoTicket;22-12-2024;Sin datos;Internacional;Dream Theater;33.300 - 149.500;Descuento Banco de Chile - 20% ;1;0;0;Metal
+155;THE FUTURE PAST TOUR;Parque Estadio Nacional Julio Martinez Pradanos;DG Medios;PuntoTicket;27-11-2024;60.000;Internacional;Iron Maiden;40.775 - 174.750;Descuento Entel - 20% Descuento Scotiabank-  20%;1;0;0;Heavy metal
+156;THE FUTURE PAST TOUR;Parque Estadio Nacional Julio Martinez Pradanos;DG Medios;PuntoTicket;28-11-2024;60.000;Internacional;Iron Maiden;40.775 - 174.750;Descuento Entel - 20% Descuento Scotiabank - 20%;1;0;0;Heavy metal
+157;Concierto Sinfónico Star Wars;Parque Padre Hurtado;Fundación Dream Here;Ticketmaster;21-12-2024;No aplica;Internacional;Sinfonica;18.400 - 48.300;Descuento Vecinos de La Reina 20%;0;1;0;Instrumental
+158;The River Is Rising - Rest Of The World Tour;Teatro Caupolican;Comercial Coliseo ;PuntoTicket;13-02-2024;Sin datos;Internacional;Slash;50.000 -110.000;No;0;0;0;Rock
+158;The River Is Rising - Rest Of The World Tour;Teatro Caupolican;Comercial Coliseo ;PuntoTicket;13-02-2024;Sin datos;Internacional;Myles Kennedy And The Conspirators;50.000 -110.000;No;0;0;0;Rock
+158;The River Is Rising - Rest Of The World Tour;Teatro Caupolican;Comercial Coliseo ;PuntoTicket;13-02-2024;Sin datos;Internacional;Gilby Clarke ;50.000 -110.000;No;0;0;0;Rock
+159;BamBam THE 1ST WORLD TOUR [AREA 52];Teatro Caupolican;Red Eyes Concerts ;PuntoTicket;02-03-2024;Sin datos;Internacional;BamBam;57.500 - 189.750;No;0;0;0;K-Pop
+160;Antonio Rios y el Festival Tropical ;Teatro Caupolican;Sociedad División;PuntoTicket;03-03-2024;Sin datos;Internacional;Antonio Rios ;22.000 - 40.000;No;0;0;0;Cumbia 
+161;Kintsuji;Teatro Caupolican;OUTSOURCING COMERCIAL;PuntoTicket;08-03-2024;Sin datos;Internacional;Un Corazón ;28.000 - 95.000;No;0;0;0;Pop
+162;Thirty Seconds To Mars Side Show Lollapalooza 2024;Teatro Caupolican;Lotus;PuntoTicket;14-03-2024;Sin datos;Internacional;30 Seconds To Mars;34.500 - 92.000;No;0;0;0;Rock
+163;Manu Chao Acustico;Teatro Caupolican;Producciones Vikingas;PuntoTicket;16-03-2024;Sin datos;Internacional;Manu Chao ;20.000 - 30.000;No;0;0;0;Reggae
+164;Phoenix Side Show Lollapalooza;Teatro Caupolican;Lotus;PuntoTicket;18-03-2024;No aplica;Internacional;Phoenix;34.500 - 92.000;No;0;0;0;Rock
+165;Destripando La Historia En Concierto;Teatro Caupolican;Chargola Pro;PuntoTicket;22-03-2024;Sin datos;Internacional;Destripando La Historia ;35.000 - 85.000;No;0;0;0;Pop
+166;The Way You Yawn, And the Outcry of Peace;Teatro Caupolican;Atenea Producciones;PuntoTicket;24-03-2024;Sin datos;Internacional;Radwimps;66.700 - 115.000;No;0;0;0;Rock
+167;Gira 30 Años;Teatro Caupolican;Grupo Liive ;PuntoTicket;02-04-2024;Sin datos;Internacional;Camela;48.000 - 172.500;No;0;0;0;Pop
+168;Royal Blood;Teatro Caupolican;Lotus;PuntoTicket;09-04-2024;Sin datos ;Internacional;Royal Blood;33.300 - 74.800;Descuento Banco de Chile - 20% ;1;0;0;Rock
+169;Por la fuerza de la razón;Teatro Caupolican;La Clave Producciones;PuntoTicket;12-04-2024;Sin datos;Nacional;Los Jaivas;28.750 - 69.000;No;0;0;0;Folclore chileno
+169;Por la fuerza de la razón;Teatro Caupolican;La Clave Producciones;PuntoTicket;12-04-2024;Sin Datos;Nacional;Inti-Illimani;28.750 - 69.000;No;0;0;0;Folclore chileno
+169;Por la fuerza de la razón;Teatro Caupolican;La Clave Producciones;PuntoTicket;12-04-2024;Sin datos;Nacional;Eduardo Gatti;28.750 - 69.000;No;0;0;0;Folclore chileno
+170;Mark Farner´s American Band;Teatro Caupolican;Spider Producciones;PuntoTicket;27-04-2024;Sin datos;Internacional;Mark Farner;33.000 - 70.000;No;0;0;0;Rock
+170;Mark Farner´s American Band;Teatro Caupolican;Spider Producciones;PuntoTicket;27-04-2024;Sin datos;Nacional;Aguaturbia;33.000 - 70.000;No;0;0;0;Rock
+171;Nelson Velásquez;Teatro Caupolican;Latramoya.cl;PuntoTicket;30-04-2024;Sin datos;Internacional;Nelson Velásquez ;28.750 - 138.000;No;1;0;0;Vallenato
+172;Nelson Velásquez;Teatro Caupolican;Latramoya.cl;PuntoTicket;01-05-2024;Sin datos;Internacional;Nelson Velásquez ;28.750 - 138.000;No;1;0;0;Vallenato
+173;The BIG Finish;Teatro Caupolican;Chargola Pro;PuntoTicket;03-05-2024;Sin datos;Internacional;Mr.Big;Sin datos;No;0;0;0;Rock
+173;The BIG Finish;Teatro Caupolican;Chargola Pro;PuntoTicket;03-05-2024;Sin datos;Internacional;Sebastian Bash ;Sin datos;No;0;0;0;Rock
+174;Carcass;Teatro Caupolican;FanLab;PuntoTicket;05-05-2024;Sin datos;Internacional;Carcass;50.600 - 103.500;Descuento Radio Futuro 20%;0;0;0;Metal
+174;Carcass;Teatro Caupolican;FanLab;PuntoTicket;05-05-2024;Sin datos;Nacional;Pentagram;50.600 - 103.500;Descuento Radio Futuro 20%;0;0;0;Metal
+175;Black Pumas;Teatro Caupolican;Lotus;PuntoTicket;15-05-2024;Sin datos;Internacional;Black Pumas;33.250 - 86.250;Descuento Banco de Chile - 20% ;0;0;0;Soul
+176;Dyango Forever;Teatro Caupolican;Atomik Entertainment;PuntoTicket;18-05-2024;Sin datos;Internacional;Dyango;24.035 - 99.935;No;1;1;0;Balada
+177;Feliz No Cumpleaños Tour 2024;Teatro Caupolican;Somelier Hoteles;PuntoTicket;20-05-2024;Sin datos;Internacional;Mago de Oz;Sin datos;No;0;0;0;Metal
+178;Feliz No Cumpleaños Tour 2024;Teatro Caupolican;Somelier Hoteles;PuntoTicket;21-05-2024;Sin datos;Internacional;Mago de Oz;Sin datos;No;0;0;0;Metal
+179;Flor BertotTI;Teatro Caupolican;Sociedad División;PuntoTicket;25-05-2024;Sin datos;Internacional;Flor Bertotti;50.000 - 80.000;No;0;0;0;Pop
+180;Flor BertotTI;Teatro Caupolican;Sociedad División;PuntoTicket;26-05-2024;Sin datos;Internacional;Flor Bertotti;50.000 - 80.000;No;0;0;0;Pop
+181;Interpol;Teatro Caupolican;Lotus;PuntoTicket;31-05-2024;Sin datos;Internacional;Interpol;46.000 - 92.000;No;0;0;0;Rock
+182;Darkera: Por Siempre;Teatro Caupolican;Lotus;PuntoTicket;02-06-2024;Sin datos;Nacional;Easykid ;23.000 - 57.500;No;0;0;0;Urbana
+183;Daniela Darcourt;Teatro Caupolican;ALFREDO TRONCOSO LEONE ;PuntoTicket;14-06-2024;Sin datos;Internacional;Daniela Darcourt;28.750 - ;No;0;0;0;Salsa
+184;Triste pero siempre mami;Teatro Caupolican;Latramoya.cl;PuntoTicket;15-06-2024;Sin datos;Internacional;Corina Smith;28.750 - 115.000;Descuento Especial Days;1;0;0;Pop
+185;Miguel Mateos;Teatro Caupolican;Somelier Hoteles;PuntoTicket;22-06-2024;Sin datos;Internacional;Miguel Mateos;34.500 - 43.700;No;0;0;0;Rock
+186;De Venezuela Pal Mundo;Teatro Caupolican;Product Show Entertainment;PuntoTicket;19-07-2024;Sin datos;Internacional;Oscar de León ;29.900 - 1.495.000;No;0;0;0;Salsa
+187;La K´Onga;Teatro Caupolican;SA Producciones;PuntoTicket;08-08-2024;Sin datos;Internacional;La K'onga;Sin datos;No;0;1;0;Cuarteto
+188;Lou Gramm By Foreigner;Teatro Caupolican;Somelier Hoteles;PuntoTicket;15-08-2024;Sin datos;Internacional;Lou Gramm;35.000 - 65.000;No;0;1;0;Rock
+189;Airbag;Teatro Caupolican;Bizarro Live Entertainment;PuntoTicket;16-08-2024;Sin datos;Internacional;Airbag;23.000 - 80.500;No;0;0;0;Rock
+190;25 Años y Nuevo Album: El Cruce;Teatro Caupolican;Sociedad División;PuntoTicket;17-08-2024;Sin datos;Nacional;El Cruce;Sin datos;No;0;1;0;Rock
+191;Nanpa Basico en Vivo;Teatro Caupolican;Bizarro Live Entertainment;PuntoTicket;22-08-2024;Sin datos;Internacional;Nanpa Basico;40.250 - 69.000;No;0;1;0;Hip hop
+192;Congreso: 55 Años, El Viaje Continua;Teatro Caupolican;MOJO Booking & Management;PuntoTicket;23-08-2024;Sin datos;Nacional;Congreso;23.000 - 75.000;No;0;0;0;Rock
+193;Rata Blanca;Teatro Caupolican;Somelier Hoteles;PuntoTicket;24-08-2024;Sin datos;Internacional;Rata Blanca;Sin datos;No;0;0;0;Rock
+194;Macha y el Bloque Depresivo;Teatro Caupolican;Sin datos;PuntoTicket;29-08-2024;Sin datos;Nacional;Macha y el Bloque Depresivo ;Sin datos;No;0;0;0;Balada
+195;Macha y el Bloque Depresivo;Teatro Caupolican;Sin datos;PuntoTicket;30-08-2024;Sin datos;Nacional;Macha y el Bloque Depresivo ;Sin datos;No;0;0;0;Balada
+196;Mala Rodriguez;Teatro Caupolican;Sin datos;PuntoTicket;08-09-2024;Sin datos;Internacional;Mala Rodríguez ;23.000 - 69.000;Promocion 2x;0;0;0;Rap
+197;Everglow US $ Latam Tour Pulse Heart;Teatro Caupolican;Lotus;PuntoTicket;12-09-2024;Sin datos;Internacional;EVERGLOW;51.750 - 115.000;No;0;0;0;K-Pop
+198;Ellipsis Tour 2024;Teatro Caupolican;Lotus;PuntoTicket;27-09-2024;Sin datos;Internacional;Joss Stone;51.800 - 143.800;No;0;0;1;Soul
+199;Harry Nach;Teatro Caupolican;Atomik Entertainment;PuntoTicket;29-09-2024;Sin datos;Nacional;Harry Nach;20.700 - 44.850;No;1;0;0;Urbana
+200;Engelbert Humperdinck ;Teatro Caupolican;Sociedad División;PuntoTicket;05-10-2024;Sin datos;Internacional;Engelbert Humperdinck ;Sin datos;No;1;1;0;Balada
+201;37 años punkeando;Teatro Caupolican;Somelier Hoteles;PuntoTicket;06-10-2024;Sin datos;Internacional;2 Minutos;22.000 - 45.000;No;1;0;0;Punk
+202;Wardruna Latin America Tour 2024;Teatro Caupolican;Spider Producciones;PuntoTicket;09-10-2024;Sin datos;Internacional;Wardruna;45.000 - 80.000;No;0;0;0;Metal
+203;Blessd;Teatro Caupolican;Lotus;PuntoTicket;10-10-2024;Sin datos;Internacional;Blessd;$29.900 - 74.800;No;0;0;0;Urbana
+204;Engelbert Humperdinck ;Teatro Caupolican;Sociedad División;PuntoTicket;12-10-2024;Sin datos;Internacional;Engelbert Humperdinck ;Sin datos;No;1;0;0;Balada
+205;Somos TDH Latam Tour;Teatro Caupolican;Lotus;PuntoTicket;17-10-2024;Sin datos;Internacional;Micro TDH;32.200 - 86.300;No;0;1;0;Urbana
+206;AGENDA 1999;Teatro Caupolican;Red Eyes Concerts ;PuntoTicket;18-10-2024;Sin datos;Internacional;Andrés Calamaro;51.750 - 86.250;No;0;0;0;Rock
+207;AGENDA 1999;Teatro Caupolican;Red Eyes Concerts ;PuntoTicket;19-10-2024;Sin datos;Internacional;Andrés Calamaro;51.750 - 86.250;No;0;0;0;Rock
+208;LSDR TOUR 2024;Teatro Caupolican;Lotus;PuntoTicket;20-10-2024;Sin datos;Nacional;DrefQuila;29.900 - 57.500;No;0;0;0;Urbana
+209;Meshuggah;Teatro Caupolican;Transistor;PuntoTicket;22-10-2024;Sin datos;Internacional;Meshuggah ;34.500 - 92.000;No;0;0;0;Metal
+210;Mother Mother;Teatro Caupolican;DG Medios;Ticketmaster;27-10-2024;Sin datos;Internacional;Mother Mother;41.940 - 67.570;Descuento Entel - 20% Descuento Scotiabank - 20%;1;0;0;Rock
+211;Nubeluz, La Despedida;Teatro Caupolican;De Hierro Music;PuntoTicket;03-11-2024;No aplica;Internacional;Nubeluz ;46.000 - 126.500;No;0;1;0;Infantil
+212;Flame On Muddafucka;Teatro Caupolican;Matahari Entertainment;PuntoTicket;14-11-2024;Sin datos;Internacional;Die Antwoord;46.000 - 74.750;Promocion 2x1;0;0;0;Electronica
+213;Dyango Forever;Teatro Caupolican;Atomik Entertainment;PuntoTicket;17-11-2024;Sin datos;Internacional;Dyango;24.035 - 99.935;No;0;1;0;Balada
+214;Pedro Aznar 5.0;Teatro Caupolican;ALFREDO TRONCOSO LEONE ;PuntoTicket;29-11-2024;Sin datos;Internacional;Pedro Aznar;27.600 - 80.500;No;0;0;0;Jazz
+215;SFDK 30 ANIVERSARIO;Teatro Caupolican;FFBOOKING;PuntoTicket;30-11-2024;Sin datos;Internacional;SFDK;34.500  - 69.000;No;0;0;0;Hip hop
+216;Andy & Lucas Nuestros Últimos Acordes;Teatro Caupolican;Grupo Liive ;PuntoTicket;01-12-2024;Sin datos;Internacional;Andy & Lucas;44.850 - 149.500;No;0;0;0;Balada
+217;Dei;Teatro Caupolican;Bizarro Live Entertainment;PuntoTicket;04-12-2024;Sin datos;Internacional;Dei V;40.250 - 86.250;No;0;0;0;Urbana
+218;El grito de la raza;Teatro Caupolican;Sociedad División;PuntoTicket;06-12-2024;Sin datos;Nacional;Illapu;25.300 -;No;0;0;0;Folclore chileno
+219;Gepe;Teatro Caupolican;Armonica Limitada ;PuntoTicket;07-12-2024;Sin datos;Nacional;Gepe;18.000 - 40.000;No;0;0;0;Pop
+220;Celebrando 60 años de musica: The Ska-talites;Teatro Caupolican;FFBOOKING;PuntoTicket;08-12-2024;Sin datos;Internacional;The Ska-talites;20.000 - ;No;0;0;0;Ska
+221;Celebrando 60 años de musica: The Ska-talites;Teatro Caupolican;FFBOOKING;PuntoTicket;08-12-2024;Sin datos;Internacional;Twinkle Brothers;20.000 - ;No;0;0;0;Ska
+221;Celebrando 60 años de musica: The Ska-talites;Teatro Caupolican;FFBOOKING;PuntoTicket;08-12-2024;Sin datos;Nacional;Chico Trujillo;20.000 - ;No;0;0;0;Ska
+221;Beyond The World Latin America Tour 2024;Teatro Caupolican;Atenea Producciones;PuntoTicket;10-12-2024;Sin datos;Internacional;Tokio Hotel;42.000 - 46.000;No;0;0;0;Rock
+222;Jinjer Latin America Tour 2024;Teatro Caupolican;Napalm Events;PuntoTicket;12-12-2024;Sin datos;Internacional;Jinjer ;38.000 - 85.000;No;1;0;0;Metal
+223;Jinjer Latin America Tour 2025;Teatro Caupolican;Napalm Events;PuntoTicket;12-12-2024;Sin datos;Internacional;Heaven Shall Burn;38.000 - 85.000;No;1;0;0;Metal
+224;Vida En Rosa Tour;Teatro Caupolican;PRIDEFESTCL;PuntoTicket;14-12-2024;Sin datos;Internacional;Belanova;40.250 - 115.000;No;0;0;0;Pop
