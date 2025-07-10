@@ -1,4 +1,4 @@
-# 1. Títular del reportaje
+# 1. Titular del reportaje
 
 **Más espacio para la música en Santiago**
 
