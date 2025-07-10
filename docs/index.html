@@ -8,7 +8,6 @@
 	<meta name="description" content="Sold Out">
     <title>Sold Out</title> 
     <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="slider.css">
      <link rel="stylesheet" href="carrusel_recintos.css">
      <link rel="stylesheet" href="productoras.css">
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
@@ -485,81 +484,178 @@
     </div>
  </div>
 
-<div class="parent">    
-<div class="child" id="productoras">
-<h1>El rol de las productoras en la experiencia de los asistentes</h1>	
-	
-<p>La capacidad es una cualidad que los artistas y los organizadores valoran cuando se trata de hacer un concierto o un festival, pero no es el único factor que está en juego al momento de llevar a cabo un evento de esta índole. Precisamente, la productora u organizadora es  una de esas piezas vitales. Cuando Shakira canceló las primeras dos fechas de su tour, la productora a cargo, Fenix Entertainment, argumentó que se debió a “dificultades de construcción”: el escenario había cedido y quedó desnivelado. El problema no se originó en la infraestructura del Estadio Nacional, como se pensó en un inicio cuando Fenix aseguró que hubo inconvenientes con el suelo del recinto deportivo.</p> 
-<div class="titular">
-        <img src="Titular%201.png" alt="Titular1" class="Titular1">
-    </div>
-<p>El desempeño de la productora también puede ser determinante para que el espectáculo se desarrolle con éxito, independiente del recinto escogido para el evento. No solo se trata de la logística, la productora es la intermediaria entre el público y el artista. De esta depende el disfrute de los asistentes respecto al espectáculo ofrecido. En Chile, nombres como Lotus, Bizarro, DG Medios y Fenix Entertainment concentran buena parte del mercado y han desarrollado un sello distintivo. Entre las 78 productoras que organizan festivales y conciertos masivos en la Región Metropolitana, estas fueron las más destacadas (revisa las 10 más relevantes en el carrusel).</p> 
-<p>Las productoras deben ser capaces de gestionar y comunicar de manera efectiva los cambios y contratiempos. Cuando se supo que el recital de Shakira se mudaría al Parque Estadio Nacional, no todos recibieron la noticia con agrado, como demuestran algunos comentarios en el perfil de Instagram de Fenix Producciones: <i>“Que terrible. Comprar Andes para que ahora nos digan que debemos estar paradas y en cancha, me siento estafada”;“¿Y el tema de la capacidad? ¿Es seguro cambiar a un lugar más pequeño?”</i>.</p> 
-<p>La percepción cambió luego de que se concretaran los primeros shows de la colombiana: <i>“Si pudiera repetiría sin duda alguna, el mejor concierto de mi vida. Gracias @shakira, gracias @fenixchile superaron mis expectativas”; “Si no viviera en región, si tuviera plata repetiría mañana, de verdad no se lo pierdan, fui ayer y fue increíble @fenixchile se fajo con lo que hizo en él nuevo escenario a pesar de tantos malos comentarios del lugar”</i>.</p> 
-<div class="titular">
-        <img src="Titular%202.png?raw=true" alt="Titular2" class="Titular2">
-    </div>	
-<p>Un ejemplo de mala gestión es Noix Entertainment. El año pasado prometió sorprender a los fanáticos del k-pop con un evento que reuniría a figuras destacadas de este género musical, el festival All At Once.16 días antes de la esperada fecha, Noix Entertainment afirmó <a href = https://www.instagram.com/p/C52GKkvRRyI/?img_index=2>a través de un comunicado que el festival fue cancelado</a>, al ser incapaz de cumplir con los estándares necesarios para un buen espectáculo. Previamente, se dio a conocer que All At Once sería trasladado desde el Club Hípico al Movistar Arena, ante la posibilidad de precipitaciones.</p> 	
-</div>	
 
-<!--SLIDER PRODUCTORAS-->
-<div class="child">
-    <div id="app">
-        <div class="sliderproductoras"></div>
-            <div class="slider" aria-labelledby="slider-heading__example-slider">
-                <ul class="slider__wrapper" style="transform: translateX(0%);">
-                    <h3 id="slider-heading__example-slider" class="visuallyhidden">Example Slider</h3>
-                    <li class="slide slide--current" style="--x: 0; --y: 0;">
-                        <div class="slide__image-wrapper">
-                            <img class="slide__image" alt="New Fashion Apparel" src="productoras/bizarro.png" style="opacity: 4;">
-                        </div>
-                            <article class="slide__content">
-                                <h2 class="slide__headline">Bizarro Live Entertainment</h2>
-                                <button class="slide__action btn">Ir a web</button>
-                            </article>
-                    </li>
-                    <li class="slide slide--next" style="--x: 0; --y: 0;">
-                        <div class="slide__image-wrapper">
-                            <img class="slide__image" alt="In The Wilderness" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg" style="opacity: 1;"></div>
-                            <article class="slide__content">
-                                <h2 class="slide__headline">In The Wilderness</h2>
-                                <button class="slide__action btn">Book travel</button>
-                            </article>
-                    </li>
-                    <li class="slide">
-                        <div class="slide__image-wrapper">
-                            <img class="slide__image" alt="For Your Current Mood" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/guitar.jpg" style="opacity: 1;"></div>
-                            <article class="slide__content">
-                                <h2 class="slide__headline">For Your Current Mood</h2>
-                                <button class="slide__action btn">Listen</button>
-                            </article>
-                    </li>
-                    <li class="slide" style="--x: 0; --y: 0;">
-                        <div class="slide__image-wrapper">
-                            <img class="slide__image" alt="Focus On The Writing" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/typewriter.jpg" style="opacity: 1;"></div>
-                            <article class="slide__content">
-                                <h2 class="slide__headline">Focus On The Writing</h2>
-                                <button class="slide__action btn">Get Focused</button>
-                            </article>
-                    </li>
-                </ul>
-                <div class="slider__controls">
-                    <button class="btn btn--previous" title="Go to previous slide">
-                        <svg class="icon" viewBox="0 0 24 24">
-                            <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"></path>
-                        </svg>
-                    </button>
-                    <button class="btn btn--next" title="Go to next slide">
-                        <svg class="icon" viewBox="0 0 24 24">
-                            <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z">
-                            </path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
+<div class="parent">    
+    <div class="child" id="productoras">
+    <h1>El rol de las productoras en la experiencia de los asistentes</h1>	
+      
+    <p>La capacidad es una cualidad que los artistas y los organizadores valoran cuando se trata de hacer un concierto o un festival, pero no es el único factor que está en juego al momento de llevar a cabo un evento de esta índole. Precisamente, la productora u organizadora es  una de esas piezas vitales. Cuando Shakira canceló las primeras dos fechas de su tour, la productora a cargo, Fenix Entertainment, argumentó que se debió a “dificultades de construcción”: el escenario había cedido y quedó desnivelado. El problema no se originó en la infraestructura del Estadio Nacional, como se pensó en un inicio cuando Fenix aseguró que hubo inconvenientes con el suelo del recinto deportivo.</p> 
+    <div class="titular">
+            <img src="Titular%201.png" alt="Titular1" class="Titular1">
         </div>
-    </div>
+    <p>El desempeño de la productora también puede ser determinante para que el espectáculo se desarrolle con éxito, independiente del recinto escogido para el evento. No solo se trata de la logística, la productora es la intermediaria entre el público y el artista. De esta depende el disfrute de los asistentes respecto al espectáculo ofrecido. En Chile, nombres como Lotus, Bizarro, DG Medios y Fenix Entertainment concentran buena parte del mercado y han desarrollado un sello distintivo. Entre las 78 productoras que organizan festivales y conciertos masivos en la Región Metropolitana, estas fueron las más destacadas (revisa las 10 más relevantes en el carrusel).</p> 
+    <p>Las productoras deben ser capaces de gestionar y comunicar de manera efectiva los cambios y contratiempos. Cuando se supo que el recital de Shakira se mudaría al Parque Estadio Nacional, no todos recibieron la noticia con agrado, como demuestran algunos comentarios en el perfil de Instagram de Fenix Producciones: <i>“Que terrible. Comprar Andes para que ahora nos digan que debemos estar paradas y en cancha, me siento estafada”;“¿Y el tema de la capacidad? ¿Es seguro cambiar a un lugar más pequeño?”</i>.</p> 
+    <p>La percepción cambió luego de que se concretaran los primeros shows de la colombiana: <i>“Si pudiera repetiría sin duda alguna, el mejor concierto de mi vida. Gracias @shakira, gracias @fenixchile superaron mis expectativas”; “Si no viviera en región, si tuviera plata repetiría mañana, de verdad no se lo pierdan, fui ayer y fue increíble @fenixchile se fajo con lo que hizo en él nuevo escenario a pesar de tantos malos comentarios del lugar”</i>.</p> 
+    <div class="titular">
+            <img src="Titular%202.png?raw=true" alt="Titular2" class="Titular2">
+        </div>	
+    <p>Un ejemplo de mala gestión es Noix Entertainment. El año pasado prometió sorprender a los fanáticos del k-pop con un evento que reuniría a figuras destacadas de este género musical, el festival All At Once.16 días antes de la esperada fecha, Noix Entertainment afirmó <a href = https://www.instagram.com/p/C52GKkvRRyI/?img_index=2>a través de un comunicado que el festival fue cancelado</a>, al ser incapaz de cumplir con los estándares necesarios para un buen espectáculo. Previamente, se dio a conocer que All At Once sería trasladado desde el Club Hípico al Movistar Arena, ante la posibilidad de precipitaciones.</p> 	
+    </div>	
 </div>
+
+
+<div class='containerp'>
+  <!--SLIDER PRODUCTORAS-->
+  <div class="slidesp" id="slidesp">
+    <div>
+      <div class="slides__slidep">
+        <div class="slides__visualp">
+          <img src="productoras/bizarro.png" alt=""/>
+        </div>
+        <div class="slides__contentp">
+          <h1>Bizarro Live Entertainment</h1>
+          <a href="https://bizarro.cl/">bizarro.cl</a>
+          <span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="slides__slidep">
+        <div class="slides__visualp">
+          <img src="productoras/dgmedios.png" alt="" />
+        </div>
+        <div class="slides__contentp">
+          <h1>DG Medios</h1>
+          <a href="https://dgmedios.com/">dgmedios.com</a>
+          <span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="slides__slidep">
+        <div class="slides__visualp">
+          <img src="productoras/fenix.png" alt="" />
+        </div>
+        <div class="slides__contentp">
+          <h1>Fenix Entertainment Chile</h1>
+          <a href="https://www.fenixchile.cl/">fenixchile.cl</a>
+          <span><i class="fas fa-star"></i></span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="slides__slidep">
+        <div class="slides__visualp">
+          <img src="productoras/Iguana.jpg" alt="" />
+        </div>
+        <div class="slides__contentp">
+          <h1>Iguana Producciones</h1>
+          <a href="https://iguanaproducciones.cl/">iguanaproducciones.cl</a>
+          <span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="slides__slidep">
+        <div class="slides__visualp">
+          <img src="productoras/laoreja.jpg" alt="" />
+        </div>
+        <div class="slides__contentp">
+          <h1>La Oreja</h1>
+          <a href="https://laoreja.com/">laoreja.com</a>
+          <span><i class="fas fa-star"></i></span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="slides__slidep">
+        <div class="slides__visualp">
+          <img src="productoras/lotus.jpg" alt="" />
+        </div>
+        <div class="slides__contentp">
+          <h1>Lotus</h1>
+          <a href="https://www.lotuspro.cl/">lotuspro.cl</a>
+          <span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="slides__slidep">
+        <div class="slides__visualp">
+          <img src="productoras/noix.jpg" alt="" />
+        </div>
+        <div class="slides__contentp">
+          <h1>NoiX Entertainment</h1>
+          <a href="https://www.noix.cl/?lang=es">noix.cl</a>
+          <span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="slides__slidep">
+        <div class="slides__visualp">
+          <img src="productoras/snow.png" alt="" />
+        </div>
+        <div class="slides__contentp">
+          <h1>Snow Entertainment</h1>
+          <a href="https://snowentertainment.com.ar/">snowentertainment.com.ar</a>
+          <span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="slides__slidep">
+        <div class="slides__visualp">
+          <img src="productoras/fanlab.jpg" alt="" />
+        </div>
+        <div class="slides__contentp">
+          <h1>The FanLab</h1>
+          <a href="https://www.thefanlab.cl/">thefanlab.cl</a>
+          <span>
+            <i class="fas fa-star"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class='nav__prevp'><i class="fas fa-chevron-left"></i></div>
+  <div class='nav__nextp'><i class="fas fa-chevron-right"></i></div>
+</div>
+</div>
+
 <!-- Este es el collage -->	 
 <div class="masonry-container">
   <div class="masonry">

@@ -1,207 +1,52 @@
-const slideData = [
-  {
-    index: 0,
-    headline: "Bizarro Live Entertainment",
-    button: "Ir a web",
-    src: "https://bizarro.cl/"
-  },
-  {
-    index: 1,
-    headline: "In The Wilderness",
-    button: "Book travel",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg"
-  },
-  {
-    index: 2,
-    headline: "For Your Current Mood",
-    button: "Listen",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/guitar.jpg"
-  },
-  {
-    index: 3,
-    headline: "Focus On The Writing",
-    button: "Get Focused",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/typewriter.jpg"
-  }
-];
+$(document).ready(function () {
+  let prevSlide = null;
 
-// =========================
-// Slide
-// =========================
+  $(".slidesp").on("init", function (event, slick) {
+    $(".slick-slide").find("h1, a, span").hide();
+    $(".slick-current").find("h1, a, span").slideDown(500).delay(1500);
+  });
 
-class Slide extends React.Component {
-  constructor(props) {
-    super(props);
+  $(".slidesp").slick({
+    slidesToShow: 3,
+    dots: false,
+    arrows: true,
+    speed: 500,
+    slidesToScroll: 1,
+    infinite: true,
+    centerMode: true,
+    centerPadding: "0",
+    focusOnSelect: true,
+    cssEase: "cubic-bezier(.1, .2, .1, .02)",
+    prevArrow: $(".nav__prevp"),
+    nextArrow: $(".nav__nextp")
+  });
 
-    this.handleMouseMove = this.handleMouseMove.bind(this);
-    this.handleMouseLeave = this.handleMouseLeave.bind(this);
-    this.handleSlideClick = this.handleSlideClick.bind(this);
-    this.imageLoaded = this.imageLoaded.bind(this);
-    this.slide = React.createRef();
-  }
-
-  handleMouseMove(event) {
-    const el = this.slide.current;
-    const r = el.getBoundingClientRect();
-
-    el.style.setProperty(
-      "--x",
-      event.clientX - (r.left + Math.floor(r.width / 2))
-    );
-    el.style.setProperty(
-      "--y",
-      event.clientY - (r.top + Math.floor(r.height / 2))
-    );
-  }
-
-  handleMouseLeave(event) {
-    this.slide.current.style.setProperty("--x", 0);
-    this.slide.current.style.setProperty("--y", 0);
-  }
-
-  handleSlideClick(event) {
-    this.props.handleSlideClick(this.props.slide.index);
-  }
-
-  imageLoaded(event) {
-    event.target.style.opacity = 1;
-  }
-
-  render() {
-    const { src, button, headline, index } = this.props.slide;
-    const current = this.props.current;
-    let classNames = "slide";
-
-    if (current === index) classNames += " slide--current";
-    else if (current - 1 === index) classNames += " slide--previous";
-    else if (current + 1 === index) classNames += " slide--next";
-
-    return (
-      <li
-        ref={this.slide}
-        className={classNames}
-        onClick={this.handleSlideClick}
-        onMouseMove={this.handleMouseMove}
-        onMouseLeave={this.handleMouseLeave}
-      >
-        <div className="slide__image-wrapper">
-          <img
-            className="slide__image"
-            alt={headline}
-            src={src}
-            onLoad={this.imageLoaded}
-          />
-        </div>
-
-        <article className="slide__content">
-          <h2 className="slide__headline">{headline}</h2>
-          <button className="slide__action btn">{button}</button>
-        </article>
-      </li>
-    );
-  }
-}
-
-// =========================
-// Slider control
-// =========================
-
-const SliderControl = ({ type, title, handleClick }) => {
-  return (
-    <button className={`btn btn--${type}`} title={title} onClick={handleClick}>
-      <svg className="icon" viewBox="0 0 24 24">
-        <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-      </svg>
-    </button>
-  );
-};
-
-// =========================
-// Slider
-// =========================
-
-class Slider extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = { current: 0 };
-    this.handlePreviousClick = this.handlePreviousClick.bind(this);
-    this.handleNextClick = this.handleNextClick.bind(this);
-    this.handleSlideClick = this.handleSlideClick.bind(this);
-  }
-
-  handlePreviousClick() {
-    const previous = this.state.current - 1;
-
-    this.setState({
-      current: previous < 0 ? this.props.slides.length - 1 : previous
-    });
-  }
-
-  handleNextClick() {
-    const next = this.state.current + 1;
-
-    this.setState({
-      current: next === this.props.slides.length ? 0 : next
-    });
-  }
-
-  handleSlideClick(index) {
-    if (this.state.current !== index) {
-      this.setState({
-        current: index
-      });
+  $(".slidesp").on(
+    "beforeChange",
+    function (event, slick, currentSlide, nextSlide) {
+      if (currentSlide !== nextSlide) {
+        $(".slick-current").find("h1, a, span").slideUp("fast");
+      }
+      liked();
     }
-  }
+  );
 
-  render() {
-    const { current, direction } = this.state;
-    const { slides, heading } = this.props;
-    const headingId = `slider-heading__${heading
-      .replace(/\s+/g, "-")
-      .toLowerCase()}`;
-    const wrapperTransform = {
-      transform: `translateX(-${current * (100 / slides.length)}%)`
-    };
+  $(".slidesp").on("afterChange", function (event, slick, currentSlide) {
+    if (currentSlide !== prevSlide) {
+      $(".slick-current").find("h1, a, span").slideDown(500).delay(1000);
+      prevSlide = currentSlide;
+    }
+  });
 
-    return (
-      <div className="slider" aria-labelledby={headingId}>
-        <ul className="slider__wrapper" style={wrapperTransform}>
-          <h3 id={headingId} class="visuallyhidden">
-            {heading}
-          </h3>
-
-          {slides.map((slide) => {
-            return (
-              <Slide
-                key={slide.index}
-                slide={slide}
-                current={current}
-                handleSlideClick={this.handleSlideClick}
-              />
-            );
-          })}
-        </ul>
-
-        <div className="slider__controls">
-          <SliderControl
-            type="previous"
-            title="Go to previous slide"
-            handleClick={this.handlePreviousClick}
-          />
-
-          <SliderControl
-            type="next"
-            title="Go to next slide"
-            handleClick={this.handleNextClick}
-          />
-        </div>
-      </div>
-    );
-  }
-}
-
-ReactDOM.render(
-  <Slider heading="Example Slider" slides={slideData} />,
-  document.getElementById("app")
-);
+  const liked = () => {
+    $(".slick-current")
+      .find("span")
+      .on("click", function () {
+        if ($(this).hasClass("liked")) {
+          $(this).removeClass("liked");
+        } else {
+          $(this).addClass("liked");
+        }
+      });
+  };
+});
