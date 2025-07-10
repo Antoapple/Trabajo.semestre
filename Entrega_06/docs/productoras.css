@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto&display=swap"); 
+
+.containerp {
+  position: relative;
+  display: block;
+  height: 550px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.nav__prevp, .nav__nextp {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #749393;
+}
+.nav__prevp:hover, .nav__nextp:hover {
+  color: #9ab6b6;
+}
+.nav__prevp {
+  left: 10px;
+}
+.nav__nextp {
+  right: 10px;
+}
+
+.slidesp {
+  margin: auto;
+  padding: 50px;
+}
+.slidesp .slick-current .slides__slidep {
+  transform: scale(1);
+  box-shadow: 0 0 30px 5px #e8e8e8;
+}
+.slidesp .slick-current .slides__contentp {
+  display: block;
+}
+.slides__slidep {
+  width: 250px;
+  padding: 10px;
+  margin: 0 30px;
+  border-radius: 20px;
+  margin: 30px auto;
+  box-shadow: 0 0 10px 5px #e8e8e8;
+  transform: scale(0.8);
+  transition: all 400ms linear;
+}
+.slides__visualp {
+  height: 260px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.slides__visualp img {
+  width: 100%;
+}
+.slides__contentp {
+  position: relative;
+}
+.slides__contentp h1 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+}
+.slides__contentp a {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: #464546;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.slides__contentp a:hover {
+  text-decoration: underline;
+}
+.slides__contentp span {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  color: #9ab6b6;
+  transition: all 100ms linear;
+  cursor: pointer;
+}
+.slides__contentp span.liked {
+  color: yellow; 
+}
